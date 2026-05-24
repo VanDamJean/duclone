@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  
+  <!-- SEO -->
+  <title>DUO — 매일 단어 반복학습</title>
+  <meta name="description" content="하루 15분, 과학적 간격 반복 알고리즘으로 영단어를 자동으로 외워주는 학습 앱" />
+  <meta name="theme-color" content="#059669" />
+  
+  <!-- PWA -->
+  <link rel="manifest" href="/manifest.json" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="DUO" />
+
+  <!-- Favicon — Emoji-based SVG -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦉</text></svg>" />
+
+  <style>
+    /* Critical CSS — 로딩 화면 */
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+    #app-loader {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100dvh;
+      background: #f8faf9;
+      gap: 16px;
+    }
+    #app-loader .loader-emoji { font-size: 3rem; animation: bounce 1s infinite; }
+    #app-loader .loader-text { font-size: 0.9rem; color: #6b7280; font-weight: 500; }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+  </style>
+</head>
+<body>
+  <!-- 로딩 화면 -->
+  <div id="app-loader">
+    <div class="loader-emoji">🦉</div>
+    <div class="loader-text">DUO 로딩 중...</div>
+  </div>
+
+  <!-- 앱 컨테이너 -->
+  <div id="app"></div>
+
+  <script type="module" src="/src/main.js"></script>
+  <script>
+    // 앱 로드 완료 시 로딩 화면 숨기기
+    window.addEventListener('load', () => {
+      const loader = document.getElementById('app-loader');
+      if (loader) {
+        loader.style.opacity = '0';
+        loader.style.transition = 'opacity 0.3s ease';
+        setTimeout(() => loader.remove(), 300);
+      }
+    });
+  </script>
+</body>
+</html>
