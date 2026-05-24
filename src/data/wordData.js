@@ -2272,4 +2272,15 @@ export const wordData = [
     category: 'social',
     level: 5,
   },
+  {
+    id: 'word_201',
+    word: 'caveman',
+    meaning: '원시인',
+    pronunciation: '/ˈkeɪvmæn/',
+    partOfSpeech: 'noun',
+    example: 'The caveman used stone tools to hunt for food.',
+    exampleKo: '원시인은 먹이를 사냥하기 위해 돌 도구를 사용했다.',
+    category: 'social',
+    level: 3,
+  },
 ];
