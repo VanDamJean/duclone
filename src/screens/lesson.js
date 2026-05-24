@@ -217,7 +217,7 @@ function renderRatingButtons(parentContainer, quiz, navigate, quizzes) {
 function renderMultipleChoiceQuiz(container, body, footer, quiz, navigate, quizzes) {
   answered = false;
 
-  const directionLabel = quiz.direction === 'en_to_ko' ? '이 단어의 뜻은?' : '이 뜻의 영어 단어는?';
+  const directionLabel = quiz.direction === 'en_to_ko' ? '이 단어의 뜻은?' : '이 뜻의 단어는?';
   const newBadge = quiz.isNew ? '<div style="margin-bottom: 8px; font-size: 0.75rem; color: var(--primary-600); background: var(--primary-50); padding: 4px 12px; border-radius: var(--radius-full); font-weight: 700; display: inline-block;">✨ 새 단어</div>' : '';
 
   body.innerHTML = `
@@ -302,7 +302,7 @@ function renderFillBlankQuiz(container, body, footer, quiz, navigate, quizzes) {
     </div>
     <div class="fill-blank-input-area">
       <input type="text" class="fill-blank-input" id="fill-input" 
-             placeholder="영어 단어를 입력하세요" 
+             placeholder="단어를 입력하세요" 
              autocomplete="off" autocapitalize="off" spellcheck="false">
       <div class="fill-blank-hint" id="fill-hint">힌트: ${quiz.hint}</div>
     </div>

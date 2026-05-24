@@ -1,7 +1,7 @@
 {
   "name": "DUO - 단어 반복학습",
   "short_name": "DUO",
-  "description": "하루 15분, 과학적 간격 반복 알고리즘으로 영단어를 자동으로 외워주는 학습 앱",
+  "description": "하루 15분, 과학적 간격 반복 알고리즘으로 단어를 자동으로 외워주는 학습 앱",
   "start_url": "/",
   "display": "standalone",
   "orientation": "portrait",

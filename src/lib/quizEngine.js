@@ -60,7 +60,7 @@ export function selectQuizType(cardState, isNew) {
  * @returns {{ question: string, options: Array, correctIndex: number, word: Object }}
  */
 export function generateMultipleChoice(targetWord) {
-  // 방향 결정: 영어→한국어 vs 한국어→영어
+  // 방향 결정: 학습 언어→한국어 vs 한국어→학습 언어
   const isEnToKo = Math.random() < 0.6;
 
   // 오답 보기 3개 생성 (같은 품사에서 우선 선택)
