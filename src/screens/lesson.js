@@ -96,19 +96,19 @@ function renderQuiz(container, navigate, quizzes) {
 
   switch (quiz.type) {
     case QuizType.FLASHCARD:
-      renderFlashcardQuiz(body, footer, quiz, navigate, quizzes);
+      renderFlashcardQuiz(container, body, footer, quiz, navigate, quizzes);
       break;
     case QuizType.MULTIPLE_CHOICE:
-      renderMultipleChoiceQuiz(body, footer, quiz, navigate, quizzes);
+      renderMultipleChoiceQuiz(container, body, footer, quiz, navigate, quizzes);
       break;
     case QuizType.FILL_BLANK:
-      renderFillBlankQuiz(body, footer, quiz, navigate, quizzes);
+      renderFillBlankQuiz(container, body, footer, quiz, navigate, quizzes);
       break;
     case QuizType.MATCHING:
-      renderMatchingQuiz(body, footer, quiz, navigate, quizzes);
+      renderMatchingQuiz(container, body, footer, quiz, navigate, quizzes);
       break;
     default:
-      renderMultipleChoiceQuiz(body, footer, quiz, navigate, quizzes);
+      renderMultipleChoiceQuiz(container, body, footer, quiz, navigate, quizzes);
   }
 
   // 닫기 버튼
@@ -122,7 +122,7 @@ function renderQuiz(container, navigate, quizzes) {
 
 // ─── Flashcard Quiz ─────────────────────────────────────
 
-function renderFlashcardQuiz(body, footer, quiz, navigate, quizzes) {
+function renderFlashcardQuiz(container, body, footer, quiz, navigate, quizzes) {
   answered = false;
 
   // 새 단어 뱃지
@@ -164,7 +164,7 @@ function renderFlashcardQuiz(body, footer, quiz, navigate, quizzes) {
     
     if (flashcard.classList.contains('flipped')) {
       document.getElementById('flashcard-actions').style.display = 'block';
-      renderRatingButtons(quiz, navigate, quizzes);
+      renderRatingButtons(container, quiz, navigate, quizzes);
     }
   });
 
@@ -175,7 +175,7 @@ function renderFlashcardQuiz(body, footer, quiz, navigate, quizzes) {
   });
 }
 
-function renderRatingButtons(quiz, navigate, quizzes) {
+function renderRatingButtons(parentContainer, quiz, navigate, quizzes) {
   if (!quiz.wordId) return;
   
   const preview = previewSchedule(quiz.wordId);
@@ -202,14 +202,14 @@ function renderRatingButtons(quiz, navigate, quizzes) {
       answered = true;
       
       const rating = parseInt(btn.dataset.rating);
-      handleAnswer(quiz, rating >= 3, rating, navigate, quizzes);
+      handleAnswer(parentContainer, quiz, rating >= 3, rating, navigate, quizzes, btn);
     });
   });
 }
 
 // ─── Multiple Choice Quiz ───────────────────────────────
 
-function renderMultipleChoiceQuiz(body, footer, quiz, navigate, quizzes) {
+function renderMultipleChoiceQuiz(container, body, footer, quiz, navigate, quizzes) {
   answered = false;
 
   const directionLabel = quiz.direction === 'en_to_ko' ? '이 단어의 뜻은?' : '이 뜻의 영어 단어는?';
@@ -271,17 +271,17 @@ function renderMultipleChoiceQuiz(body, footer, quiz, navigate, quizzes) {
       }
 
       const rating = isCorrect ? 3 : 1;
-      handleAnswer(quiz, isCorrect, rating, navigate, quizzes, btn);
+      handleAnswer(container, quiz, isCorrect, rating, navigate, quizzes, btn);
     });
   });
 }
 
 // ─── Fill Blank Quiz ────────────────────────────────────
 
-function renderFillBlankQuiz(body, footer, quiz, navigate, quizzes) {
+function renderFillBlankQuiz(container, body, footer, quiz, navigate, quizzes) {
   // 빈칸 채우기가 아닌 경우 (폴백)
   if (quiz.type !== QuizType.FILL_BLANK) {
-    renderMultipleChoiceQuiz(body, footer, quiz, navigate, quizzes);
+    renderMultipleChoiceQuiz(container, body, footer, quiz, navigate, quizzes);
     return;
   }
 
@@ -330,7 +330,7 @@ function renderFillBlankQuiz(body, footer, quiz, navigate, quizzes) {
     }
 
     const rating = isCorrect ? 3 : 1;
-    handleAnswer(quiz, isCorrect, rating, navigate, quizzes);
+    handleAnswer(container, quiz, isCorrect, rating, navigate, quizzes);
   };
 
   submitBtn?.addEventListener('click', submit);
@@ -341,7 +341,7 @@ function renderFillBlankQuiz(body, footer, quiz, navigate, quizzes) {
 
 // ─── Matching Quiz ──────────────────────────────────────
 
-function renderMatchingQuiz(body, footer, quiz, navigate, quizzes) {
+function renderMatchingQuiz(container, body, footer, quiz, navigate, quizzes) {
   answered = false;
   let selectedWord = null;
   let matchedCount = 0;
@@ -397,7 +397,7 @@ function renderMatchingQuiz(body, footer, quiz, navigate, quizzes) {
           if (matchedCount === totalPairs) {
             // 모든 매칭 완료
             setTimeout(() => {
-              handleAnswer(quiz, true, 3, navigate, quizzes);
+              handleAnswer(container, quiz, true, 3, navigate, quizzes);
             }, 600);
           }
         } else {
@@ -415,7 +415,7 @@ function renderMatchingQuiz(body, footer, quiz, navigate, quizzes) {
 
 // ─── Common Answer Handler ──────────────────────────────
 
-function handleAnswer(quiz, isCorrect, rating, navigate, quizzes, clickedEl = null) {
+function handleAnswer(container, quiz, isCorrect, rating, navigate, quizzes, clickedEl = null) {
   if (isCorrect) {
     combo++;
     sessionCorrect++;
@@ -452,7 +452,7 @@ function handleAnswer(quiz, isCorrect, rating, navigate, quizzes, clickedEl = nu
 
   // 오늘 통계 업데이트
   updateTodayStats({
-    reviews: (sessionCorrect + (sessionTotal - sessionCorrect - (quizzes.length - currentQuizIndex - 1))),
+    reviews: currentQuizIndex + 1,
     correct: sessionCorrect,
   });
 
@@ -474,12 +474,12 @@ function handleAnswer(quiz, isCorrect, rating, navigate, quizzes, clickedEl = nu
 
     document.getElementById('next-btn')?.addEventListener('click', () => {
       currentQuizIndex++;
-      renderQuiz(document.getElementById('app'), navigate, quizzes);
+      renderQuiz(container, navigate, quizzes);
     });
   } else if (quiz.type === QuizType.MATCHING) {
     // 매칭은 자동 전환
     currentQuizIndex++;
-    renderQuiz(document.getElementById('app'), navigate, quizzes);
+    renderQuiz(container, navigate, quizzes);
   }
 }
 

@@ -26,7 +26,9 @@ export function createHeatmap(weeks = 12) {
   const stats = getStats();
   const today = new Date();
   const startDate = new Date(today);
-  startDate.setDate(startDate.getDate() - (weeks * 7 - 1));
+  // 오늘 요일(0:일, 1:월 ... 6:토)을 기준으로 이번 주 일요일을 구하고, 거기서 (weeks - 1)주를 뺍니다.
+  startDate.setDate(today.getDate() - today.getDay() - (weeks - 1) * 7);
+  startDate.setHours(0, 0, 0, 0);
 
   // 요일 이름 (월~일)
   const dayLabels = document.createElement('div');

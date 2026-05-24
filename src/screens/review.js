@@ -107,7 +107,7 @@ function renderCard(container, navigate) {
     flipped = true;
     flashcard.classList.add('flipped');
     playFlip();
-    showRatingButtons(word, navigate);
+    showRatingButtons(container, word, navigate);
   });
 
   // TTS
@@ -128,7 +128,7 @@ function renderCard(container, navigate) {
   setTimeout(() => speakWord(word.word), 300);
 }
 
-function showRatingButtons(word, navigate) {
+function showRatingButtons(container, word, navigate) {
   const footer = document.getElementById('review-footer');
   if (!footer) return;
 
@@ -194,7 +194,7 @@ function showRatingButtons(word, navigate) {
       });
 
       currentIndex++;
-      setTimeout(() => renderCard(document.getElementById('app'), navigate), 300);
+      setTimeout(() => renderCard(container, navigate), 300);
     });
   });
 }
