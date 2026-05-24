@@ -5,12 +5,20 @@
 
 const STORAGE_PREFIX = 'duo_';
 
+export function getCurrentLanguage() {
+  return safeGet(`${STORAGE_PREFIX}current_lang`, 'en');
+}
+
+export function setCurrentLanguage(lang) {
+  safeSet(`${STORAGE_PREFIX}current_lang`, lang);
+}
+
 const KEYS = {
-  CARDS: `${STORAGE_PREFIX}cards`,
+  get CARDS() { return `${STORAGE_PREFIX}${getCurrentLanguage()}_cards`; },
   USER: `${STORAGE_PREFIX}user`,
   STATS: `${STORAGE_PREFIX}stats`,
   SETTINGS: `${STORAGE_PREFIX}settings`,
-  REVIEW_LOG: `${STORAGE_PREFIX}review_log`,
+  get REVIEW_LOG() { return `${STORAGE_PREFIX}${getCurrentLanguage()}_review_log`; },
 };
 
 /**

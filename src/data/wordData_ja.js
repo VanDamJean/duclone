@@ -1,0 +1,230 @@
+export const categories_ja = {
+  n: '명사',
+  v: '동사',
+  adj: '형용사',
+  adv: '부사',
+  phr: '관용구'
+};
+
+export const wordData_ja = [
+  {
+    id: "ja_w1",
+    word: "こんにちは",
+    meaning: "안녕하세요 (낮인사)",
+    pronunciation: "콘니치와",
+    partOfSpeech: "phr",
+    category: "phr",
+    level: 1,
+    example: "こんにちは、お元気ですか。",
+    exampleKo: "안녕하세요, 잘 지내세요?"
+  },
+  {
+    id: "ja_w2",
+    word: "ありがとう",
+    meaning: "고맙습니다",
+    pronunciation: "아리가토-",
+    partOfSpeech: "phr",
+    category: "phr",
+    level: 1,
+    example: "手伝ってくれてありがとう。",
+    exampleKo: "도와줘서 고마워."
+  },
+  {
+    id: "ja_w3",
+    word: "はい",
+    meaning: "네",
+    pronunciation: "하이",
+    partOfSpeech: "adv",
+    category: "adv",
+    level: 1,
+    example: "はい、分かりました。",
+    exampleKo: "네, 알겠습니다."
+  },
+  {
+    id: "ja_w4",
+    word: "いいえ",
+    meaning: "아니요",
+    pronunciation: "이-에",
+    partOfSpeech: "adv",
+    category: "adv",
+    level: 1,
+    example: "いいえ、違います。",
+    exampleKo: "아니요, 틀립니다."
+  },
+  {
+    id: "ja_w5",
+    word: "猫 (ねこ)",
+    meaning: "고양이",
+    pronunciation: "네코",
+    partOfSpeech: "n",
+    category: "n",
+    level: 1,
+    example: "可愛い猫がいます。",
+    exampleKo: "귀여운 고양이가 있습니다."
+  },
+  {
+    id: "ja_w6",
+    word: "犬 (いぬ)",
+    meaning: "개",
+    pronunciation: "이누",
+    partOfSpeech: "n",
+    category: "n",
+    level: 1,
+    example: "犬が公園を走っています。",
+    exampleKo: "개가 공원을 달리고 있습니다."
+  },
+  {
+    id: "ja_w7",
+    word: "水 (みず)",
+    meaning: "물",
+    pronunciation: "미즈",
+    partOfSpeech: "n",
+    category: "n",
+    level: 1,
+    example: "お水をください。",
+    exampleKo: "물을 주세요."
+  },
+  {
+    id: "ja_w8",
+    word: "食べる (たべる)",
+    meaning: "먹다",
+    pronunciation: "타베루",
+    partOfSpeech: "v",
+    category: "v",
+    level: 1,
+    example: "朝ごはんを食べます。",
+    exampleKo: "아침밥을 먹습니다."
+  },
+  {
+    id: "ja_w9",
+    word: "飲む (のむ)",
+    meaning: "마시다",
+    pronunciation: "노무",
+    partOfSpeech: "v",
+    category: "v",
+    level: 1,
+    example: "お茶を飲みます。",
+    exampleKo: "차를 마십니다."
+  },
+  {
+    id: "ja_w10",
+    word: "大きい (おおきい)",
+    meaning: "크다",
+    pronunciation: "오오키-",
+    partOfSpeech: "adj",
+    category: "adj",
+    level: 1,
+    example: "大きい家ですね。",
+    exampleKo: "큰 집이네요."
+  },
+  {
+    id: "ja_w11",
+    word: "小さい (ちいさい)",
+    meaning: "작다",
+    pronunciation: "치-사이",
+    partOfSpeech: "adj",
+    category: "adj",
+    level: 1,
+    example: "小さい車を買いました。",
+    exampleKo: "작은 차를 샀습니다."
+  },
+  {
+    id: "ja_w12",
+    word: "美味しい (おいしい)",
+    meaning: "맛있다",
+    pronunciation: "오이시-",
+    partOfSpeech: "adj",
+    category: "adj",
+    level: 1,
+    example: "このケーキはとても美味しいです。",
+    exampleKo: "이 케이크는 정말 맛있습니다."
+  },
+  {
+    id: "ja_w13",
+    word: "行く (いく)",
+    meaning: "가다",
+    pronunciation: "이쿠",
+    partOfSpeech: "v",
+    category: "v",
+    level: 1,
+    example: "明日、学校へ行きます。",
+    exampleKo: "내일, 학교에 갑니다."
+  },
+  {
+    id: "ja_w14",
+    word: "来る (くる)",
+    meaning: "오다",
+    pronunciation: "쿠루",
+    partOfSpeech: "v",
+    category: "v",
+    level: 1,
+    example: "友達が家に来ました。",
+    exampleKo: "친구가 집에 왔습니다."
+  },
+  {
+    id: "ja_w15",
+    word: "する",
+    meaning: "하다",
+    pronunciation: "스루",
+    partOfSpeech: "v",
+    category: "v",
+    level: 1,
+    example: "宿題をします。",
+    exampleKo: "숙제를 합니다."
+  },
+  {
+    id: "ja_w16",
+    word: "時間 (じかん)",
+    meaning: "시간",
+    pronunciation: "지칸",
+    partOfSpeech: "n",
+    category: "n",
+    level: 1,
+    example: "時間がありません。",
+    exampleKo: "시간이 없습니다."
+  },
+  {
+    id: "ja_w17",
+    word: "人 (ひと)",
+    meaning: "사람",
+    pronunciation: "히토",
+    partOfSpeech: "n",
+    category: "n",
+    level: 1,
+    example: "あの人は誰ですか。",
+    exampleKo: "저 사람은 누구입니까?"
+  },
+  {
+    id: "ja_w18",
+    word: "私 (わたし)",
+    meaning: "나, 저",
+    pronunciation: "와타시",
+    partOfSpeech: "n",
+    category: "n",
+    level: 1,
+    example: "私は学生です。",
+    exampleKo: "저는 학생입니다."
+  },
+  {
+    id: "ja_w19",
+    word: "見る (みる)",
+    meaning: "보다",
+    pronunciation: "미루",
+    partOfSpeech: "v",
+    category: "v",
+    level: 1,
+    example: "映画を見ます。",
+    exampleKo: "영화를 봅니다."
+  },
+  {
+    id: "ja_w20",
+    word: "本 (ほん)",
+    meaning: "책",
+    pronunciation: "혼",
+    partOfSpeech: "n",
+    category: "n",
+    level: 1,
+    example: "本を読んでいます。",
+    exampleKo: "책을 읽고 있습니다."
+  }
+];

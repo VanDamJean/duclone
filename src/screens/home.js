@@ -3,7 +3,7 @@
  * 오늘의 학습 현황, 스트릭, XP, 레벨 표시
  */
 
-import { getUser, getTodayStats, getSettings } from '../lib/storage.js';
+import { getUser, getTodayStats, getSettings, getCurrentLanguage, setCurrentLanguage } from '../lib/storage.js';
 import { getDueCards, getNewWords, getOverallProgress } from '../lib/scheduler.js';
 import { calculateLevel, getLevelProgress, getXpToNextLevel, getLevelBadge, getLevelTitle, getAccuracy } from '../lib/gamification.js';
 import { createProgressBar } from '../components/progressBar.js';
@@ -37,8 +37,18 @@ export function renderHome(container, navigate) {
   const todayProgress = Math.min(1, todayDone / todayGoal);
   const isComplete = todayStats.completed || todayDone >= todayGoal;
 
+  const lang = getCurrentLanguage();
+
   container.innerHTML = `
     <div class="home-screen">
+      <div class="home-topbar">
+        <select class="language-select" id="lang-select" aria-label="학습 언어 선택">
+          <option value="en" ${lang === 'en' ? 'selected' : ''}>🇺🇸 English</option>
+          <option value="fr" ${lang === 'fr' ? 'selected' : ''}>🇫🇷 Français</option>
+          <option value="ja" ${lang === 'ja' ? 'selected' : ''}>🇯🇵 日本語</option>
+        </select>
+      </div>
+
       <!-- 인사 -->
       <div class="home-greeting animate-in">
         <div class="greeting-text">${greeting}</div>
@@ -141,5 +151,12 @@ export function renderHome(container, navigate) {
   // 이벤트: 단어장
   document.getElementById('qa-wordbook')?.addEventListener('click', () => {
     navigate('wordbook');
+  });
+
+  // 이벤트: 언어 변경
+  document.getElementById('lang-select')?.addEventListener('change', (e) => {
+    if (e.target.value === getCurrentLanguage()) return;
+    setCurrentLanguage(e.target.value);
+    window.location.reload(); // 강제 리로드로 전체 상태 리셋 및 렌더링
   });
 }

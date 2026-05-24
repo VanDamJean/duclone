@@ -3,7 +3,7 @@
  * 카드 상태에 따라 적절한 퀴즈 타입을 선택하고 문제를 생성합니다.
  */
 
-import { wordData } from '../data/wordData.js';
+import { getWordData } from '../data/wordData.js';
 import { getAllCards } from './storage.js';
 import { State } from 'ts-fsrs';
 
@@ -246,11 +246,12 @@ export function generateSessionQuizzes(sessionCards) {
  * 오답 보기용 단어 선택
  */
 function getDistractors(targetWord, count) {
+  const currentWordData = getWordData();
   // 같은 품사에서 우선 선택
-  const samePOS = wordData.filter(
+  const samePOS = currentWordData.filter(
     w => w.id !== targetWord.id && w.partOfSpeech === targetWord.partOfSpeech
   );
-  const others = wordData.filter(
+  const others = currentWordData.filter(
     w => w.id !== targetWord.id && w.partOfSpeech !== targetWord.partOfSpeech
   );
 

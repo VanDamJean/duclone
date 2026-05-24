@@ -5,7 +5,7 @@
 
 import { createEmptyCard, fsrs, Rating, State } from 'ts-fsrs';
 import { getAllCards, saveCard, getUser, updateUser, getSettings } from './storage.js';
-import { wordData } from '../data/wordData.js';
+import { getWordData } from '../data/wordData.js';
 
 // FSRS 스케줄러 인스턴스 (앱 시작 시 초기화)
 let scheduler = null;
@@ -47,7 +47,7 @@ export function getDueCards() {
     // 아직 학습 중(Learning/Relearning)이거나, 복습 예정일이 지난 카드
     const dueDate = new Date(cardState.due);
     if (dueDate <= now) {
-      const word = wordData.find(w => w.id === wordId);
+      const word = getWordData().find(w => w.id === wordId);
       if (word) {
         dueCards.push({ wordId, card: cardState, word });
       }
@@ -67,7 +67,7 @@ export function getDueCards() {
  */
 export function getNewWords(count = 10) {
   const allCards = getAllCards();
-  const unseenWords = wordData.filter(w => !allCards[w.id]);
+  const unseenWords = getWordData().filter(w => !allCards[w.id]);
 
   // 레벨 순으로 정렬 (쉬운 것부터)
   unseenWords.sort((a, b) => a.level - b.level);
@@ -265,7 +265,7 @@ function formatInterval(card) {
  */
 export function getOverallProgress() {
   const allCards = getAllCards();
-  const total = wordData.length;
+  const total = getWordData().length;
   const learned = Object.keys(allCards).length;
   const mastered = Object.values(allCards).filter(
     c => c.state === State.Review && (c.stability || 0) > 21

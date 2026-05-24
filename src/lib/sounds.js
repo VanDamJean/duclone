@@ -3,7 +3,7 @@
  * 정답, 오답, 레벨업, 클릭 등의 효과음을 생성합니다.
  */
 
-import { getSettings } from './storage.js';
+import { getCurrentLanguage, getSettings } from './storage.js';
 
 let audioContext = null;
 
@@ -111,7 +111,16 @@ export function playFlip() {
 /**
  * TTS (Text-to-Speech) — 단어 발음 재생
  */
-export function speakWord(word, lang = 'en-US') {
+function getSpeechLanguage(lang = getCurrentLanguage()) {
+  switch (lang) {
+    case 'fr': return 'fr-FR';
+    case 'ja': return 'ja-JP';
+    case 'en':
+    default: return 'en-US';
+  }
+}
+
+export function speakWord(word, lang = getSpeechLanguage()) {
   if (!getSettings().ttsEnabled) return;
   
   if ('speechSynthesis' in window) {

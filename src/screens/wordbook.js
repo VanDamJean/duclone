@@ -3,7 +3,7 @@
  * 전체 단어 목록, 카테고리 필터, 숙달도 표시
  */
 
-import { wordData, categories } from '../data/wordData.js';
+import { getWordData, getCategories } from '../data/wordData.js';
 import { getAllCards } from '../lib/storage.js';
 import { getCardStateLabel } from '../lib/scheduler.js';
 import { speakWord } from '../lib/sounds.js';
@@ -34,7 +34,7 @@ export function renderWordbook(container, navigate) {
       <!-- 카테고리 필터 -->
       <div class="wordbook-filters animate-in animate-in-delay-1" id="category-filters">
         <button class="filter-chip active" data-cat="all">전체</button>
-        ${Object.entries(categories).map(([id, label]) => 
+        ${Object.entries(getCategories()).map(([id, label]) => 
           `<button class="filter-chip" data-cat="${id}">${label}</button>`
         ).join('')}
       </div>
@@ -68,7 +68,7 @@ function renderWordList(allCards) {
   const list = document.getElementById('word-list');
   if (!list) return;
 
-  let filtered = [...wordData];
+  let filtered = [...getWordData()];
 
   // 카테고리 필터
   if (currentCategory !== 'all') {
@@ -123,7 +123,7 @@ function renderWordList(allCards) {
   list.querySelectorAll('.word-list-item').forEach(item => {
     item.addEventListener('click', () => {
       const wordId = item.dataset.wordId;
-      const word = wordData.find(w => w.id === wordId);
+      const word = getWordData().find(w => w.id === wordId);
       if (word) showWordDetail(word, allCards[wordId]);
     });
   });
@@ -180,7 +180,7 @@ function showWordDetail(word, card) {
       <div style="display:flex; gap:8px; margin-bottom:16px">
         <div style="flex:1; padding:12px; background:var(--bg); border-radius:var(--radius-md); text-align:center">
           <div style="font-size:0.7rem; color:var(--text-muted); font-weight:600">카테고리</div>
-          <div style="font-size:0.85rem; font-weight:700; margin-top:2px">${categories[word.category]}</div>
+          <div style="font-size:0.85rem; font-weight:700; margin-top:2px">${getCategories()[word.category]}</div>
         </div>
         <div style="flex:1; padding:12px; background:var(--bg); border-radius:var(--radius-md); text-align:center">
           <div style="font-size:0.7rem; color:var(--text-muted); font-weight:600">레벨</div>

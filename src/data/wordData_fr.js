@@ -1,0 +1,230 @@
+export const categories_fr = {
+  n: '명사',
+  v: '동사',
+  adj: '형용사',
+  adv: '부사',
+  phr: '관용구'
+};
+
+export const wordData_fr = [
+  {
+    id: "fr_w1",
+    word: "bonjour",
+    meaning: "안녕하세요 / 좋은 아침",
+    pronunciation: "봉주르",
+    partOfSpeech: "n",
+    category: "phr",
+    level: 1,
+    example: "Bonjour, comment allez-vous ?",
+    exampleKo: "안녕하세요, 어떻게 지내세요?"
+  },
+  {
+    id: "fr_w2",
+    word: "merci",
+    meaning: "감사합니다",
+    pronunciation: "메흐씨",
+    partOfSpeech: "n",
+    category: "phr",
+    level: 1,
+    example: "Merci beaucoup pour votre aide.",
+    exampleKo: "도와주셔서 정말 감사합니다."
+  },
+  {
+    id: "fr_w3",
+    word: "oui",
+    meaning: "네",
+    pronunciation: "위",
+    partOfSpeech: "adv",
+    category: "adv",
+    level: 1,
+    example: "Oui, c'est vrai.",
+    exampleKo: "네, 그게 맞아요."
+  },
+  {
+    id: "fr_w4",
+    word: "non",
+    meaning: "아니요",
+    pronunciation: "농",
+    partOfSpeech: "adv",
+    category: "adv",
+    level: 1,
+    example: "Non, je ne sais pas.",
+    exampleKo: "아니요, 저는 모릅니다."
+  },
+  {
+    id: "fr_w5",
+    word: "chat",
+    meaning: "고양이",
+    pronunciation: "샤",
+    partOfSpeech: "n",
+    category: "n",
+    level: 1,
+    example: "Le chat dort sur le canapé.",
+    exampleKo: "고양이가 소파 위에서 자고 있습니다."
+  },
+  {
+    id: "fr_w6",
+    word: "chien",
+    meaning: "개",
+    pronunciation: "시앙",
+    partOfSpeech: "n",
+    category: "n",
+    level: 1,
+    example: "Le chien aboie.",
+    exampleKo: "개가 짖고 있습니다."
+  },
+  {
+    id: "fr_w7",
+    word: "eau",
+    meaning: "물",
+    pronunciation: "오",
+    partOfSpeech: "n",
+    category: "n",
+    level: 1,
+    example: "Je voudrais de l'eau, s'il vous plaît.",
+    exampleKo: "물 좀 주시겠어요?"
+  },
+  {
+    id: "fr_w8",
+    word: "manger",
+    meaning: "먹다",
+    pronunciation: "망제",
+    partOfSpeech: "v",
+    category: "v",
+    level: 1,
+    example: "Il aime manger des pommes.",
+    exampleKo: "그는 사과 먹는 것을 좋아합니다."
+  },
+  {
+    id: "fr_w9",
+    word: "boire",
+    meaning: "마시다",
+    pronunciation: "부아흐",
+    partOfSpeech: "v",
+    category: "v",
+    level: 1,
+    example: "Je bois du café le matin.",
+    exampleKo: "나는 아침에 커피를 마십니다."
+  },
+  {
+    id: "fr_w10",
+    word: "grand",
+    meaning: "큰",
+    pronunciation: "그헝",
+    partOfSpeech: "adj",
+    category: "adj",
+    level: 1,
+    example: "C'est un grand bâtiment.",
+    exampleKo: "저것은 큰 건물입니다."
+  },
+  {
+    id: "fr_w11",
+    word: "petit",
+    meaning: "작은",
+    pronunciation: "쁘띠",
+    partOfSpeech: "adj",
+    category: "adj",
+    level: 1,
+    example: "Le petit garçon joue dans le parc.",
+    exampleKo: "작은 소년이 공원에서 놀고 있습니다."
+  },
+  {
+    id: "fr_w12",
+    word: "beau",
+    meaning: "아름다운, 잘생긴",
+    pronunciation: "보",
+    partOfSpeech: "adj",
+    category: "adj",
+    level: 1,
+    example: "C'est un beau paysage.",
+    exampleKo: "아름다운 풍경이네요."
+  },
+  {
+    id: "fr_w13",
+    word: "aimer",
+    meaning: "사랑하다, 좋아하다",
+    pronunciation: "에메",
+    partOfSpeech: "v",
+    category: "v",
+    level: 1,
+    example: "J'aime la musique.",
+    exampleKo: "나는 음악을 좋아합니다."
+  },
+  {
+    id: "fr_w14",
+    word: "aller",
+    meaning: "가다",
+    pronunciation: "알레",
+    partOfSpeech: "v",
+    category: "v",
+    level: 1,
+    example: "Je vais à l'école.",
+    exampleKo: "나는 학교에 갑니다."
+  },
+  {
+    id: "fr_w15",
+    word: "faire",
+    meaning: "하다, 만들다",
+    pronunciation: "페흐",
+    partOfSpeech: "v",
+    category: "v",
+    level: 1,
+    example: "Je fais mes devoirs.",
+    exampleKo: "나는 숙제를 합니다."
+  },
+  {
+    id: "fr_w16",
+    word: "temps",
+    meaning: "시간, 날씨",
+    pronunciation: "땅",
+    partOfSpeech: "n",
+    category: "n",
+    level: 2,
+    example: "Quel temps fait-il aujourd'hui ?",
+    exampleKo: "오늘 날씨가 어떤가요?"
+  },
+  {
+    id: "fr_w17",
+    word: "jour",
+    meaning: "날, 하루",
+    pronunciation: "주흐",
+    partOfSpeech: "n",
+    category: "n",
+    level: 1,
+    example: "Passez une bonne journée !",
+    exampleKo: "좋은 하루 보내세요!"
+  },
+  {
+    id: "fr_w18",
+    word: "homme",
+    meaning: "남자, 사람",
+    pronunciation: "옴므",
+    partOfSpeech: "n",
+    category: "n",
+    level: 1,
+    example: "Cet homme est mon père.",
+    exampleKo: "이 남자는 나의 아버지입니다."
+  },
+  {
+    id: "fr_w19",
+    word: "femme",
+    meaning: "여자, 아내",
+    pronunciation: "팜므",
+    partOfSpeech: "n",
+    category: "n",
+    level: 1,
+    example: "C'est une femme très intelligente.",
+    exampleKo: "그녀는 매우 똑똑한 여성입니다."
+  },
+  {
+    id: "fr_w20",
+    word: "voir",
+    meaning: "보다",
+    pronunciation: "부아흐",
+    partOfSpeech: "v",
+    category: "v",
+    level: 1,
+    example: "Je veux voir ce film.",
+    exampleKo: "나는 이 영화를 보고 싶다."
+  }
+];
