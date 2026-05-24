@@ -479,6 +479,7 @@ function handleAnswer(quiz, isCorrect, rating, navigate, quizzes, clickedEl = nu
   } else if (quiz.type === QuizType.MATCHING) {
     // 매칭은 자동 전환
     currentQuizIndex++;
+    renderQuiz(document.getElementById('app'), navigate, quizzes);
   }
 }
 
