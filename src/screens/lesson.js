@@ -6,6 +6,7 @@
 import { getTodaySession, processReview, previewSchedule } from '../lib/scheduler.js';
 import { generateSessionQuizzes, QuizType } from '../lib/quizEngine.js';
 import { calculateCorrectXp, calculateLessonCompleteXp, awardXp, updateStreak, isFirstStudyToday } from '../lib/gamification.js';
+import { awardAnswerLp, awardLessonCompleteLp, canClaimAdReward, claimAdReward, getLeagueRewards } from '../lib/league.js';
 import { updateTodayStats, addReviewLog } from '../lib/storage.js';
 import { playCorrect, playWrong, playComplete, playClick, playFlip, speakWord, initAudio } from '../lib/sounds.js';
 import { launchConfetti, miniConfetti } from '../components/confetti.js';
@@ -18,6 +19,8 @@ let combo = 0;
 let sessionCorrect = 0;
 let sessionTotal = 0;
 let sessionXp = 0;
+let sessionLp = 0;
+let sessionCompleteAwarded = false;
 let answered = false;
 
 /**
@@ -42,6 +45,8 @@ export function renderLesson(container, navigate) {
   sessionCorrect = 0;
   sessionTotal = quizzes.length;
   sessionXp = 0;
+  sessionLp = 0;
+  sessionCompleteAwarded = false;
   answered = false;
 
   // 첫 학습 스트릭 업데이트
@@ -441,6 +446,8 @@ function handleAnswer(container, quiz, isCorrect, rating, navigate, quizzes, cli
   // XP 부여
   const xpResult = calculateCorrectXp(combo);
   const earnedXp = isCorrect ? xpResult.xp : 0;
+  const earnedLp = awardAnswerLp(isCorrect);
+  sessionLp += earnedLp;
   if (earnedXp > 0) {
     const award = awardXp(earnedXp);
     sessionXp += earnedXp;
@@ -506,10 +513,16 @@ function handleAnswer(container, quiz, isCorrect, rating, navigate, quizzes, cli
 // ─── Lesson Complete Screen ─────────────────────────────
 
 function renderComplete(container, navigate) {
-  // 레슨 완료 XP
-  const completeXp = calculateLessonCompleteXp(sessionCorrect, sessionTotal);
-  const award = awardXp(completeXp.xp);
-  sessionXp += completeXp.xp;
+  let award = { leveledUp: false };
+  if (!sessionCompleteAwarded) {
+    const completeXp = calculateLessonCompleteXp(sessionCorrect, sessionTotal);
+    award = awardXp(completeXp.xp);
+    sessionXp += completeXp.xp;
+    const completeLp = awardLessonCompleteLp({ perfect: sessionCorrect === sessionTotal });
+    sessionLp += completeLp;
+    sessionCompleteAwarded = true;
+  }
+  const leagueReward = getLeagueRewards();
 
   // 통계 최종 업데이트
   updateTodayStats({
@@ -550,6 +563,15 @@ function renderComplete(container, navigate) {
         <span class="xp-text">+${sessionXp} XP 획득!</span>
       </div>
 
+      <div class="lp-earned">
+        <span class="lp-icon">🏆</span>
+        <span class="lp-text">+${sessionLp} LP 리그 점수</span>
+      </div>
+
+      <button class="btn btn-secondary btn-full" id="complete-ad" ${canClaimAdReward() ? '' : 'disabled'} style="margin-bottom: 12px">
+        ${canClaimAdReward() ? `광고 보고 +${leagueReward.ad} LP 받기` : '오늘 광고 보상 완료'}
+      </button>
+
       <button class="btn btn-primary btn-full" id="complete-home" style="margin-bottom: 12px">홈으로</button>
       <button class="btn btn-secondary btn-full" id="complete-more">추가 학습하기</button>
     </div>
@@ -561,12 +583,22 @@ function renderComplete(container, navigate) {
     setTimeout(() => showLevelUpToast(award.newLevel), 1000);
   }
 
+  document.getElementById('complete-ad')?.addEventListener('click', () => {
+    const result = claimAdReward();
+    if (!result.claimed) return;
+    sessionLp += result.amount;
+    showToast(`광고 보너스 +${result.amount} LP`, '🎁');
+    renderComplete(container, navigate);
+  });
+
   document.getElementById('complete-home')?.addEventListener('click', () => navigate('home'));
   document.getElementById('complete-more')?.addEventListener('click', () => {
     currentQuizIndex = 0;
     combo = 0;
     sessionCorrect = 0;
     sessionXp = 0;
+    sessionLp = 0;
+    sessionCompleteAwarded = false;
     renderLesson(container, navigate);
   });
 }

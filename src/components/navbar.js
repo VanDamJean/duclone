@@ -5,7 +5,7 @@
 const NAV_ITEMS = [
   { id: 'home',     icon: '🏠', label: '홈' },
   { id: 'lesson',   icon: '📚', label: '학습' },
-  { id: 'stats',    icon: '📊', label: '통계' },
+  { id: 'league',   icon: '🏆', label: '리그' },
   { id: 'wordbook', icon: '📖', label: '단어장' },
 ];
 

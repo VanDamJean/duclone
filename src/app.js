@@ -7,7 +7,7 @@ import { renderNavbar, setActiveTab, showNavbar } from './components/navbar.js';
 import { renderHome } from './screens/home.js';
 import { renderLesson } from './screens/lesson.js';
 import { renderReview } from './screens/review.js';
-import { renderStats } from './screens/stats.js';
+import { renderLeague } from './screens/league.js';
 import { renderWordbook } from './screens/wordbook.js';
 import { getDueCards } from './lib/scheduler.js';
 import { setNavBadge } from './components/navbar.js';
@@ -20,7 +20,7 @@ const screens = {
   home: renderHome,
   lesson: renderLesson,
   review: renderReview,
-  stats: renderStats,
+  league: renderLeague,
   wordbook: renderWordbook,
 };
 
@@ -61,7 +61,7 @@ export function navigate(screenId) {
   currentScreen = screenId;
   
   // 네비바 탭 업데이트 (lesson/review 중에는 숨김)
-  if (['home', 'stats', 'wordbook'].includes(screenId)) {
+  if (['home', 'league', 'wordbook'].includes(screenId)) {
     showNavbar();
     setActiveTab(screenId);
   } else if (screenId === 'lesson' || screenId === 'review') {

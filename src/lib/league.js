@@ -1,0 +1,201 @@
+/**
+ * league.js — weekly league ranking and rewarded ad state
+ */
+
+import { getTodayKey } from './storage.js';
+
+const STORAGE_PREFIX = 'duo_';
+const LEAGUE_KEY = `${STORAGE_PREFIX}league`;
+const AD_REWARD_LP = 20;
+const COMPLETE_LP = 10;
+const PERFECT_LP = 10;
+const CORRECT_LP = 2;
+
+export const LEAGUES = ['Bronze', 'Silver', 'Gold', 'Sapphire', 'Ruby'];
+
+const BOT_NAMES = [
+  'Mina', 'Leo', 'Sofia', 'Ken', 'Ava', 'Noah', 'Yuna', 'Hugo', 'Emma', 'Luca',
+  'Nina', 'Owen', 'Mika', 'Ivy', 'Theo', 'Lina', 'Kai', 'Zoe', 'Eli', 'Sara',
+];
+const BOT_AVATARS = ['🧑', '👩', '👨', '🧕', '👱', '🧔', '👩‍🦱', '👨‍🦱'];
+
+function safeGet(key, defaultValue = null) {
+  try {
+    const raw = localStorage.getItem(key);
+    return raw === null ? defaultValue : JSON.parse(raw);
+  } catch {
+    return defaultValue;
+  }
+}
+
+function safeSet(key, value) {
+  try {
+    localStorage.setItem(key, JSON.stringify(value));
+  } catch {
+    console.error('League storage write failed');
+  }
+}
+
+function getWeekKey(date = new Date()) {
+  const d = new Date(date);
+  const day = d.getDay();
+  const diffToMonday = day === 0 ? -6 : 1 - day;
+  d.setHours(0, 0, 0, 0);
+  d.setDate(d.getDate() + diffToMonday);
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+}
+
+function hashString(value) {
+  let hash = 0;
+  for (let i = 0; i < value.length; i++) {
+    hash = ((hash << 5) - hash + value.charCodeAt(i)) | 0;
+  }
+  return Math.abs(hash);
+}
+
+function seededNumber(seed, min, max) {
+  const x = Math.sin(seed) * 10000;
+  const ratio = x - Math.floor(x);
+  return Math.round(min + ratio * (max - min));
+}
+
+function createBots(weekKey) {
+  const seedBase = hashString(weekKey);
+  return BOT_NAMES.slice(0, 19).map((name, index) => {
+    const seed = seedBase + index * 97;
+    const styleRoll = seededNumber(seed, 1, 100);
+    const pace = styleRoll > 88
+      ? seededNumber(seed + 1, 70, 120)
+      : styleRoll > 35
+        ? seededNumber(seed + 2, 30, 60)
+        : seededNumber(seed + 3, 10, 25);
+
+    return {
+      id: `bot_${index + 1}`,
+      name,
+      avatar: BOT_AVATARS[index % BOT_AVATARS.length],
+      lp: seededNumber(seed + 4, 0, 25),
+      pace,
+    };
+  });
+}
+
+function normalizeBots(league) {
+  league.bots = (league.bots || []).map((bot, index) => ({
+    ...bot,
+    avatar: BOT_AVATARS[index % BOT_AVATARS.length],
+  }));
+  return league;
+}
+
+function createLeague() {
+  const weekKey = getWeekKey();
+  return {
+    weekKey,
+    tier: 0,
+    userLp: 0,
+    adRewardClaimedDate: null,
+    bots: createBots(weekKey),
+    lastSimulatedAt: new Date().toISOString(),
+  };
+}
+
+function simulateBots(league) {
+  const now = new Date();
+  const last = new Date(league.lastSimulatedAt || now);
+  const elapsedDays = Math.max(0, (now - last) / 86400000);
+  if (elapsedDays <= 0) return league;
+
+  league.bots = league.bots.map((bot, index) => {
+    const drift = 0.75 + ((index % 5) * 0.12);
+    return {
+      ...bot,
+      lp: Math.round(bot.lp + bot.pace * elapsedDays * drift),
+    };
+  });
+  league.lastSimulatedAt = now.toISOString();
+  return league;
+}
+
+export function getLeague() {
+  let league = safeGet(LEAGUE_KEY, null);
+  const weekKey = getWeekKey();
+  if (!league || league.weekKey !== weekKey) {
+    league = createLeague();
+  }
+  league = normalizeBots(league);
+  league = simulateBots(league);
+  safeSet(LEAGUE_KEY, league);
+  return league;
+}
+
+export function saveLeague(league) {
+  safeSet(LEAGUE_KEY, league);
+}
+
+export function getLeagueName(tier = getLeague().tier) {
+  return LEAGUES[Math.min(Math.max(tier, 0), LEAGUES.length - 1)];
+}
+
+export function getLeaderboard() {
+  const league = getLeague();
+  const rows = [
+    { id: 'user', name: 'You', avatar: '🧠', lp: league.userLp || 0, isUser: true },
+    ...league.bots,
+  ].sort((a, b) => b.lp - a.lp);
+
+  return rows.map((entry, index) => ({
+    ...entry,
+    rank: index + 1,
+    zone: index < 5 ? 'promotion' : index >= 15 ? 'demotion' : 'stay',
+  }));
+}
+
+export function getUserRank() {
+  return getLeaderboard().find((entry) => entry.isUser);
+}
+
+export function addLeaguePoints(amount) {
+  const league = getLeague();
+  league.userLp = Math.max(0, (league.userLp || 0) + amount);
+  saveLeague(league);
+  return league.userLp;
+}
+
+export function awardAnswerLp(isCorrect) {
+  if (!isCorrect) return 0;
+  addLeaguePoints(CORRECT_LP);
+  return CORRECT_LP;
+}
+
+export function awardLessonCompleteLp({ perfect = false } = {}) {
+  const amount = COMPLETE_LP + (perfect ? PERFECT_LP : 0);
+  addLeaguePoints(amount);
+  return amount;
+}
+
+export function canClaimAdReward() {
+  const league = getLeague();
+  return league.adRewardClaimedDate !== getTodayKey();
+}
+
+export function claimAdReward() {
+  const league = getLeague();
+  const today = getTodayKey();
+  if (league.adRewardClaimedDate === today) {
+    return { claimed: false, amount: 0, totalLp: league.userLp || 0 };
+  }
+  league.adRewardClaimedDate = today;
+  league.userLp = (league.userLp || 0) + AD_REWARD_LP;
+  saveLeague(league);
+  return { claimed: true, amount: AD_REWARD_LP, totalLp: league.userLp };
+}
+
+export function getLeagueRewards() {
+  return {
+    correct: CORRECT_LP,
+    complete: COMPLETE_LP,
+    perfect: PERFECT_LP,
+    ad: AD_REWARD_LP,
+  };
+}

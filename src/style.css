@@ -1199,6 +1199,218 @@ input {
   color: var(--xp);
 }
 
+.lp-earned {
+  background: linear-gradient(135deg, #fffbeb, #fef3c7);
+  border-radius: var(--radius-xl);
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+  width: 100%;
+}
+
+.lp-earned .lp-icon {
+  font-size: 1.5rem;
+}
+
+.lp-earned .lp-text {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--accent-600);
+}
+
+.btn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* ─── League Screen ──────────────────────────────────── */
+
+.league-screen {
+  padding: 0 20px 20px;
+}
+
+.league-hero {
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  color: white;
+  border-radius: var(--radius-xl);
+  padding: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: var(--shadow-lg);
+  margin-bottom: 14px;
+}
+
+.league-eyebrow {
+  font-size: 0.75rem;
+  font-weight: 800;
+  opacity: 0.8;
+  text-transform: uppercase;
+}
+
+.league-title {
+  font-size: 1.45rem;
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+.league-subtitle {
+  font-size: 0.8rem;
+  font-weight: 600;
+  opacity: 0.85;
+  margin-top: 4px;
+}
+
+.league-rank {
+  min-width: 72px;
+  height: 72px;
+  border-radius: var(--radius-xl);
+  background: rgba(255,255,255,0.18);
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 2px;
+  padding-top: 10px;
+}
+
+.league-rank span {
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.league-rank small {
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+
+.league-summary {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.league-summary > div {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  padding: 14px;
+}
+
+.summary-label {
+  color: var(--text-muted);
+  font-size: 0.72rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.summary-value {
+  color: var(--accent-600);
+  font-size: 1.35rem;
+  font-weight: 900;
+}
+
+.league-ad-btn {
+  width: 100%;
+  height: 34px;
+  border-radius: var(--radius-full);
+  background: var(--accent-500);
+  color: white;
+  font-weight: 800;
+  box-shadow: 0 3px 0 var(--accent-600);
+}
+
+.league-ad-btn:disabled {
+  background: var(--divider);
+  color: var(--text-muted);
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+.league-zones {
+  display: flex;
+  gap: 12px;
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin: 8px 0 12px;
+}
+
+.league-zones span {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.league-zones b {
+  width: 8px;
+  height: 8px;
+  border-radius: var(--radius-full);
+}
+
+.promotion-dot { background: var(--correct); }
+.stay-dot { background: var(--info); }
+.demotion-dot { background: var(--wrong); }
+
+.league-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.league-row {
+  display: grid;
+  grid-template-columns: 34px 40px 1fr auto;
+  align-items: center;
+  gap: 10px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-left: 5px solid var(--info);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  padding: 10px 12px 10px 8px;
+}
+
+.league-row.promotion { border-left-color: var(--correct); }
+.league-row.demotion { border-left-color: var(--wrong); }
+.league-row.is-user {
+  border-color: var(--accent-500);
+  background: #fffbeb;
+  box-shadow: var(--shadow-card);
+}
+
+.league-row .rank {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  font-weight: 900;
+  text-align: center;
+}
+
+.league-row .avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-full);
+  background: var(--divider);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.league-row .name {
+  font-size: 0.92rem;
+  font-weight: 800;
+}
+
+.league-row .lp {
+  color: var(--text-secondary);
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
 /* ─── Stats Screen ───────────────────────────────────── */
 
 .stats-screen {
