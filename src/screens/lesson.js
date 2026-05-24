@@ -459,18 +459,38 @@ function handleAnswer(container, quiz, isCorrect, rating, navigate, quizzes, cli
   // 피드백 표시
   const footer = document.getElementById('quiz-footer');
   if (footer && quiz.type !== QuizType.MATCHING) {
-    footer.innerHTML = `
-      <div class="quiz-feedback ${isCorrect ? 'correct' : 'wrong'}">
-        <div class="feedback-title">${isCorrect ? (combo >= 3 ? `🔥 ${combo}연속 정답!` : '✅ 정답!') : '❌ 오답'}</div>
-        <div class="feedback-detail">${isCorrect 
-          ? (earnedXp > 0 ? `+${earnedXp} XP` : '') 
-          : `정답: ${quiz.word?.meaning || ''}`}
+    let feedbackHtml = '';
+    
+    if (quiz.type === QuizType.FLASHCARD) {
+      const intervalStr = rating === 1 ? '1분 뒤' : rating === 2 ? '6분 뒤' : rating === 3 ? '10분 뒤' : '6일 뒤';
+      const title = rating === 1 ? '🔄 복습 예정' : rating === 2 ? '⚠️ 조금 어려움' : rating === 3 ? '✅ 기억함' : '🎉 아주 쉬움';
+      const detail = rating >= 3 ? `+${earnedXp} XP (${intervalStr} 복습)` : `${intervalStr} 다시 나옵니다`;
+      const btnClass = rating >= 3 ? 'btn-correct' : 'btn-wrong';
+      
+      feedbackHtml = `
+        <div class="quiz-feedback ${rating >= 3 ? 'correct' : 'wrong'}">
+          <div class="feedback-title">${title}</div>
+          <div class="feedback-detail">${detail}</div>
         </div>
-      </div>
-      <button class="btn ${isCorrect ? 'btn-correct' : 'btn-wrong'} btn-full" id="next-btn">
-        ${currentQuizIndex + 1 >= quizzes.length ? '결과 보기' : '다음'}
-      </button>
-    `;
+        <button class="btn ${btnClass} btn-full" id="next-btn">
+          ${currentQuizIndex + 1 >= quizzes.length ? '결과 보기' : '다음'}
+        </button>
+      `;
+    } else {
+      feedbackHtml = `
+        <div class="quiz-feedback ${isCorrect ? 'correct' : 'wrong'}">
+          <div class="feedback-title">${isCorrect ? (combo >= 3 ? `🔥 ${combo}연속 정답!` : '✅ 정답!') : '❌ 오답'}</div>
+          <div class="feedback-detail">${isCorrect 
+            ? (earnedXp > 0 ? `+${earnedXp} XP` : '') 
+            : `정답: ${quiz.word?.meaning || ''}`}
+          </div>
+        </div>
+        <button class="btn ${isCorrect ? 'btn-correct' : 'btn-wrong'} btn-full" id="next-btn">
+          ${currentQuizIndex + 1 >= quizzes.length ? '결과 보기' : '다음'}
+        </button>
+      `;
+    }
+    footer.innerHTML = feedbackHtml;
 
     document.getElementById('next-btn')?.addEventListener('click', () => {
       currentQuizIndex++;
