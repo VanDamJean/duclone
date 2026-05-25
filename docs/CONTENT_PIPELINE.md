@@ -16,11 +16,11 @@ Current check:
 npm run vocab:check
 ```
 
-Current counts after batch 2:
+Current counts after batch 3:
 
 - English: 200
-- French: 120
-- Japanese: 120
+- French: 170
+- Japanese: 170
 
 Dry-run a reviewed batch:
 

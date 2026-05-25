@@ -1966,5 +1966,855 @@ export const wordData_ja = [
       "lexical": "curated",
       "example": "curated"
     }
+  },
+  {
+    "id": "ja_w121",
+    "word": "病院",
+    "reading": "びょういん",
+    "romaji": "byoin",
+    "meaning": "병원",
+    "pronunciation": "뵤-인",
+    "partOfSpeech": "n",
+    "category": "n",
+    "level": 1,
+    "example": "病院へ行きます。",
+    "exampleKo": "병원에 갑니다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "ja_w122",
+    "word": "医者",
+    "reading": "いしゃ",
+    "romaji": "isha",
+    "meaning": "의사",
+    "pronunciation": "이샤",
+    "partOfSpeech": "n",
+    "category": "n",
+    "level": 1,
+    "example": "医者に相談します。",
+    "exampleKo": "의사와 상담합니다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "ja_w123",
+    "word": "薬",
+    "reading": "くすり",
+    "romaji": "kusuri",
+    "meaning": "약",
+    "pronunciation": "쿠스리",
+    "partOfSpeech": "n",
+    "category": "n",
+    "level": 1,
+    "example": "薬を飲みます。",
+    "exampleKo": "약을 먹습니다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "ja_w124",
+    "word": "頭",
+    "reading": "あたま",
+    "romaji": "atama",
+    "meaning": "머리",
+    "pronunciation": "아타마",
+    "partOfSpeech": "n",
+    "category": "n",
+    "level": 1,
+    "example": "頭が痛いです。",
+    "exampleKo": "머리가 아픕니다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "ja_w125",
+    "word": "手",
+    "reading": "て",
+    "romaji": "te",
+    "meaning": "손",
+    "pronunciation": "테",
+    "partOfSpeech": "n",
+    "category": "n",
+    "level": 1,
+    "example": "手を洗います。",
+    "exampleKo": "손을 씻습니다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "ja_w126",
+    "word": "足",
+    "reading": "あし",
+    "romaji": "ashi",
+    "meaning": "발, 다리",
+    "pronunciation": "아시",
+    "partOfSpeech": "n",
+    "category": "n",
+    "level": 1,
+    "example": "足が疲れました。",
+    "exampleKo": "다리가 피곤합니다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "ja_w127",
+    "word": "心",
+    "reading": "こころ",
+    "romaji": "kokoro",
+    "meaning": "마음",
+    "pronunciation": "코코로",
+    "partOfSpeech": "n",
+    "category": "n",
+    "level": 2,
+    "example": "心が落ち着きます。",
+    "exampleKo": "마음이 차분해집니다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "ja_w128",
+    "word": "空",
+    "reading": "そら",
+    "romaji": "sora",
+    "meaning": "하늘",
+    "pronunciation": "소라",
+    "partOfSpeech": "n",
+    "category": "n",
+    "level": 1,
+    "example": "空が青いです。",
+    "exampleKo": "하늘이 파랗습니다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "ja_w129",
+    "word": "雨",
+    "reading": "あめ",
+    "romaji": "ame",
+    "meaning": "비",
+    "pronunciation": "아메",
+    "partOfSpeech": "n",
+    "category": "n",
+    "level": 1,
+    "example": "雨が降っています。",
+    "exampleKo": "비가 오고 있습니다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "ja_w130",
+    "word": "雪",
+    "reading": "ゆき",
+    "romaji": "yuki",
+    "meaning": "눈",
+    "pronunciation": "유키",
+    "partOfSpeech": "n",
+    "category": "n",
+    "level": 1,
+    "example": "雪が降りました。",
+    "exampleKo": "눈이 왔습니다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "ja_w131",
+    "word": "山",
+    "reading": "やま",
+    "romaji": "yama",
+    "meaning": "산",
+    "pronunciation": "야마",
+    "partOfSpeech": "n",
+    "category": "n",
+    "level": 1,
+    "example": "山に登ります。",
+    "exampleKo": "산에 오릅니다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "ja_w132",
+    "word": "川",
+    "reading": "かわ",
+    "romaji": "kawa",
+    "meaning": "강",
+    "pronunciation": "카와",
+    "partOfSpeech": "n",
+    "category": "n",
+    "level": 1,
+    "example": "川の水は冷たいです。",
+    "exampleKo": "강물은 차갑습니다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "ja_w133",
+    "word": "海",
+    "reading": "うみ",
+    "romaji": "umi",
+    "meaning": "바다",
+    "pronunciation": "우미",
+    "partOfSpeech": "n",
+    "category": "n",
+    "level": 1,
+    "example": "海で泳ぎます。",
+    "exampleKo": "바다에서 수영합니다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "ja_w134",
+    "word": "森",
+    "reading": "もり",
+    "romaji": "mori",
+    "meaning": "숲",
+    "pronunciation": "모리",
+    "partOfSpeech": "n",
+    "category": "n",
+    "level": 2,
+    "example": "森の中を歩きます。",
+    "exampleKo": "숲속을 걷습니다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "ja_w135",
+    "word": "花",
+    "reading": "はな",
+    "romaji": "hana",
+    "meaning": "꽃",
+    "pronunciation": "하나",
+    "partOfSpeech": "n",
+    "category": "n",
+    "level": 1,
+    "example": "花を買いました。",
+    "exampleKo": "꽃을 샀습니다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "ja_w136",
+    "word": "登る",
+    "reading": "のぼる",
+    "romaji": "noboru",
+    "meaning": "오르다",
+    "pronunciation": "노보루",
+    "partOfSpeech": "v",
+    "category": "v",
+    "level": 1,
+    "example": "山に登ります。",
+    "exampleKo": "산에 오릅니다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "ja_w137",
+    "word": "降りる",
+    "reading": "おりる",
+    "romaji": "oriru",
+    "meaning": "내리다",
+    "pronunciation": "오리루",
+    "partOfSpeech": "v",
+    "category": "v",
+    "level": 1,
+    "example": "次の駅で降ります。",
+    "exampleKo": "다음 역에서 내립니다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "ja_w138",
+    "word": "走る",
+    "reading": "はしる",
+    "romaji": "hashiru",
+    "meaning": "달리다",
+    "pronunciation": "하시루",
+    "partOfSpeech": "v",
+    "category": "v",
+    "level": 1,
+    "example": "公園を走ります。",
+    "exampleKo": "공원을 달립니다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "ja_w139",
+    "word": "泳ぐ",
+    "reading": "およぐ",
+    "romaji": "oyogu",
+    "meaning": "수영하다",
+    "pronunciation": "오요구",
+    "partOfSpeech": "v",
+    "category": "v",
+    "level": 1,
+    "example": "プールで泳ぎます。",
+    "exampleKo": "수영장에서 수영합니다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "ja_w140",
+    "word": "旅行する",
+    "reading": "りょこうする",
+    "romaji": "ryoko suru",
+    "meaning": "여행하다",
+    "pronunciation": "료코-스루",
+    "partOfSpeech": "v",
+    "category": "v",
+    "level": 2,
+    "example": "来月、日本を旅行します。",
+    "exampleKo": "다음 달 일본을 여행합니다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "ja_w141",
+    "word": "予約する",
+    "reading": "よやくする",
+    "romaji": "yoyaku suru",
+    "meaning": "예약하다",
+    "pronunciation": "요야쿠스루",
+    "partOfSpeech": "v",
+    "category": "v",
+    "level": 2,
+    "example": "ホテルを予約します。",
+    "exampleKo": "호텔을 예약합니다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "ja_w142",
+    "word": "答える",
+    "reading": "こたえる",
+    "romaji": "kotaeru",
+    "meaning": "대답하다",
+    "pronunciation": "코타에루",
+    "partOfSpeech": "v",
+    "category": "v",
+    "level": 1,
+    "example": "質問に答えます。",
+    "exampleKo": "질문에 대답합니다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "ja_w143",
+    "word": "質問する",
+    "reading": "しつもんする",
+    "romaji": "shitsumon suru",
+    "meaning": "질문하다",
+    "pronunciation": "시츠몬스루",
+    "partOfSpeech": "v",
+    "category": "v",
+    "level": 1,
+    "example": "先生に質問します。",
+    "exampleKo": "선생님께 질문합니다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "ja_w144",
+    "word": "説明する",
+    "reading": "せつめいする",
+    "romaji": "setsumei suru",
+    "meaning": "설명하다",
+    "pronunciation": "세츠메이스루",
+    "partOfSpeech": "v",
+    "category": "v",
+    "level": 2,
+    "example": "使い方を説明します。",
+    "exampleKo": "사용법을 설명합니다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "ja_w145",
+    "word": "試す",
+    "reading": "ためす",
+    "romaji": "tamesu",
+    "meaning": "시험해보다",
+    "pronunciation": "타메스",
+    "partOfSpeech": "v",
+    "category": "v",
+    "level": 2,
+    "example": "新しい方法を試します。",
+    "exampleKo": "새로운 방법을 시험해봅니다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "ja_w146",
+    "word": "成功する",
+    "reading": "せいこうする",
+    "romaji": "seiko suru",
+    "meaning": "성공하다",
+    "pronunciation": "세-코-스루",
+    "partOfSpeech": "v",
+    "category": "v",
+    "level": 2,
+    "example": "プロジェクトは成功しました。",
+    "exampleKo": "프로젝트는 성공했습니다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "ja_w147",
+    "word": "失敗する",
+    "reading": "しっぱいする",
+    "romaji": "shippai suru",
+    "meaning": "실패하다",
+    "pronunciation": "싯파이스루",
+    "partOfSpeech": "v",
+    "category": "v",
+    "level": 2,
+    "example": "失敗しても大丈夫です。",
+    "exampleKo": "실패해도 괜찮습니다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "ja_w148",
+    "word": "忘れる",
+    "reading": "わすれる",
+    "romaji": "wasureru",
+    "meaning": "잊다",
+    "pronunciation": "와스레루",
+    "partOfSpeech": "v",
+    "category": "v",
+    "level": 1,
+    "example": "名前を忘れました。",
+    "exampleKo": "이름을 잊었습니다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "ja_w149",
+    "word": "覚える",
+    "reading": "おぼえる",
+    "romaji": "oboeru",
+    "meaning": "외우다, 기억하다",
+    "pronunciation": "오보에루",
+    "partOfSpeech": "v",
+    "category": "v",
+    "level": 1,
+    "example": "単語を覚えます。",
+    "exampleKo": "단어를 외웁니다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "ja_w150",
+    "word": "考える",
+    "reading": "かんがえる",
+    "romaji": "kangaeru",
+    "meaning": "생각하다",
+    "pronunciation": "칸가에루",
+    "partOfSpeech": "v",
+    "category": "v",
+    "level": 2,
+    "example": "少し考えます。",
+    "exampleKo": "조금 생각합니다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "ja_w151",
+    "word": "痛い",
+    "reading": "いたい",
+    "romaji": "itai",
+    "meaning": "아픈",
+    "pronunciation": "이타이",
+    "partOfSpeech": "adj",
+    "category": "adj",
+    "level": 1,
+    "example": "足が痛いです。",
+    "exampleKo": "발이 아픕니다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "ja_w152",
+    "word": "眠い",
+    "reading": "ねむい",
+    "romaji": "nemui",
+    "meaning": "졸린",
+    "pronunciation": "네무이",
+    "partOfSpeech": "adj",
+    "category": "adj",
+    "level": 1,
+    "example": "今日は眠いです。",
+    "exampleKo": "오늘은 졸립니다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "ja_w153",
+    "word": "元気",
+    "reading": "げんき",
+    "romaji": "genki",
+    "meaning": "건강한, 활기찬",
+    "pronunciation": "겐키",
+    "partOfSpeech": "adj",
+    "category": "adj",
+    "level": 1,
+    "example": "彼はとても元気です。",
+    "exampleKo": "그는 매우 건강합니다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "ja_w154",
+    "word": "危ない",
+    "reading": "あぶない",
+    "romaji": "abunai",
+    "meaning": "위험한",
+    "pronunciation": "아부나이",
+    "partOfSpeech": "adj",
+    "category": "adj",
+    "level": 1,
+    "example": "この道は危ないです。",
+    "exampleKo": "이 길은 위험합니다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "ja_w155",
+    "word": "安全",
+    "reading": "あんぜん",
+    "romaji": "anzen",
+    "meaning": "안전한",
+    "pronunciation": "안젠",
+    "partOfSpeech": "adj",
+    "category": "adj",
+    "level": 2,
+    "example": "ここは安全です。",
+    "exampleKo": "여기는 안전합니다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "ja_w156",
+    "word": "必要",
+    "reading": "ひつよう",
+    "romaji": "hitsuyo",
+    "meaning": "필요한",
+    "pronunciation": "히츠요-",
+    "partOfSpeech": "adj",
+    "category": "adj",
+    "level": 2,
+    "example": "水が必要です。",
+    "exampleKo": "물이 필요합니다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "ja_w157",
+    "word": "大切",
+    "reading": "たいせつ",
+    "romaji": "taisetsu",
+    "meaning": "소중한, 중요한",
+    "pronunciation": "타이세츠",
+    "partOfSpeech": "adj",
+    "category": "adj",
+    "level": 2,
+    "example": "家族は大切です。",
+    "exampleKo": "가족은 소중합니다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "ja_w158",
+    "word": "自由",
+    "reading": "じゆう",
+    "romaji": "jiyu",
+    "meaning": "자유로운",
+    "pronunciation": "지유-",
+    "partOfSpeech": "adj",
+    "category": "adj",
+    "level": 2,
+    "example": "今日は自由な時間があります。",
+    "exampleKo": "오늘은 자유 시간이 있습니다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "ja_w159",
+    "word": "特別",
+    "reading": "とくべつ",
+    "romaji": "tokubetsu",
+    "meaning": "특별한",
+    "pronunciation": "토쿠베츠",
+    "partOfSpeech": "adj",
+    "category": "adj",
+    "level": 2,
+    "example": "今日は特別な日です。",
+    "exampleKo": "오늘은 특별한 날입니다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "ja_w160",
+    "word": "普通",
+    "reading": "ふつう",
+    "romaji": "futsu",
+    "meaning": "보통의",
+    "pronunciation": "후츠-",
+    "partOfSpeech": "adj",
+    "category": "adj",
+    "level": 1,
+    "example": "普通の生活が好きです。",
+    "exampleKo": "보통의 생활을 좋아합니다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "ja_w161",
+    "word": "外",
+    "reading": "そと",
+    "romaji": "soto",
+    "meaning": "밖",
+    "pronunciation": "소토",
+    "partOfSpeech": "adv",
+    "category": "adv",
+    "level": 1,
+    "example": "外で待っています。",
+    "exampleKo": "밖에서 기다리고 있습니다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "ja_w162",
+    "word": "中",
+    "reading": "なか",
+    "romaji": "naka",
+    "meaning": "안, 속",
+    "pronunciation": "나카",
+    "partOfSpeech": "adv",
+    "category": "adv",
+    "level": 1,
+    "example": "箱の中を見ます。",
+    "exampleKo": "상자 안을 봅니다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "ja_w163",
+    "word": "上",
+    "reading": "うえ",
+    "romaji": "ue",
+    "meaning": "위",
+    "pronunciation": "우에",
+    "partOfSpeech": "adv",
+    "category": "adv",
+    "level": 1,
+    "example": "机の上にあります。",
+    "exampleKo": "책상 위에 있습니다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "ja_w164",
+    "word": "下",
+    "reading": "した",
+    "romaji": "shita",
+    "meaning": "아래",
+    "pronunciation": "시타",
+    "partOfSpeech": "adv",
+    "category": "adv",
+    "level": 1,
+    "example": "椅子の下にあります。",
+    "exampleKo": "의자 아래에 있습니다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "ja_w165",
+    "word": "前",
+    "reading": "まえ",
+    "romaji": "mae",
+    "meaning": "앞, 전",
+    "pronunciation": "마에",
+    "partOfSpeech": "adv",
+    "category": "adv",
+    "level": 1,
+    "example": "駅の前で会います。",
+    "exampleKo": "역 앞에서 만납니다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "ja_w166",
+    "word": "後ろ",
+    "reading": "うしろ",
+    "romaji": "ushiro",
+    "meaning": "뒤",
+    "pronunciation": "우시로",
+    "partOfSpeech": "adv",
+    "category": "adv",
+    "level": 1,
+    "example": "後ろを見てください。",
+    "exampleKo": "뒤를 봐 주세요.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "ja_w167",
+    "word": "問題ありません",
+    "reading": "もんだいありません",
+    "romaji": "mondai arimasen",
+    "meaning": "문제없습니다",
+    "pronunciation": "몬다이 아리마센",
+    "partOfSpeech": "phr",
+    "category": "phr",
+    "level": 2,
+    "example": "はい、問題ありません。",
+    "exampleKo": "네, 문제없습니다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "ja_w168",
+    "word": "お大事に",
+    "reading": "おだいじに",
+    "romaji": "odaiji ni",
+    "meaning": "몸조리 잘하세요",
+    "pronunciation": "오다이지니",
+    "partOfSpeech": "phr",
+    "category": "phr",
+    "level": 2,
+    "example": "風邪ですか。お大事に。",
+    "exampleKo": "감기인가요? 몸조리 잘하세요.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "ja_w169",
+    "word": "おめでとう",
+    "reading": "おめでとう",
+    "romaji": "omedeto",
+    "meaning": "축하합니다",
+    "pronunciation": "오메데토-",
+    "partOfSpeech": "phr",
+    "category": "phr",
+    "level": 1,
+    "example": "合格おめでとう。",
+    "exampleKo": "합격 축하합니다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "ja_w170",
+    "word": "申し訳ありません",
+    "reading": "もうしわけありません",
+    "romaji": "moshiwake arimasen",
+    "meaning": "죄송합니다",
+    "pronunciation": "모-시와케 아리마센",
+    "partOfSpeech": "phr",
+    "category": "phr",
+    "level": 3,
+    "example": "申し訳ありません、遅れました。",
+    "exampleKo": "죄송합니다, 늦었습니다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
   }
 ];

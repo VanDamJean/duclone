@@ -37,6 +37,7 @@ Status: in progress.
 - Run `npm run vocab:check` before each content batch.
 - Batch 1 complete: French 20 -> 70, Japanese 20 -> 70.
 - Batch 2 complete: French 70 -> 120, Japanese 70 -> 120.
+- Batch 3 complete: French 120 -> 170, Japanese 120 -> 170.
 
 ### 4. Weekly League Loop
 
