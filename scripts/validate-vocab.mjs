@@ -25,6 +25,7 @@ function validateDataset(lang, { words, categories, minTarget }) {
   const errors = [];
   const warnings = [];
   let missingSourceCount = 0;
+  const levelCounts = { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0 };
 
   words.forEach((word, index) => {
     const label = `${lang}[${index}] ${word.id || '(missing id)'}`;
@@ -42,6 +43,8 @@ function validateDataset(lang, { words, categories, minTarget }) {
 
     if (typeof word.level !== 'number' || word.level < 1 || word.level > 5) {
       errors.push(`${label}: level must be 1-5`);
+    } else {
+      levelCounts[word.level]++;
     }
 
     if (lang === 'ja') {
@@ -64,6 +67,7 @@ function validateDataset(lang, { words, categories, minTarget }) {
   const gap = Math.max(minTarget - words.length, 0);
   const status = gap === 0 ? 'ready' : `${gap} short of ${minTarget}`;
   console.log(`${lang}: ${words.length} words, ${Object.keys(categories).length} categories, ${status}`);
+  console.log(`  levels: L1=${levelCounts[1]}, L2=${levelCounts[2]}, L3=${levelCounts[3]}, L4=${levelCounts[4]}, L5=${levelCounts[5]}`);
 
   if (errors.length) {
     hasErrors = true;

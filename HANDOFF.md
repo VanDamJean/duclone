@@ -46,6 +46,10 @@ Repository:
   - French increased from 120 to 170 words.
   - Japanese increased from 120 to 170 words.
   - Batch files saved in `data/vocab-import/batches/fr-003.json` and `data/vocab-import/batches/ja-003.json`.
+- Content batch 4:
+  - French increased from 170 to 220 words.
+  - Japanese increased from 170 to 220 words.
+  - Batch files saved in `data/vocab-import/batches/fr-004.json` and `data/vocab-import/batches/ja-004.json`.
 - Weekly league rollover MVP:
   - Week changes finalize the old league.
   - Promotion/stay/demotion tier changes apply to the new week.
@@ -67,21 +71,19 @@ git diff --check
 Expected current vocab check summary:
 
 - EN: 200 words, 100 short of 300.
-- FR: 170 words, 130 short of 300.
-- JA: 170 words, 130 short of 300.
+- FR: 220 words, 80 short of 300.
+- JA: 220 words, 80 short of 300.
 - Existing words still lack source metadata; this is tracked as warning debt.
 
 ## What To Do Next
 
 Recommended order:
 
-1. Commit the current pipeline/schema work.
-2. Let Gemini/Antigravity do UI-only polish using `docs/UI_POLISH_BRIEF.md`.
-3. Review Gemini's diff carefully.
-4. Create reviewed FR/JA batch 4, likely another 50 words each.
-5. Dry-run each batch with `npm run vocab:import -- <batch>`.
-6. Apply with `--apply`, then run full validation.
-7. Add richer league result/reward copy after UI polish.
+1. Create reviewed FR/JA batch 5, likely 50-80 words each.
+2. Dry-run each batch with `npm run vocab:import -- <batch>`.
+3. Apply with `--apply`, then run full validation.
+4. Push both French and Japanese to at least 300 words.
+5. Add richer league result/reward copy after content target is met.
 
 ## Do Not Let UI Agents Touch
 

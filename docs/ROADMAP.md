@@ -38,6 +38,7 @@ Status: in progress.
 - Batch 1 complete: French 20 -> 70, Japanese 20 -> 70.
 - Batch 2 complete: French 70 -> 120, Japanese 70 -> 120.
 - Batch 3 complete: French 120 -> 170, Japanese 120 -> 170.
+- Batch 4 complete: French 170 -> 220, Japanese 170 -> 220.
 
 ### 4. Weekly League Loop
 
