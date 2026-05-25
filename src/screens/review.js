@@ -75,7 +75,7 @@ function renderCard(container, navigate) {
       </div>
 
       <div class="quiz-body">
-        <div style="font-size:0.75rem; color:var(--text-muted); font-weight:600; margin-bottom:8px">🔄 복습</div>
+        <div class="review-label">🔄 복습</div>
         
         <div class="flashcard" id="review-flashcard">
           <div class="flashcard-inner">

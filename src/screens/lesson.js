@@ -132,7 +132,7 @@ function renderFlashcardQuiz(container, body, footer, quiz, navigate, quizzes) {
   answered = false;
 
   // 새 단어 뱃지
-  const newBadge = quiz.isNew ? '<div style="margin-bottom: 12px; font-size: 0.75rem; color: var(--primary-600); background: var(--primary-50); padding: 4px 12px; border-radius: var(--radius-full); font-weight: 700; display: inline-block;">✨ 새 단어</div>' : '';
+  const newBadge = quiz.isNew ? '<div class="new-word-badge">✨ 새 단어</div>' : '';
 
   body.innerHTML = `
     ${newBadge}
@@ -219,7 +219,7 @@ function renderMultipleChoiceQuiz(container, body, footer, quiz, navigate, quizz
   answered = false;
 
   const directionLabel = quiz.direction === 'word_to_ko' ? '이 단어의 뜻은?' : '이 뜻의 단어는?';
-  const newBadge = quiz.isNew ? '<div style="margin-bottom: 8px; font-size: 0.75rem; color: var(--primary-600); background: var(--primary-50); padding: 4px 12px; border-radius: var(--radius-full); font-weight: 700; display: inline-block;">✨ 새 단어</div>' : '';
+  const newBadge = quiz.isNew ? '<div class="new-word-badge">✨ 새 단어</div>' : '';
 
   body.innerHTML = `
     <div class="quiz-question">

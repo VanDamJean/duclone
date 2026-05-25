@@ -1430,6 +1430,9 @@ input {
 .league-row .name {
   font-size: 0.92rem;
   font-weight: 800;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .league-row .lp {
@@ -1836,7 +1839,183 @@ input {
 .animate-in-delay-4 { animation-delay: 0.2s; }
 .animate-in-delay-5 { animation-delay: 0.25s; }
 
+/* T1 — Wordbook Search Input */
+.wordbook-search-wrap {
+  position: relative;
+  padding: 0 0 8px;
+}
+.wordbook-search-input {
+  width: 100%;
+  padding: 12px 16px 12px 40px;
+  border: 2px solid var(--border);
+  border-radius: var(--radius-lg);
+  font-size: 0.9rem;
+  font-weight: 500;
+  background: var(--bg-card);
+  color: var(--text);
+  transition: border-color var(--duration-fast) ease, box-shadow var(--duration-fast) ease;
+}
+.wordbook-search-input:focus {
+  border-color: var(--primary-500);
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
+}
+.wordbook-search-icon {
+  position: absolute;
+  left: 14px;
+  top: calc(50% - 4px);
+  transform: translateY(-50%);
+  font-size: 1rem;
+  color: var(--text-muted);
+  pointer-events: none;
+}
+
+/* T2 — Word Detail Modal */
+.word-detail-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+.word-detail-word {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 4px;
+}
+.word-detail-sub {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-bottom: 4px;
+}
+.word-detail-tags {
+  display: inline-flex;
+  gap: 8px;
+}
+.word-detail-tag {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+}
+.word-detail-tag--pos {
+  background: var(--primary-50);
+  color: var(--primary-600);
+}
+.word-detail-tag--state {
+  background: var(--divider);
+  color: var(--text-secondary);
+}
+.word-detail-section {
+  margin-bottom: 20px;
+}
+.word-detail-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.word-detail-meaning {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.word-detail-example-box {
+  margin-bottom: 20px;
+  padding: 16px;
+  background: var(--divider);
+  border-radius: var(--radius-lg);
+}
+.word-detail-example {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 4px;
+}
+.word-detail-example-ko {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+.word-detail-info-grid {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+.word-detail-info-item {
+  flex: 1;
+  padding: 12px;
+  background: var(--bg);
+  border-radius: var(--radius-md);
+  text-align: center;
+}
+.word-detail-info-label {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+.word-detail-study-box .word-detail-info-label {
+  margin-bottom: 6px;
+}
+.word-detail-info-value {
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-top: 2px;
+}
+.word-detail-study-box {
+  padding: 12px;
+  background: var(--bg);
+  border-radius: var(--radius-md);
+}
+.word-detail-study-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+}
+.word-detail-study-due {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+.word-detail-study-box + .btn,
+.word-detail-info-grid + .btn { margin-top: 16px; }
+.modal-content .btn + .btn { margin-top: 8px; }
+
+/* T3 — New Word Badge */
+.new-word-badge {
+  display: inline-block;
+  margin-bottom: 12px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--primary-600);
+  background: var(--primary-50);
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+}
+.quiz-question .new-word-badge { margin-bottom: 8px; }
+
+/* T4 — Review Label */
+.review-label {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
 /* ─── Responsive ─────────────────────────────────────── */
+
+@media (max-width: 374px) {
+  .matching-item {
+    font-size: 0.8rem;
+    padding: 12px 10px;
+    min-height: 48px;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+  }
+  .flashcard-ratings {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6px;
+  }
+  .rating-btn {
+    padding: 10px 8px;
+  }
+}
 
 @media (min-width: 481px) {
   body {

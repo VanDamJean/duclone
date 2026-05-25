@@ -23,13 +23,10 @@ export function renderWordbook(container, navigate) {
       </div>
 
       <!-- 검색 -->
-      <div class="animate-in" style="padding: 0 0 8px">
-        <div style="position:relative">
-          <input type="text" id="word-search" placeholder="단어 검색..." 
-                 style="width:100%; padding:12px 16px 12px 40px; border:2px solid var(--border); border-radius:var(--radius-lg); font-size:0.9rem; font-weight:500; background:var(--bg-card); color:var(--text);"
-                 autocomplete="off">
-          <span style="position:absolute; left:14px; top:50%; transform:translateY(-50%); font-size:1rem; color:var(--text-muted)">🔍</span>
-        </div>
+      <div class="wordbook-search-wrap animate-in">
+        <input type="text" id="word-search" class="wordbook-search-input"
+               placeholder="단어 검색..." autocomplete="off">
+        <span class="wordbook-search-icon">🔍</span>
       </div>
 
       <!-- 카테고리 필터 -->
@@ -158,50 +155,50 @@ function showWordDetail(word, card) {
     <div class="modal-content">
       <div class="modal-handle"></div>
       
-      <div style="text-align:center; margin-bottom:24px">
-        <div style="font-size:2rem; font-weight:800; margin-bottom:4px">${getDisplayWord(word)}</div>
-        <div style="font-size:0.9rem; color:var(--text-secondary); margin-bottom:4px">${getWordSub(word)}</div>
-        <div style="display:inline-flex; gap:8px">
-          <span style="font-size:0.75rem; padding:3px 10px; border-radius:var(--radius-full); background:var(--primary-50); color:var(--primary-600); font-weight:600">${word.partOfSpeech}</span>
-          <span style="font-size:0.75rem; padding:3px 10px; border-radius:var(--radius-full); background:var(--divider); color:var(--text-secondary); font-weight:600">${label}</span>
+      <div class="word-detail-header">
+        <div class="word-detail-word">${getDisplayWord(word)}</div>
+        <div class="word-detail-sub">${getWordSub(word)}</div>
+        <div class="word-detail-tags">
+          <span class="word-detail-tag word-detail-tag--pos">${word.partOfSpeech}</span>
+          <span class="word-detail-tag word-detail-tag--state">${label}</span>
         </div>
       </div>
 
-      <div style="margin-bottom:20px">
-        <div style="font-size:0.8rem; font-weight:700; color:var(--text-muted); margin-bottom:6px; text-transform:uppercase; letter-spacing:0.05em">뜻</div>
-        <div style="font-size:1.2rem; font-weight:700">${word.meaning}</div>
+      <div class="word-detail-section">
+        <div class="word-detail-label">뜻</div>
+        <div class="word-detail-meaning">${word.meaning}</div>
       </div>
 
-      <div style="margin-bottom:20px; padding:16px; background:var(--divider); border-radius:var(--radius-lg)">
-        <div style="font-size:0.8rem; font-weight:700; color:var(--text-muted); margin-bottom:6px; text-transform:uppercase; letter-spacing:0.05em">예문</div>
-        <div style="font-size:0.95rem; line-height:1.6; margin-bottom:4px">${word.example}</div>
-        <div style="font-size:0.85rem; color:var(--text-secondary)">${word.exampleKo}</div>
+      <div class="word-detail-example-box">
+        <div class="word-detail-label">예문</div>
+        <div class="word-detail-example">${word.example}</div>
+        <div class="word-detail-example-ko">${word.exampleKo}</div>
       </div>
 
-      <div style="display:flex; gap:8px; margin-bottom:16px">
-        <div style="flex:1; padding:12px; background:var(--bg); border-radius:var(--radius-md); text-align:center">
-          <div style="font-size:0.7rem; color:var(--text-muted); font-weight:600">카테고리</div>
-          <div style="font-size:0.85rem; font-weight:700; margin-top:2px">${getCategories()[word.category]}</div>
+      <div class="word-detail-info-grid">
+        <div class="word-detail-info-item">
+          <div class="word-detail-info-label">카테고리</div>
+          <div class="word-detail-info-value">${getCategories()[word.category]}</div>
         </div>
-        <div style="flex:1; padding:12px; background:var(--bg); border-radius:var(--radius-md); text-align:center">
-          <div style="font-size:0.7rem; color:var(--text-muted); font-weight:600">레벨</div>
-          <div style="font-size:0.85rem; font-weight:700; margin-top:2px">${'⭐'.repeat(word.level)}</div>
+        <div class="word-detail-info-item">
+          <div class="word-detail-info-label">레벨</div>
+          <div class="word-detail-info-value">${'⭐'.repeat(word.level)}</div>
         </div>
       </div>
 
       ${card ? `
-        <div style="padding:12px; background:var(--bg); border-radius:var(--radius-md)">
-          <div style="font-size:0.7rem; color:var(--text-muted); font-weight:600; margin-bottom:6px">학습 상태</div>
-          <div style="display:flex; justify-content:space-between; font-size:0.8rem">
+        <div class="word-detail-study-box">
+          <div class="word-detail-info-label">학습 상태</div>
+          <div class="word-detail-study-row">
             <span>복습 횟수: <strong>${card.reps || 0}</strong></span>
             <span>안정도: <strong>${(card.stability || 0).toFixed(1)}</strong></span>
           </div>
-          ${card.due ? `<div style="font-size:0.75rem; color:var(--text-muted); margin-top:4px">다음 복습: ${new Date(card.due).toLocaleDateString('ko-KR')}</div>` : ''}
+          ${card.due ? `<div class="word-detail-study-due">다음 복습: ${new Date(card.due).toLocaleDateString('ko-KR')}</div>` : ''}
         </div>
       ` : ''}
 
-      <button class="btn btn-primary btn-full" style="margin-top:16px" id="speak-detail">🔊 발음 듣기</button>
-      <button class="btn btn-secondary btn-full" style="margin-top:8px" id="close-detail">닫기</button>
+      <button class="btn btn-primary btn-full" id="speak-detail">🔊 발음 듣기</button>
+      <button class="btn btn-secondary btn-full" id="close-detail">닫기</button>
     </div>
   `;
 
