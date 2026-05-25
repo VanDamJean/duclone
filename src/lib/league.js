@@ -236,6 +236,46 @@ export function getLeagueRewards() {
   };
 }
 
+export function getLeagueCoach() {
+  const league = getLeague();
+  const rows = getLeaderboardForLeague(league);
+  const user = rows.find((entry) => entry.isUser);
+  const rewards = getLeagueRewards();
+
+  if (user.zone === 'promotion') {
+    const challenger = rows[5];
+    const buffer = challenger ? Math.max(user.lp - challenger.lp + 1, 1) : 0;
+    return {
+      tone: 'promotion',
+      title: '승급권이에요',
+      body: challenger
+        ? `6위보다 ${buffer} LP 앞서요. 오늘 레슨 하나만 더 하면 훨씬 안전해요.`
+        : '이번 주 흐름이 좋아요. 짧게 한 번만 더 복습해도 유지가 쉬워요.',
+      adCopy: `오늘 부스터 +${rewards.ad} LP`,
+    };
+  }
+
+  if (user.zone === 'demotion') {
+    const stayLine = rows[14];
+    const needed = stayLine ? Math.max(stayLine.lp - user.lp + 1, 1) : rewards.complete;
+    return {
+      tone: 'demotion',
+      title: '잔류권까지 조금 남았어요',
+      body: `${needed} LP만 더 얻으면 강등권 밖으로 나갈 수 있어요.`,
+      adCopy: `잔류 부스터 +${rewards.ad} LP`,
+    };
+  }
+
+  const promotionLine = rows[4];
+  const needed = promotionLine ? Math.max(promotionLine.lp - user.lp + 1, 1) : rewards.complete;
+  return {
+    tone: 'stay',
+    title: '안정권이에요',
+    body: `승급권까지 ${needed} LP. 정답 ${Math.ceil(needed / rewards.correct)}개 정도면 따라붙어요.`,
+    adCopy: `승급 부스터 +${rewards.ad} LP`,
+  };
+}
+
 export function getLastLeagueResult() {
   return getLeague().lastResult || null;
 }

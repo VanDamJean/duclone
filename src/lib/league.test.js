@@ -7,6 +7,7 @@ import {
   claimAdReward,
   getLeaderboard,
   getLeague,
+  getLeagueCoach,
   getLeagueName,
   getLeagueRewards,
   getUserRank,
@@ -69,5 +70,28 @@ describe('League system', () => {
     expect(nextLeague.tier).toBe(1);
     expect(nextLeague.lastResult.rank).toBe(1);
     expect(nextLeague.lastResult.tierDelta).toBe(1);
+  });
+
+  it('returns coach copy for promotion, stay, and demotion zones', () => {
+    const league = getLeague();
+    league.bots = Array.from({ length: 19 }, (_, index) => ({
+      id: `bot_${index + 1}`,
+      name: `Bot ${index + 1}`,
+      avatar: '🙂',
+      lp: 190 - index * 10,
+      pace: 0,
+    }));
+
+    league.userLp = 500;
+    saveLeague(league);
+    expect(getLeagueCoach().tone).toBe('promotion');
+
+    league.userLp = 120;
+    saveLeague(league);
+    expect(getLeagueCoach().tone).toBe('stay');
+
+    league.userLp = 1;
+    saveLeague(league);
+    expect(getLeagueCoach().tone).toBe('demotion');
   });
 });

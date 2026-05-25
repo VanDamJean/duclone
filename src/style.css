@@ -1313,6 +1313,34 @@ input {
   min-width: 72px;
 }
 
+.league-coach {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-left: 5px solid var(--info);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  padding: 14px 16px;
+  margin-bottom: 12px;
+}
+
+.league-coach.promotion {
+  border-left-color: var(--correct);
+}
+
+.league-coach.demotion {
+  border-left-color: var(--wrong);
+}
+
+.league-coach .league-title {
+  color: var(--text-primary);
+  font-size: 1rem;
+}
+
+.league-coach .league-subtitle {
+  color: var(--text-secondary);
+  opacity: 1;
+}
+
 .league-summary {
   display: grid;
   grid-template-columns: 1fr 1fr;

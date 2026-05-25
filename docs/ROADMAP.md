@@ -50,6 +50,7 @@ Status: in progress.
 - Keep bot league first; real global users can come after auth/backend.
 - Tie daily rewarded ad to a small league push, not forced progress.
 - Weekly rollover MVP complete: previous-week result is stored, tier changes are applied, and a dismissible result card appears in the league screen.
+- League motivation copy complete: the league screen now shows a weekly target, rank-zone guidance, and contextual daily booster copy.
 
 ## Later
 

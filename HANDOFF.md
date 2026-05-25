@@ -61,6 +61,9 @@ Repository:
   - Week changes finalize the old league.
   - Promotion/stay/demotion tier changes apply to the new week.
   - League screen shows a dismissible previous-week result card.
+- League reward copy:
+  - League screen shows rank-zone coaching for promotion, stay, and demotion zones.
+  - Daily ad reward copy changes by context, such as booster for promotion or staying out of demotion.
 - Small visible UI status:
   - Home language selector now shows word counts.
 
@@ -86,9 +89,9 @@ Expected current vocab check summary:
 
 Recommended order:
 
-1. Add richer league result/reward copy.
-2. Add a small content QA pass for imported examples before broader release.
-3. Tune difficulty/category mix after real usage data.
+1. Add a small content QA pass for imported examples before broader release.
+2. Tune difficulty/category mix after real usage data.
+3. Continue app-shell polish in Figma/Gemini without touching learning logic.
 
 ## Do Not Let UI Agents Touch
 
