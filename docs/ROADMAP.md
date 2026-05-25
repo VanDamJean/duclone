@@ -28,9 +28,9 @@ Status: done.
 
 ### 3. Content Expansion
 
-Status: in progress.
+Status: done for French and Japanese MVP target.
 
-- Expand French and Japanese toward the first 300-word target.
+- Expand French and Japanese to the first 300-word target.
 - Add category and difficulty coverage for daily sessions.
 - Validate sample sentences and translations before scaling further.
 - Track import sources in `docs/CONTENT_PIPELINE.md`.
@@ -39,6 +39,7 @@ Status: in progress.
 - Batch 2 complete: French 70 -> 120, Japanese 70 -> 120.
 - Batch 3 complete: French 120 -> 170, Japanese 120 -> 170.
 - Batch 4 complete: French 170 -> 220, Japanese 170 -> 220.
+- Batch 5 complete: French 220 -> 300, Japanese 220 -> 300.
 
 ### 4. Weekly League Loop
 
