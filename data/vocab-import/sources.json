@@ -22,5 +22,11 @@
     "url": "local",
     "license": "Project-owned generated and reviewed content",
     "use": "Korean meanings, simplified examples, reviewed app copy"
+  },
+  "legacy-seed": {
+    "name": "Legacy seed vocabulary",
+    "url": "local",
+    "license": "Project-owned initial app seed content",
+    "use": "Original seed words created before the batch import pipeline"
   }
 }

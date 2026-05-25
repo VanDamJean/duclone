@@ -44,6 +44,10 @@ export const wordData = [
     partOfSpeech: 'verb',
     example: 'I usually wake up at seven in the morning.',
     exampleKo: '나는 보통 아침 7시에 일어난다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'daily',
     level: 1,
   },
@@ -55,6 +59,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'She always has breakfast before leaving the house.',
     exampleKo: '그녀는 항상 집을 나서기 전에 아침을 먹는다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'daily',
     level: 1,
   },
@@ -66,6 +74,10 @@ export const wordData = [
     partOfSpeech: 'verb',
     example: 'He commutes to work by subway every day.',
     exampleKo: '그는 매일 지하철로 출근한다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'daily',
     level: 2,
   },
@@ -77,6 +89,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'We need to buy groceries for the week.',
     exampleKo: '우리는 이번 주에 필요한 식료품을 사야 한다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'daily',
     level: 2,
   },
@@ -88,6 +104,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'I do the laundry every Saturday.',
     exampleKo: '나는 매주 토요일에 빨래를 한다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'daily',
     level: 2,
   },
@@ -99,6 +119,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'I have a dentist appointment at three.',
     exampleKo: '3시에 치과 예약이 있다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'daily',
     level: 2,
   },
@@ -110,6 +134,10 @@ export const wordData = [
     partOfSpeech: 'adjective',
     example: 'The store is in a very convenient location.',
     exampleKo: '그 가게는 매우 편리한 위치에 있다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'daily',
     level: 2,
   },
@@ -121,6 +149,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'Our neighbor invited us over for dinner.',
     exampleKo: '이웃이 저녁 식사에 우리를 초대했다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'daily',
     level: 1,
   },
@@ -132,6 +164,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'I have a few errands to run after work.',
     exampleKo: '퇴근 후에 볼일이 몇 가지 있다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'daily',
     level: 3,
   },
@@ -143,6 +179,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'Exercise is part of my daily routine.',
     exampleKo: '운동은 나의 일상의 일부이다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'daily',
     level: 2,
   },
@@ -154,6 +194,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'Everyone in the household helps with chores.',
     exampleKo: '가정의 모든 구성원이 집안일을 돕는다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'daily',
     level: 3,
   },
@@ -165,6 +209,10 @@ export const wordData = [
     partOfSpeech: 'verb',
     example: 'I need to organize my closet this weekend.',
     exampleKo: '이번 주말에 옷장을 정리해야 한다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'daily',
     level: 2,
   },
@@ -176,6 +224,10 @@ export const wordData = [
     partOfSpeech: 'adjective',
     example: 'Please keep your room tidy.',
     exampleKo: '방을 깔끔하게 유지해 주세요.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'daily',
     level: 2,
   },
@@ -187,6 +239,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'Doing the dishes is my least favorite chore.',
     exampleKo: '설거지는 내가 가장 싫어하는 집안일이다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'daily',
     level: 3,
   },
@@ -198,6 +254,10 @@ export const wordData = [
     partOfSpeech: 'adverb',
     example: 'We occasionally eat out on weekends.',
     exampleKo: '우리는 가끔 주말에 외식한다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'daily',
     level: 3,
   },
@@ -209,6 +269,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'The kitchen is equipped with modern appliances.',
     exampleKo: '주방에는 현대식 가전제품이 갖추어져 있다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'daily',
     level: 3,
   },
@@ -220,6 +284,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'I decided to get rid of the clutter in my room.',
     exampleKo: '방에 있는 잡동사니를 치우기로 했다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'daily',
     level: 4,
   },
@@ -231,6 +299,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'The train was packed with commuters during rush hour.',
     exampleKo: '출퇴근 시간에 기차는 통근자들로 가득 찼다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'daily',
     level: 4,
   },
@@ -242,6 +314,10 @@ export const wordData = [
     partOfSpeech: 'adjective',
     example: 'Even mundane tasks can be enjoyable with music.',
     exampleKo: '음악과 함께라면 평범한 일도 즐거울 수 있다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'daily',
     level: 5,
   },
@@ -253,6 +329,10 @@ export const wordData = [
     partOfSpeech: 'verb',
     example: 'I spent the entire afternoon decluttering my desk.',
     exampleKo: '오후 내내 책상을 정리 정돈하는 데 보냈다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'daily',
     level: 5,
   },
@@ -268,6 +348,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'The meeting is scheduled for ten o\'clock.',
     exampleKo: '회의는 10시로 예정되어 있다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'business',
     level: 1,
   },
@@ -279,6 +363,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'She negotiated a higher salary during the interview.',
     exampleKo: '그녀는 면접에서 더 높은 급여를 협상했다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'business',
     level: 1,
   },
@@ -290,6 +378,10 @@ export const wordData = [
     partOfSpeech: 'verb',
     example: 'She accomplished her goal ahead of schedule.',
     exampleKo: '그녀는 예정보다 앞서 목표를 달성했다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'business',
     level: 2,
   },
@@ -301,6 +393,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'We must finish the report before the deadline.',
     exampleKo: '마감 기한 전에 보고서를 끝내야 한다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'business',
     level: 1,
   },
@@ -312,6 +408,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'My colleague helped me prepare the presentation.',
     exampleKo: '동료가 발표 준비를 도와주었다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'business',
     level: 2,
   },
@@ -323,6 +423,10 @@ export const wordData = [
     partOfSpeech: 'verb',
     example: 'They negotiated the terms of the contract.',
     exampleKo: '그들은 계약 조건을 협상했다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'business',
     level: 3,
   },
@@ -334,6 +438,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'The company reported a significant profit this quarter.',
     exampleKo: '회사는 이번 분기에 상당한 수익을 보고했다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'business',
     level: 2,
   },
@@ -345,6 +453,10 @@ export const wordData = [
     partOfSpeech: 'verb',
     example: 'He was promoted to senior manager last month.',
     exampleKo: '그는 지난달에 수석 매니저로 승진했다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'business',
     level: 2,
   },
@@ -356,6 +468,10 @@ export const wordData = [
     partOfSpeech: 'verb',
     example: 'They decided to invest in renewable energy.',
     exampleKo: '그들은 재생 에너지에 투자하기로 했다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'business',
     level: 2,
   },
@@ -367,6 +483,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'We need to stay within the project budget.',
     exampleKo: '프로젝트 예산 내에서 진행해야 한다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'business',
     level: 2,
   },
@@ -378,6 +498,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'Annual revenue exceeded expectations this year.',
     exampleKo: '올해 연간 매출이 기대를 초과했다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'business',
     level: 3,
   },
@@ -389,6 +513,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'She became a successful entrepreneur at a young age.',
     exampleKo: '그녀는 젊은 나이에 성공한 기업가가 되었다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'business',
     level: 3,
   },
@@ -400,6 +528,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'The marketing strategy proved to be very effective.',
     exampleKo: '마케팅 전략은 매우 효과적인 것으로 입증되었다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'business',
     level: 3,
   },
@@ -411,6 +543,10 @@ export const wordData = [
     partOfSpeech: 'verb',
     example: 'We plan to implement the new policy next month.',
     exampleKo: '다음 달에 새로운 정책을 시행할 계획이다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'business',
     level: 3,
   },
@@ -422,6 +558,10 @@ export const wordData = [
     partOfSpeech: 'verb',
     example: 'The two teams collaborated on the product launch.',
     exampleKo: '두 팀이 제품 출시를 위해 협업했다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'business',
     level: 3,
   },
@@ -433,6 +573,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'The acquisition of the startup cost millions.',
     exampleKo: '그 스타트업의 인수에 수백만 달러가 들었다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'business',
     level: 4,
   },
@@ -444,6 +588,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'All stakeholders must approve the final plan.',
     exampleKo: '모든 이해관계자가 최종 계획을 승인해야 한다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'business',
     level: 4,
   },
@@ -455,6 +603,10 @@ export const wordData = [
     partOfSpeech: 'verb',
     example: 'We should leverage our strengths in this market.',
     exampleKo: '이 시장에서 우리의 강점을 활용해야 한다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'business',
     level: 4,
   },
@@ -466,6 +618,10 @@ export const wordData = [
     partOfSpeech: 'verb',
     example: 'The company plans to diversify its product range.',
     exampleKo: '회사는 제품 범위를 다각화할 계획이다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'business',
     level: 5,
   },
@@ -477,6 +633,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'The merger created strong synergy between the brands.',
     exampleKo: '합병은 브랜드 간에 강력한 시너지를 만들었다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'business',
     level: 5,
   },
@@ -492,6 +652,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'Don\'t forget to bring your passport to the airport.',
     exampleKo: '공항에 여권을 가져가는 것을 잊지 마세요.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'travel',
     level: 1,
   },
@@ -503,6 +667,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'Please keep your luggage with you at all times.',
     exampleKo: '수하물을 항상 가지고 계세요.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'travel',
     level: 1,
   },
@@ -514,6 +682,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'The departure time has been changed to noon.',
     exampleKo: '출발 시간이 정오로 변경되었다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'travel',
     level: 2,
   },
@@ -525,6 +697,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'Our final destination is Tokyo.',
     exampleKo: '우리의 최종 목적지는 도쿄이다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'travel',
     level: 2,
   },
@@ -536,6 +712,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'I made a reservation at the hotel for two nights.',
     exampleKo: '호텔에 2박 예약을 했다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'travel',
     level: 2,
   },
@@ -547,6 +727,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'Boarding begins thirty minutes before departure.',
     exampleKo: '탑승은 출발 30분 전에 시작된다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'travel',
     level: 2,
   },
@@ -558,6 +742,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'Where can I find a currency exchange counter?',
     exampleKo: '환전 카운터는 어디에서 찾을 수 있나요?',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'travel',
     level: 2,
   },
@@ -569,6 +757,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'We spent the whole day sightseeing in Paris.',
     exampleKo: '우리는 하루 종일 파리에서 관광했다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'travel',
     level: 2,
   },
@@ -580,6 +772,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'I bought a small souvenir for my parents.',
     exampleKo: '부모님을 위해 작은 기념품을 샀다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'travel',
     level: 2,
   },
@@ -591,6 +787,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'Our itinerary includes visits to three cities.',
     exampleKo: '우리 여행 일정에는 세 도시 방문이 포함되어 있다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'travel',
     level: 3,
   },
@@ -602,6 +802,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'We found affordable accommodation near the beach.',
     exampleKo: '해변 근처에서 저렴한 숙소를 찾았다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'travel',
     level: 3,
   },
@@ -613,6 +817,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'We had to declare our items at customs.',
     exampleKo: '세관에서 물품을 신고해야 했다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'travel',
     level: 3,
   },
@@ -624,6 +832,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'The hotel offers guided excursions to nearby islands.',
     exampleKo: '호텔은 인근 섬으로 가이드 투어를 제공한다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'travel',
     level: 4,
   },
@@ -635,6 +847,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'We had a four-hour layover in Singapore.',
     exampleKo: '싱가포르에서 4시간 경유가 있었다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'travel',
     level: 3,
   },
@@ -646,6 +862,10 @@ export const wordData = [
     partOfSpeech: 'verb',
     example: 'It is easy to navigate the city with a map app.',
     exampleKo: '지도 앱이 있으면 도시에서 길을 찾기 쉽다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'travel',
     level: 3,
   },
@@ -657,6 +877,10 @@ export const wordData = [
     partOfSpeech: 'adverb',
     example: 'She has been living abroad for five years.',
     exampleKo: '그녀는 5년 동안 해외에서 살고 있다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'travel',
     level: 2,
   },
@@ -668,6 +892,10 @@ export const wordData = [
     partOfSpeech: 'adjective',
     example: 'We took the scenic route along the coast.',
     exampleKo: '우리는 해안을 따라 경치가 좋은 길로 갔다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'travel',
     level: 4,
   },
@@ -679,6 +907,10 @@ export const wordData = [
     partOfSpeech: 'verb',
     example: 'We wandered through the old streets of the town.',
     exampleKo: '우리는 마을의 오래된 거리를 돌아다녔다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'travel',
     level: 3,
   },
@@ -690,6 +922,10 @@ export const wordData = [
     partOfSpeech: 'verb',
     example: 'We embarked on a journey across Europe.',
     exampleKo: '우리는 유럽 횡단 여행을 시작했다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'travel',
     level: 5,
   },
@@ -701,6 +937,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'The expedition to the South Pole lasted three months.',
     exampleKo: '남극 탐험은 3개월간 계속되었다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'travel',
     level: 5,
   },
@@ -716,6 +956,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'I found a great recipe for chocolate cake online.',
     exampleKo: '온라인에서 훌륭한 초콜릿 케이크 레시피를 찾았다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'food',
     level: 1,
   },
@@ -727,6 +971,10 @@ export const wordData = [
     partOfSpeech: 'adjective',
     example: 'The homemade soup was absolutely delicious.',
     exampleKo: '집에서 만든 수프는 정말 맛있었다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'food',
     level: 1,
   },
@@ -738,6 +986,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'Fresh ingredients make a big difference in cooking.',
     exampleKo: '신선한 재료가 요리에서 큰 차이를 만든다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'food',
     level: 2,
   },
@@ -749,6 +1001,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'The long hike gave me a huge appetite.',
     exampleKo: '긴 하이킹이 식욕을 크게 자극했다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'food',
     level: 2,
   },
@@ -760,6 +1016,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'This cheese has a rich, nutty flavor.',
     exampleKo: '이 치즈는 고소하고 풍부한 맛이 난다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'food',
     level: 2,
   },
@@ -771,6 +1031,10 @@ export const wordData = [
     partOfSpeech: 'adjective',
     example: 'Vegetables are both nutritious and affordable.',
     exampleKo: '채소는 영양가 있고 가격도 저렴하다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'food',
     level: 3,
   },
@@ -782,6 +1046,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'The portions at that restaurant are very generous.',
     exampleKo: '그 레스토랑의 양은 매우 넉넉하다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'food',
     level: 2,
   },
@@ -793,6 +1061,10 @@ export const wordData = [
     partOfSpeech: 'adjective',
     example: 'The food was a bit bland and needed more salt.',
     exampleKo: '음식이 좀 싱거워서 소금이 더 필요했다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'food',
     level: 3,
   },
@@ -804,6 +1076,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'Korean cuisine is popular all over the world.',
     exampleKo: '한국 요리는 전 세계적으로 인기가 있다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'food',
     level: 3,
   },
@@ -815,6 +1091,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'Would you like a hot or cold beverage?',
     exampleKo: '따뜻한 음료와 차가운 음료 중 어떤 걸 드릴까요?',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'food',
     level: 3,
   },
@@ -826,6 +1106,10 @@ export const wordData = [
     partOfSpeech: 'verb',
     example: 'Take your time and savor each bite.',
     exampleKo: '천천히 한 입 한 입 음미하세요.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'food',
     level: 4,
   },
@@ -837,6 +1121,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'Add seasoning to taste before serving.',
     exampleKo: '내기 전에 입맛에 맞게 양념을 추가하세요.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'food',
     level: 2,
   },
@@ -848,6 +1136,10 @@ export const wordData = [
     partOfSpeech: 'adjective',
     example: 'She only buys organic fruits and vegetables.',
     exampleKo: '그녀는 유기농 과일과 채소만 산다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'food',
     level: 2,
   },
@@ -859,6 +1151,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'We had leftovers from last night for lunch.',
     exampleKo: '어젯밤 남은 음식을 점심으로 먹었다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'food',
     level: 2,
   },
@@ -870,6 +1166,10 @@ export const wordData = [
     partOfSpeech: 'adjective',
     example: 'The hotel has a gourmet restaurant on the top floor.',
     exampleKo: '그 호텔 꼭대기 층에 고급 레스토랑이 있다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'food',
     level: 4,
   },
@@ -881,6 +1181,10 @@ export const wordData = [
     partOfSpeech: 'verb',
     example: 'Let the sauce simmer for twenty minutes.',
     exampleKo: '소스를 20분간 약한 불에 끓여 주세요.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'food',
     level: 4,
   },
@@ -892,6 +1196,10 @@ export const wordData = [
     partOfSpeech: 'adjective',
     example: 'The fried chicken was golden and crispy.',
     exampleKo: '프라이드 치킨은 황금빛으로 바삭바삭했다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'food',
     level: 2,
   },
@@ -903,6 +1211,10 @@ export const wordData = [
     partOfSpeech: 'verb',
     example: 'It takes time to digest a heavy meal.',
     exampleKo: '과식한 음식을 소화하는 데 시간이 걸린다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'food',
     level: 3,
   },
@@ -914,6 +1226,10 @@ export const wordData = [
     partOfSpeech: 'adjective',
     example: 'The hospital food was surprisingly palatable.',
     exampleKo: '병원 음식이 의외로 입에 맞았다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'food',
     level: 5,
   },
@@ -925,6 +1241,10 @@ export const wordData = [
     partOfSpeech: 'adjective',
     example: 'She attended a culinary school in France.',
     exampleKo: '그녀는 프랑스의 요리 학교에 다녔다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'food',
     level: 5,
   },
@@ -940,6 +1260,10 @@ export const wordData = [
     partOfSpeech: 'adjective',
     example: 'The children looked happy playing in the park.',
     exampleKo: '아이들은 공원에서 놀며 행복해 보였다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'emotion',
     level: 1,
   },
@@ -951,6 +1275,10 @@ export const wordData = [
     partOfSpeech: 'adjective',
     example: 'He was angry about the unfair decision.',
     exampleKo: '그는 불공정한 결정에 화가 났다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'emotion',
     level: 1,
   },
@@ -962,6 +1290,10 @@ export const wordData = [
     partOfSpeech: 'adjective',
     example: 'She felt nervous before the job interview.',
     exampleKo: '그녀는 면접 전에 긴장했다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'emotion',
     level: 1,
   },
@@ -973,6 +1305,10 @@ export const wordData = [
     partOfSpeech: 'adjective',
     example: 'I am grateful for your kind help.',
     exampleKo: '당신의 친절한 도움에 감사합니다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'emotion',
     level: 2,
   },
@@ -984,6 +1320,10 @@ export const wordData = [
     partOfSpeech: 'adjective',
     example: 'Living alone sometimes makes me feel lonely.',
     exampleKo: '혼자 사는 것은 가끔 외롭게 느끼게 한다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'emotion',
     level: 1,
   },
@@ -995,6 +1335,10 @@ export const wordData = [
     partOfSpeech: 'adjective',
     example: 'He was jealous of his friend\'s success.',
     exampleKo: '그는 친구의 성공을 질투했다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'emotion',
     level: 2,
   },
@@ -1006,6 +1350,10 @@ export const wordData = [
     partOfSpeech: 'adjective',
     example: 'I felt frustrated when the computer crashed again.',
     exampleKo: '컴퓨터가 또 다운되어서 답답했다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'emotion',
     level: 2,
   },
@@ -1017,6 +1365,10 @@ export const wordData = [
     partOfSpeech: 'adjective',
     example: 'She was embarrassed when she tripped on stage.',
     exampleKo: '그녀는 무대에서 넘어져 창피했다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'emotion',
     level: 2,
   },
@@ -1028,6 +1380,10 @@ export const wordData = [
     partOfSpeech: 'adjective',
     example: 'He felt anxious about the exam results.',
     exampleKo: '그는 시험 결과가 걱정되었다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'emotion',
     level: 2,
   },
@@ -1039,6 +1395,10 @@ export const wordData = [
     partOfSpeech: 'adjective',
     example: 'We were disappointed by the cancellation of the show.',
     exampleKo: '공연 취소에 실망했다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'emotion',
     level: 2,
   },
@@ -1050,6 +1410,10 @@ export const wordData = [
     partOfSpeech: 'adjective',
     example: 'She was overwhelmed by all the support she received.',
     exampleKo: '그녀는 받은 모든 지지에 벅차올랐다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'emotion',
     level: 3,
   },
@@ -1061,6 +1425,10 @@ export const wordData = [
     partOfSpeech: 'adjective',
     example: 'He was furious when he discovered the lie.',
     exampleKo: '거짓말을 알게 되었을 때 그는 격노했다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'emotion',
     level: 3,
   },
@@ -1072,6 +1440,10 @@ export const wordData = [
     partOfSpeech: 'verb',
     example: 'I sympathize with people who have lost their jobs.',
     exampleKo: '실직한 사람들에게 공감한다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'emotion',
     level: 3,
   },
@@ -1083,6 +1455,10 @@ export const wordData = [
     partOfSpeech: 'adjective',
     example: 'He became resentful after being passed over for promotion.',
     exampleKo: '승진에서 누락된 후 그는 원망하게 되었다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'emotion',
     level: 4,
   },
@@ -1094,6 +1470,10 @@ export const wordData = [
     partOfSpeech: 'adjective',
     example: 'She was terrified of the thunderstorm.',
     exampleKo: '그녀는 뇌우에 겁에 질렸다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'emotion',
     level: 3,
   },
@@ -1105,6 +1485,10 @@ export const wordData = [
     partOfSpeech: 'adjective',
     example: 'The old photos made her feel nostalgic.',
     exampleKo: '오래된 사진이 그녀를 그리움에 젖게 했다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'emotion',
     level: 4,
   },
@@ -1116,6 +1500,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'She showed great compassion for the victims.',
     exampleKo: '그녀는 피해자들에게 큰 연민을 보였다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'emotion',
     level: 3,
   },
@@ -1127,6 +1515,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'The team felt euphoria after winning the championship.',
     exampleKo: '팀은 우승 후 도취감을 느꼈다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'emotion',
     level: 5,
   },
@@ -1138,6 +1530,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'A sense of melancholy filled the room on rainy days.',
     exampleKo: '비 오는 날 방 안에 우울한 기운이 가득했다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'emotion',
     level: 5,
   },
@@ -1149,6 +1545,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'She looked at the rude man with contempt.',
     exampleKo: '그녀는 무례한 남자를 경멸의 눈으로 바라봤다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'emotion',
     level: 4,
   },
@@ -1164,6 +1564,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'Regular exercise is important for your health.',
     exampleKo: '규칙적인 운동은 건강에 중요하다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'health',
     level: 1,
   },
@@ -1175,6 +1579,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'Fever is a common symptom of the flu.',
     exampleKo: '열은 독감의 흔한 증상이다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'health',
     level: 2,
   },
@@ -1186,6 +1594,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'Take this medicine three times a day after meals.',
     exampleKo: '이 약을 하루 세 번 식후에 복용하세요.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'health',
     level: 1,
   },
@@ -1197,6 +1609,10 @@ export const wordData = [
     partOfSpeech: 'verb',
     example: 'The doctor prescribed antibiotics for the infection.',
     exampleKo: '의사가 감염에 대해 항생제를 처방했다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'health',
     level: 3,
   },
@@ -1208,6 +1624,10 @@ export const wordData = [
     partOfSpeech: 'verb',
     example: 'It took him two weeks to recover from the cold.',
     exampleKo: '감기에서 회복하는 데 2주가 걸렸다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'health',
     level: 2,
   },
@@ -1219,6 +1639,10 @@ export const wordData = [
     partOfSpeech: 'adjective',
     example: 'She is allergic to peanuts.',
     exampleKo: '그녀는 땅콩 알레르기가 있다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'health',
     level: 2,
   },
@@ -1230,6 +1654,10 @@ export const wordData = [
     partOfSpeech: 'verb',
     example: 'The disease was diagnosed at an early stage.',
     exampleKo: '그 질병은 초기 단계에서 진단되었다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'health',
     level: 3,
   },
@@ -1241,6 +1669,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'Chronic fatigue can affect your daily life.',
     exampleKo: '만성 피로는 일상생활에 영향을 줄 수 있다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'health',
     level: 3,
   },
@@ -1252,6 +1684,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'He suffered a knee injury during the game.',
     exampleKo: '그는 경기 중에 무릎 부상을 당했다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'health',
     level: 2,
   },
@@ -1263,6 +1699,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'A balanced diet helps build strong immunity.',
     exampleKo: '균형 잡힌 식단은 강한 면역력을 키우는 데 도움이 된다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'health',
     level: 3,
   },
@@ -1274,6 +1714,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'Physical therapy helped her walk again.',
     exampleKo: '물리 치료가 그녀가 다시 걷는 데 도움이 되었다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'health',
     level: 3,
   },
@@ -1285,6 +1729,10 @@ export const wordData = [
     partOfSpeech: 'verb',
     example: 'Make sure to hydrate during hot weather.',
     exampleKo: '더운 날씨에는 수분을 꼭 보충하세요.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'health',
     level: 3,
   },
@@ -1296,6 +1744,10 @@ export const wordData = [
     partOfSpeech: 'adjective',
     example: 'The flu is highly contagious.',
     exampleKo: '독감은 전염성이 매우 높다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'health',
     level: 4,
   },
@@ -1307,6 +1759,10 @@ export const wordData = [
     partOfSpeech: 'adjective',
     example: 'She suffers from chronic back pain.',
     exampleKo: '그녀는 만성적인 허리 통증으로 고생한다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'health',
     level: 4,
   },
@@ -1318,6 +1774,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'The company offers a wellness program for employees.',
     exampleKo: '회사는 직원들을 위한 건강 프로그램을 제공한다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'health',
     level: 2,
   },
@@ -1329,6 +1789,10 @@ export const wordData = [
     partOfSpeech: 'adjective',
     example: 'Her ankle was swollen after the fall.',
     exampleKo: '넘어진 후 그녀의 발목이 부어올랐다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'health',
     level: 3,
   },
@@ -1340,6 +1804,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'He takes vitamin supplements every morning.',
     exampleKo: '그는 매일 아침 비타민 보충제를 복용한다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'health',
     level: 3,
   },
@@ -1351,6 +1819,10 @@ export const wordData = [
     partOfSpeech: 'adjective',
     example: 'A sedentary lifestyle increases the risk of disease.',
     exampleKo: '앉아서 생활하는 습관은 질병의 위험을 높인다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'health',
     level: 5,
   },
@@ -1362,6 +1834,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'He suffers from various minor ailments.',
     exampleKo: '그는 여러 가지 가벼운 질환을 앓고 있다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'health',
     level: 5,
   },
@@ -1373,6 +1849,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'Honey and lemon is a popular home remedy for colds.',
     exampleKo: '꿀과 레몬은 감기에 대한 인기 있는 민간요법이다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'health',
     level: 4,
   },
@@ -1388,6 +1868,10 @@ export const wordData = [
     partOfSpeech: 'verb',
     example: 'You can download the app for free.',
     exampleKo: '그 앱을 무료로 다운로드할 수 있다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'technology',
     level: 1,
   },
@@ -1399,6 +1883,10 @@ export const wordData = [
     partOfSpeech: 'verb',
     example: 'Please update your software to the latest version.',
     exampleKo: '소프트웨어를 최신 버전으로 업데이트해 주세요.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'technology',
     level: 1,
   },
@@ -1410,6 +1898,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'This device can connect to the internet wirelessly.',
     exampleKo: '이 기기는 무선으로 인터넷에 연결할 수 있다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'technology',
     level: 1,
   },
@@ -1421,6 +1913,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'Use a strong password to protect your account.',
     exampleKo: '계정을 보호하려면 강력한 비밀번호를 사용하세요.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'technology',
     level: 1,
   },
@@ -1432,6 +1928,10 @@ export const wordData = [
     partOfSpeech: 'verb',
     example: 'I spent an hour browsing the internet.',
     exampleKo: '인터넷을 한 시간 동안 검색했다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'technology',
     level: 2,
   },
@@ -1443,6 +1943,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'All customer information is stored in the database.',
     exampleKo: '모든 고객 정보는 데이터베이스에 저장된다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'technology',
     level: 2,
   },
@@ -1454,6 +1958,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'The Wi-Fi network is down at the moment.',
     exampleKo: '현재 와이파이 네트워크가 작동하지 않는다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'technology',
     level: 2,
   },
@@ -1465,6 +1973,10 @@ export const wordData = [
     partOfSpeech: 'adjective',
     example: 'Make sure the charger is compatible with your phone.',
     exampleKo: '충전기가 휴대폰과 호환되는지 확인하세요.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'technology',
     level: 3,
   },
@@ -1476,6 +1988,10 @@ export const wordData = [
     partOfSpeech: 'verb',
     example: 'We can automate repetitive tasks using software.',
     exampleKo: '소프트웨어를 사용하여 반복적인 작업을 자동화할 수 있다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'technology',
     level: 3,
   },
@@ -1487,6 +2003,10 @@ export const wordData = [
     partOfSpeech: 'verb',
     example: 'The developer spent hours debugging the code.',
     exampleKo: '개발자는 코드의 오류를 수정하는 데 몇 시간을 보냈다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'technology',
     level: 3,
   },
@@ -1498,6 +2018,10 @@ export const wordData = [
     partOfSpeech: 'verb',
     example: 'All messages are encrypted for security.',
     exampleKo: '모든 메시지는 보안을 위해 암호화된다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'technology',
     level: 4,
   },
@@ -1509,6 +2033,10 @@ export const wordData = [
     partOfSpeech: 'adjective',
     example: 'Artificial intelligence is transforming many industries.',
     exampleKo: '인공지능이 많은 산업을 변화시키고 있다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'technology',
     level: 3,
   },
@@ -1520,6 +2048,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'Streaming video requires a lot of bandwidth.',
     exampleKo: '동영상 스트리밍은 많은 대역폭이 필요하다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'technology',
     level: 4,
   },
@@ -1531,6 +2063,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'A software glitch caused the system to crash.',
     exampleKo: '소프트웨어 결함으로 시스템이 다운되었다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'technology',
     level: 3,
   },
@@ -1542,6 +2078,10 @@ export const wordData = [
     partOfSpeech: 'verb',
     example: 'We need to optimize the website for mobile users.',
     exampleKo: '모바일 사용자를 위해 웹사이트를 최적화해야 한다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'technology',
     level: 4,
   },
@@ -1553,6 +2093,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'The search algorithm was improved for better results.',
     exampleKo: '더 나은 결과를 위해 검색 알고리즘이 개선되었다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'technology',
     level: 4,
   },
@@ -1564,6 +2108,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'The user interface is simple and intuitive.',
     exampleKo: '사용자 인터페이스가 간단하고 직관적이다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'technology',
     level: 3,
   },
@@ -1575,6 +2123,10 @@ export const wordData = [
     partOfSpeech: 'adjective',
     example: 'We need a scalable solution for the growing user base.',
     exampleKo: '늘어나는 사용자 기반을 위한 확장 가능한 솔루션이 필요하다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'technology',
     level: 5,
   },
@@ -1586,6 +2138,10 @@ export const wordData = [
     partOfSpeech: 'adjective',
     example: 'Floppy disks are now completely obsolete.',
     exampleKo: '플로피 디스크는 이제 완전히 구식이다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'technology',
     level: 5,
   },
@@ -1597,6 +2153,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'Cybersecurity threats are increasing every year.',
     exampleKo: '사이버 보안 위협이 매년 증가하고 있다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'technology',
     level: 4,
   },
@@ -1612,6 +2172,10 @@ export const wordData = [
     partOfSpeech: 'verb',
     example: 'I study English for two hours every day.',
     exampleKo: '나는 매일 2시간 영어를 공부한다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'education',
     level: 1,
   },
@@ -1623,6 +2187,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'The final exam will cover all chapters.',
     exampleKo: '기말 시험은 모든 단원을 포함한다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'education',
     level: 1,
   },
@@ -1634,6 +2202,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'The professor gave an interesting lecture on history.',
     exampleKo: '교수님이 역사에 관한 흥미로운 강의를 했다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'education',
     level: 2,
   },
@@ -1645,6 +2217,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'The assignment is due next Friday.',
     exampleKo: '과제는 다음 주 금요일까지이다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'education',
     level: 2,
   },
@@ -1656,6 +2232,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'She received a full scholarship to the university.',
     exampleKo: '그녀는 대학 전액 장학금을 받았다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'education',
     level: 2,
   },
@@ -1667,6 +2247,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'The school updated its curriculum this year.',
     exampleKo: '학교가 올해 교육과정을 갱신했다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'education',
     level: 3,
   },
@@ -1678,6 +2262,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'He hired a tutor to help with mathematics.',
     exampleKo: '그는 수학을 도와줄 과외 교사를 고용했다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'education',
     level: 2,
   },
@@ -1689,6 +2277,10 @@ export const wordData = [
     partOfSpeech: 'verb',
     example: 'It is difficult to comprehend such a complex theory.',
     exampleKo: '그렇게 복잡한 이론을 이해하기는 어렵다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'education',
     level: 3,
   },
@@ -1700,6 +2292,10 @@ export const wordData = [
     partOfSpeech: 'verb',
     example: 'She will graduate from college next spring.',
     exampleKo: '그녀는 내년 봄에 대학을 졸업할 것이다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'education',
     level: 2,
   },
@@ -1711,6 +2307,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'The fall semester starts in September.',
     exampleKo: '가을 학기는 9월에 시작한다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'education',
     level: 2,
   },
@@ -1722,6 +2322,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'She is writing her thesis on climate change.',
     exampleKo: '그녀는 기후 변화에 관한 논문을 쓰고 있다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'education',
     level: 4,
   },
@@ -1733,6 +2337,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'Digital literacy is essential in the modern world.',
     exampleKo: '디지털 소양은 현대 사회에서 필수적이다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'education',
     level: 3,
   },
@@ -1744,6 +2352,10 @@ export const wordData = [
     partOfSpeech: 'verb',
     example: 'You need to memorize these vocabulary words.',
     exampleKo: '이 단어들을 암기해야 한다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'education',
     level: 2,
   },
@@ -1755,6 +2367,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'Enrollment for the new course begins next week.',
     exampleKo: '새 과정의 등록은 다음 주에 시작된다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'education',
     level: 3,
   },
@@ -1766,6 +2382,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'Plagiarism is a serious academic offense.',
     exampleKo: '표절은 심각한 학문적 위반이다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'education',
     level: 4,
   },
@@ -1777,6 +2397,10 @@ export const wordData = [
     partOfSpeech: 'adjective',
     example: 'She participates in many extracurricular activities.',
     exampleKo: '그녀는 많은 과외 활동에 참여한다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'education',
     level: 4,
   },
@@ -1788,6 +2412,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'Physics is a fascinating discipline to study.',
     exampleKo: '물리학은 공부하기에 매력적인 학문 분야이다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'education',
     level: 3,
   },
@@ -1799,6 +2427,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'She achieved a high level of proficiency in Spanish.',
     exampleKo: '그녀는 스페인어에서 높은 수준의 숙달을 달성했다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'education',
     level: 4,
   },
@@ -1810,6 +2442,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'Modern pedagogy emphasizes student-centered learning.',
     exampleKo: '현대 교수법은 학생 중심 학습을 강조한다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'education',
     level: 5,
   },
@@ -1821,6 +2457,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'He defended his doctoral dissertation successfully.',
     exampleKo: '그는 박사 학위 논문을 성공적으로 발표했다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'education',
     level: 5,
   },
@@ -1836,6 +2476,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'The weather is beautiful today.',
     exampleKo: '오늘 날씨가 아름답다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'nature',
     level: 1,
   },
@@ -1847,6 +2491,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'We climbed the mountain during our vacation.',
     exampleKo: '휴가 동안 산을 올랐다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'nature',
     level: 1,
   },
@@ -1858,6 +2506,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'A cool breeze blew through the open window.',
     exampleKo: '열린 창문으로 시원한 산들바람이 불어왔다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'nature',
     level: 2,
   },
@@ -1869,6 +2521,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'Cherry blossoms bloom in early spring.',
     exampleKo: '벚꽃은 이른 봄에 핀다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'nature',
     level: 2,
   },
@@ -1880,6 +2536,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'The national park is home to diverse wildlife.',
     exampleKo: '국립공원에는 다양한 야생 동물이 서식한다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'nature',
     level: 2,
   },
@@ -1891,6 +2551,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'The region is suffering from a severe drought.',
     exampleKo: '그 지역은 심각한 가뭄으로 고통받고 있다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'nature',
     level: 3,
   },
@@ -1902,6 +2566,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'The landscape of Iceland is breathtaking.',
     exampleKo: '아이슬란드의 풍경은 숨이 멎을 정도이다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'nature',
     level: 2,
   },
@@ -1913,6 +2581,10 @@ export const wordData = [
     partOfSpeech: 'adjective',
     example: 'Summers in Korea are very hot and humid.',
     exampleKo: '한국의 여름은 매우 덥고 습하다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'nature',
     level: 2,
   },
@@ -1924,6 +2596,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'Pollution is damaging the marine ecosystem.',
     exampleKo: '오염이 해양 생태계를 훼손하고 있다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'nature',
     level: 3,
   },
@@ -1935,6 +2611,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'Farmers are busy during the harvest season.',
     exampleKo: '농부들은 수확기에 바쁘다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'nature',
     level: 2,
   },
@@ -1946,6 +2626,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'Air pollution is a serious problem in big cities.',
     exampleKo: '대기 오염은 대도시에서 심각한 문제이다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'nature',
     level: 2,
   },
@@ -1957,6 +2641,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'Wildlife conservation is crucial for biodiversity.',
     exampleKo: '야생 동물 보호는 생물 다양성에 매우 중요하다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'nature',
     level: 3,
   },
@@ -1968,6 +2656,10 @@ export const wordData = [
     partOfSpeech: 'adjective',
     example: 'We must adopt sustainable farming practices.',
     exampleKo: '지속 가능한 농업 관행을 채택해야 한다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'nature',
     level: 3,
   },
@@ -1979,6 +2671,10 @@ export const wordData = [
     partOfSpeech: 'adjective',
     example: 'The panda is an endangered species.',
     exampleKo: '판다는 멸종 위기 종이다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'nature',
     level: 3,
   },
@@ -1990,6 +2686,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'Soil erosion is caused by heavy rainfall.',
     exampleKo: '토양 침식은 폭우로 인해 발생한다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'nature',
     level: 4,
   },
@@ -2001,6 +2701,10 @@ export const wordData = [
     partOfSpeech: 'adjective',
     example: 'Korea has a temperate climate with four seasons.',
     exampleKo: '한국은 사계절이 있는 온대 기후이다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'nature',
     level: 4,
   },
@@ -2012,6 +2716,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'Tropical rainforests have the greatest biodiversity.',
     exampleKo: '열대 우림은 가장 큰 생물 다양성을 보유한다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'nature',
     level: 4,
   },
@@ -2023,6 +2731,10 @@ export const wordData = [
     partOfSpeech: 'verb',
     example: 'Bears hibernate during the winter months.',
     exampleKo: '곰은 겨울철에 동면한다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'nature',
     level: 4,
   },
@@ -2034,6 +2746,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'Plants produce oxygen through photosynthesis.',
     exampleKo: '식물은 광합성을 통해 산소를 생산한다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'nature',
     level: 5,
   },
@@ -2045,6 +2761,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'Deforestation is one of the main causes of climate change.',
     exampleKo: '삼림 벌채는 기후 변화의 주요 원인 중 하나이다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'nature',
     level: 5,
   },
@@ -2060,6 +2780,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'The community organized a neighborhood cleanup.',
     exampleKo: '지역 사회가 이웃 청소를 조직했다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'social',
     level: 1,
   },
@@ -2071,6 +2795,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'Many volunteers helped at the charity event.',
     exampleKo: '많은 자원봉사자가 자선 행사를 도왔다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'social',
     level: 1,
   },
@@ -2082,6 +2810,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'They fought for equality and justice.',
     exampleKo: '그들은 평등과 정의를 위해 싸웠다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'social',
     level: 2,
   },
@@ -2093,6 +2825,10 @@ export const wordData = [
     partOfSpeech: 'verb',
     example: 'Everyone is encouraged to participate in the discussion.',
     exampleKo: '모든 사람이 토론에 참여하도록 권장된다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'social',
     level: 2,
   },
@@ -2104,6 +2840,10 @@ export const wordData = [
     partOfSpeech: 'verb',
     example: 'She donates blood twice a year.',
     exampleKo: '그녀는 일 년에 두 번 헌혈한다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'social',
     level: 2,
   },
@@ -2115,6 +2855,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'Thousands joined the peaceful protest downtown.',
     exampleKo: '수천 명이 시내의 평화 시위에 참여했다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'social',
     level: 2,
   },
@@ -2126,6 +2870,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'Cultural diversity enriches our society.',
     exampleKo: '문화적 다양성은 우리 사회를 풍요롭게 한다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'social',
     level: 3,
   },
@@ -2137,6 +2885,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'Education can help reduce prejudice.',
     exampleKo: '교육은 편견을 줄이는 데 도움이 될 수 있다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'social',
     level: 3,
   },
@@ -2148,6 +2900,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'Democracy gives citizens the right to vote.',
     exampleKo: '민주주의는 시민에게 투표할 권리를 준다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'social',
     level: 3,
   },
@@ -2159,6 +2915,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'The government expanded the welfare program.',
     exampleKo: '정부는 복지 프로그램을 확대했다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'social',
     level: 3,
   },
@@ -2170,6 +2930,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'Income inequality has been growing in recent years.',
     exampleKo: '최근 몇 년간 소득 불평등이 증가하고 있다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'social',
     level: 3,
   },
@@ -2181,6 +2945,10 @@ export const wordData = [
     partOfSpeech: 'verb',
     example: 'She advocates for children\'s rights.',
     exampleKo: '그녀는 아동의 권리를 옹호한다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'social',
     level: 3,
   },
@@ -2192,6 +2960,10 @@ export const wordData = [
     partOfSpeech: 'adjective',
     example: 'The policy aims to support marginalized communities.',
     exampleKo: '그 정책은 소외된 지역사회를 지원하는 것을 목표로 한다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'social',
     level: 4,
   },
@@ -2203,6 +2975,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'Youth activism is driving social change worldwide.',
     exampleKo: '청소년 사회 운동이 전 세계적으로 사회 변화를 이끌고 있다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'social',
     level: 4,
   },
@@ -2214,6 +2990,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'The committee reached a consensus on the issue.',
     exampleKo: '위원회는 그 문제에 대해 합의에 이르렀다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'social',
     level: 4,
   },
@@ -2225,6 +3005,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'The workers showed solidarity during the strike.',
     exampleKo: '노동자들은 파업 중에 연대를 보여주었다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'social',
     level: 4,
   },
@@ -2236,6 +3020,10 @@ export const wordData = [
     partOfSpeech: 'verb',
     example: 'Education empowers people to improve their lives.',
     exampleKo: '교육은 사람들이 삶을 개선할 수 있도록 힘을 준다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'social',
     level: 3,
   },
@@ -2247,6 +3035,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'Too much bureaucracy can slow down progress.',
     exampleKo: '과도한 관료주의는 진행을 느리게 할 수 있다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'social',
     level: 5,
   },
@@ -2258,6 +3050,10 @@ export const wordData = [
     partOfSpeech: 'noun',
     example: 'His philanthropy has helped build schools in rural areas.',
     exampleKo: '그의 자선 활동은 농촌 지역에 학교를 세우는 데 도움이 되었다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'social',
     level: 5,
   },
@@ -2269,7 +3065,1511 @@ export const wordData = [
     partOfSpeech: 'verb',
     example: 'Laws should not disenfranchise any group of citizens.',
     exampleKo: '법은 어떤 시민 집단의 권리도 박탈해서는 안 된다.',
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    },
     category: 'social',
     level: 5,
   },
+  {
+    "id": "word_201",
+    "word": "passport",
+    "meaning": "여권",
+    "pronunciation": "/ˈpæspɔːrt/",
+    "partOfSpeech": "noun",
+    "category": "travel",
+    "level": 1,
+    "example": "Keep your passport in a safe place.",
+    "exampleKo": "여권을 안전한 곳에 보관해라.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_202",
+    "word": "luggage",
+    "meaning": "짐, 수하물",
+    "pronunciation": "/ˈlʌɡɪdʒ/",
+    "partOfSpeech": "noun",
+    "category": "travel",
+    "level": 1,
+    "example": "My luggage is too heavy.",
+    "exampleKo": "내 짐이 너무 무겁다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_203",
+    "word": "boarding",
+    "meaning": "탑승",
+    "pronunciation": "/ˈbɔːrdɪŋ/",
+    "partOfSpeech": "noun",
+    "category": "travel",
+    "level": 2,
+    "example": "Boarding starts in ten minutes.",
+    "exampleKo": "탑승은 10분 후에 시작된다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_204",
+    "word": "departure",
+    "meaning": "출발",
+    "pronunciation": "/dɪˈpɑːrtʃər/",
+    "partOfSpeech": "noun",
+    "category": "travel",
+    "level": 2,
+    "example": "The departure time has changed.",
+    "exampleKo": "출발 시간이 바뀌었다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_205",
+    "word": "arrival",
+    "meaning": "도착",
+    "pronunciation": "/əˈraɪvəl/",
+    "partOfSpeech": "noun",
+    "category": "travel",
+    "level": 2,
+    "example": "Our arrival was delayed by rain.",
+    "exampleKo": "우리의 도착은 비 때문에 지연되었다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_206",
+    "word": "reservation",
+    "meaning": "예약",
+    "pronunciation": "/ˌrezərˈveɪʃən/",
+    "partOfSpeech": "noun",
+    "category": "travel",
+    "level": 2,
+    "example": "I made a hotel reservation.",
+    "exampleKo": "나는 호텔 예약을 했다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_207",
+    "word": "destination",
+    "meaning": "목적지",
+    "pronunciation": "/ˌdestɪˈneɪʃən/",
+    "partOfSpeech": "noun",
+    "category": "travel",
+    "level": 2,
+    "example": "What is your final destination?",
+    "exampleKo": "최종 목적지가 어디인가요?",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_208",
+    "word": "itinerary",
+    "meaning": "여행 일정",
+    "pronunciation": "/aɪˈtɪnəreri/",
+    "partOfSpeech": "noun",
+    "category": "travel",
+    "level": 3,
+    "example": "She checked the itinerary before the trip.",
+    "exampleKo": "그녀는 여행 전에 일정을 확인했다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_209",
+    "word": "souvenir",
+    "meaning": "기념품",
+    "pronunciation": "/ˌsuːvəˈnɪr/",
+    "partOfSpeech": "noun",
+    "category": "travel",
+    "level": 2,
+    "example": "I bought a small souvenir.",
+    "exampleKo": "나는 작은 기념품을 샀다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_210",
+    "word": "landmark",
+    "meaning": "랜드마크, 명소",
+    "pronunciation": "/ˈlændmɑːrk/",
+    "partOfSpeech": "noun",
+    "category": "travel",
+    "level": 2,
+    "example": "The tower is a famous landmark.",
+    "exampleKo": "그 탑은 유명한 명소다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_211",
+    "word": "ingredient",
+    "meaning": "재료",
+    "pronunciation": "/ɪnˈɡriːdiənt/",
+    "partOfSpeech": "noun",
+    "category": "food",
+    "level": 2,
+    "example": "This soup has simple ingredients.",
+    "exampleKo": "이 수프에는 간단한 재료가 들어간다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_212",
+    "word": "recipe",
+    "meaning": "요리법, 레시피",
+    "pronunciation": "/ˈresəpi/",
+    "partOfSpeech": "noun",
+    "category": "food",
+    "level": 1,
+    "example": "I found an easy recipe online.",
+    "exampleKo": "나는 온라인에서 쉬운 레시피를 찾았다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_213",
+    "word": "flavor",
+    "meaning": "맛, 풍미",
+    "pronunciation": "/ˈfleɪvər/",
+    "partOfSpeech": "noun",
+    "category": "food",
+    "level": 1,
+    "example": "The flavor is rich and sweet.",
+    "exampleKo": "그 맛은 진하고 달콤하다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_214",
+    "word": "portion",
+    "meaning": "1인분, 부분",
+    "pronunciation": "/ˈpɔːrʃən/",
+    "partOfSpeech": "noun",
+    "category": "food",
+    "level": 2,
+    "example": "The portion is small but enough.",
+    "exampleKo": "양은 적지만 충분하다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_215",
+    "word": "appetite",
+    "meaning": "식욕",
+    "pronunciation": "/ˈæpətaɪt/",
+    "partOfSpeech": "noun",
+    "category": "food",
+    "level": 2,
+    "example": "Fresh air gave me an appetite.",
+    "exampleKo": "신선한 공기가 내 식욕을 돋웠다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_216",
+    "word": "dessert",
+    "meaning": "디저트",
+    "pronunciation": "/dɪˈzɜːrt/",
+    "partOfSpeech": "noun",
+    "category": "food",
+    "level": 1,
+    "example": "We shared dessert after dinner.",
+    "exampleKo": "우리는 저녁 후에 디저트를 나눠 먹었다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_217",
+    "word": "beverage",
+    "meaning": "음료",
+    "pronunciation": "/ˈbevərɪdʒ/",
+    "partOfSpeech": "noun",
+    "category": "food",
+    "level": 2,
+    "example": "Water is the best beverage for exercise.",
+    "exampleKo": "운동할 때 물이 가장 좋은 음료다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_218",
+    "word": "spicy",
+    "meaning": "매운",
+    "pronunciation": "/ˈspaɪsi/",
+    "partOfSpeech": "adjective",
+    "category": "food",
+    "level": 1,
+    "example": "This noodle dish is very spicy.",
+    "exampleKo": "이 국수 요리는 매우 맵다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_219",
+    "word": "crispy",
+    "meaning": "바삭한",
+    "pronunciation": "/ˈkrɪspi/",
+    "partOfSpeech": "adjective",
+    "category": "food",
+    "level": 2,
+    "example": "The fries are hot and crispy.",
+    "exampleKo": "감자튀김은 뜨겁고 바삭하다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_220",
+    "word": "leftover",
+    "meaning": "남은 음식",
+    "pronunciation": "/ˈleftoʊvər/",
+    "partOfSpeech": "noun",
+    "category": "food",
+    "level": 2,
+    "example": "I ate leftovers for lunch.",
+    "exampleKo": "나는 점심으로 남은 음식을 먹었다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_221",
+    "word": "anxious",
+    "meaning": "불안한",
+    "pronunciation": "/ˈæŋkʃəs/",
+    "partOfSpeech": "adjective",
+    "category": "emotion",
+    "level": 2,
+    "example": "She felt anxious before the interview.",
+    "exampleKo": "그녀는 면접 전에 불안했다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_222",
+    "word": "relieved",
+    "meaning": "안도한",
+    "pronunciation": "/rɪˈliːvd/",
+    "partOfSpeech": "adjective",
+    "category": "emotion",
+    "level": 2,
+    "example": "I felt relieved after the test.",
+    "exampleKo": "나는 시험 후에 안도했다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_223",
+    "word": "grateful",
+    "meaning": "감사하는",
+    "pronunciation": "/ˈɡreɪtfəl/",
+    "partOfSpeech": "adjective",
+    "category": "emotion",
+    "level": 2,
+    "example": "I am grateful for your help.",
+    "exampleKo": "당신의 도움에 감사합니다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_224",
+    "word": "lonely",
+    "meaning": "외로운",
+    "pronunciation": "/ˈloʊnli/",
+    "partOfSpeech": "adjective",
+    "category": "emotion",
+    "level": 1,
+    "example": "He felt lonely in the new city.",
+    "exampleKo": "그는 새 도시에서 외로움을 느꼈다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_225",
+    "word": "confident",
+    "meaning": "자신감 있는",
+    "pronunciation": "/ˈkɑːnfɪdənt/",
+    "partOfSpeech": "adjective",
+    "category": "emotion",
+    "level": 2,
+    "example": "Practice made her more confident.",
+    "exampleKo": "연습은 그녀를 더 자신감 있게 만들었다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_226",
+    "word": "embarrassed",
+    "meaning": "창피한",
+    "pronunciation": "/ɪmˈbærəst/",
+    "partOfSpeech": "adjective",
+    "category": "emotion",
+    "level": 2,
+    "example": "I was embarrassed by my mistake.",
+    "exampleKo": "나는 내 실수 때문에 창피했다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_227",
+    "word": "disappointed",
+    "meaning": "실망한",
+    "pronunciation": "/ˌdɪsəˈpɔɪntɪd/",
+    "partOfSpeech": "adjective",
+    "category": "emotion",
+    "level": 2,
+    "example": "They were disappointed with the result.",
+    "exampleKo": "그들은 결과에 실망했다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_228",
+    "word": "curious",
+    "meaning": "궁금한, 호기심 많은",
+    "pronunciation": "/ˈkjʊriəs/",
+    "partOfSpeech": "adjective",
+    "category": "emotion",
+    "level": 2,
+    "example": "The child was curious about everything.",
+    "exampleKo": "그 아이는 모든 것에 호기심이 있었다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_229",
+    "word": "proud",
+    "meaning": "자랑스러운",
+    "pronunciation": "/praʊd/",
+    "partOfSpeech": "adjective",
+    "category": "emotion",
+    "level": 1,
+    "example": "Her parents were proud of her.",
+    "exampleKo": "그녀의 부모님은 그녀를 자랑스러워했다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_230",
+    "word": "upset",
+    "meaning": "속상한, 화난",
+    "pronunciation": "/ʌpˈset/",
+    "partOfSpeech": "adjective",
+    "category": "emotion",
+    "level": 1,
+    "example": "He was upset about the news.",
+    "exampleKo": "그는 그 소식 때문에 속상했다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_231",
+    "word": "symptom",
+    "meaning": "증상",
+    "pronunciation": "/ˈsɪmptəm/",
+    "partOfSpeech": "noun",
+    "category": "health",
+    "level": 2,
+    "example": "Fever is a common symptom.",
+    "exampleKo": "열은 흔한 증상이다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_232",
+    "word": "treatment",
+    "meaning": "치료",
+    "pronunciation": "/ˈtriːtmənt/",
+    "partOfSpeech": "noun",
+    "category": "health",
+    "level": 2,
+    "example": "The treatment takes two weeks.",
+    "exampleKo": "치료는 2주가 걸린다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_233",
+    "word": "recovery",
+    "meaning": "회복",
+    "pronunciation": "/rɪˈkʌvəri/",
+    "partOfSpeech": "noun",
+    "category": "health",
+    "level": 2,
+    "example": "Sleep helps recovery.",
+    "exampleKo": "수면은 회복을 돕는다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_234",
+    "word": "nutrition",
+    "meaning": "영양",
+    "pronunciation": "/nuːˈtrɪʃən/",
+    "partOfSpeech": "noun",
+    "category": "health",
+    "level": 3,
+    "example": "Good nutrition supports your body.",
+    "exampleKo": "좋은 영양은 몸을 지탱한다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_235",
+    "word": "immune",
+    "meaning": "면역의",
+    "pronunciation": "/ɪˈmjuːn/",
+    "partOfSpeech": "adjective",
+    "category": "health",
+    "level": 3,
+    "example": "Sleep supports the immune system.",
+    "exampleKo": "수면은 면역 체계를 돕는다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_236",
+    "word": "injury",
+    "meaning": "부상",
+    "pronunciation": "/ˈɪndʒəri/",
+    "partOfSpeech": "noun",
+    "category": "health",
+    "level": 2,
+    "example": "The injury was not serious.",
+    "exampleKo": "그 부상은 심각하지 않았다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_237",
+    "word": "prescription",
+    "meaning": "처방전",
+    "pronunciation": "/prɪˈskrɪpʃən/",
+    "partOfSpeech": "noun",
+    "category": "health",
+    "level": 3,
+    "example": "The doctor gave me a prescription.",
+    "exampleKo": "의사가 내게 처방전을 주었다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_238",
+    "word": "clinic",
+    "meaning": "진료소, 병원",
+    "pronunciation": "/ˈklɪnɪk/",
+    "partOfSpeech": "noun",
+    "category": "health",
+    "level": 1,
+    "example": "The clinic opens at nine.",
+    "exampleKo": "진료소는 9시에 문을 연다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_239",
+    "word": "dizzy",
+    "meaning": "어지러운",
+    "pronunciation": "/ˈdɪzi/",
+    "partOfSpeech": "adjective",
+    "category": "health",
+    "level": 2,
+    "example": "I felt dizzy after standing up.",
+    "exampleKo": "나는 일어난 후 어지러움을 느꼈다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_240",
+    "word": "hydrated",
+    "meaning": "수분을 유지한",
+    "pronunciation": "/ˈhaɪdreɪtɪd/",
+    "partOfSpeech": "adjective",
+    "category": "health",
+    "level": 3,
+    "example": "Stay hydrated during exercise.",
+    "exampleKo": "운동 중에는 수분을 유지해라.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_241",
+    "word": "device",
+    "meaning": "기기, 장치",
+    "pronunciation": "/dɪˈvaɪs/",
+    "partOfSpeech": "noun",
+    "category": "technology",
+    "level": 1,
+    "example": "This device is easy to use.",
+    "exampleKo": "이 기기는 사용하기 쉽다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_242",
+    "word": "battery",
+    "meaning": "배터리",
+    "pronunciation": "/ˈbætəri/",
+    "partOfSpeech": "noun",
+    "category": "technology",
+    "level": 1,
+    "example": "My phone battery is low.",
+    "exampleKo": "내 휴대폰 배터리가 부족하다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_243",
+    "word": "password",
+    "meaning": "비밀번호",
+    "pronunciation": "/ˈpæswɜːrd/",
+    "partOfSpeech": "noun",
+    "category": "technology",
+    "level": 1,
+    "example": "Do not share your password.",
+    "exampleKo": "비밀번호를 공유하지 마라.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_244",
+    "word": "update",
+    "meaning": "업데이트하다, 업데이트",
+    "pronunciation": "/ˌʌpˈdeɪt/",
+    "partOfSpeech": "verb",
+    "category": "technology",
+    "level": 1,
+    "example": "Update the app before using it.",
+    "exampleKo": "사용하기 전에 앱을 업데이트해라.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_245",
+    "word": "download",
+    "meaning": "다운로드하다",
+    "pronunciation": "/ˌdaʊnˈloʊd/",
+    "partOfSpeech": "verb",
+    "category": "technology",
+    "level": 1,
+    "example": "Download the file from the website.",
+    "exampleKo": "웹사이트에서 파일을 다운로드해라.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_246",
+    "word": "upload",
+    "meaning": "업로드하다",
+    "pronunciation": "/ˌʌpˈloʊd/",
+    "partOfSpeech": "verb",
+    "category": "technology",
+    "level": 1,
+    "example": "Please upload your photo.",
+    "exampleKo": "사진을 업로드해 주세요.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_247",
+    "word": "wireless",
+    "meaning": "무선의",
+    "pronunciation": "/ˈwaɪərləs/",
+    "partOfSpeech": "adjective",
+    "category": "technology",
+    "level": 2,
+    "example": "I bought wireless headphones.",
+    "exampleKo": "나는 무선 헤드폰을 샀다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_248",
+    "word": "privacy",
+    "meaning": "개인정보, 사생활",
+    "pronunciation": "/ˈpraɪvəsi/",
+    "partOfSpeech": "noun",
+    "category": "technology",
+    "level": 2,
+    "example": "Privacy matters online.",
+    "exampleKo": "온라인에서 개인정보는 중요하다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_249",
+    "word": "backup",
+    "meaning": "백업",
+    "pronunciation": "/ˈbækʌp/",
+    "partOfSpeech": "noun",
+    "category": "technology",
+    "level": 2,
+    "example": "Make a backup of your photos.",
+    "exampleKo": "사진을 백업해라.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_250",
+    "word": "shortcut",
+    "meaning": "단축키, 지름길",
+    "pronunciation": "/ˈʃɔːrtkʌt/",
+    "partOfSpeech": "noun",
+    "category": "technology",
+    "level": 2,
+    "example": "This shortcut saves time.",
+    "exampleKo": "이 단축키는 시간을 절약한다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_251",
+    "word": "assignment",
+    "meaning": "과제",
+    "pronunciation": "/əˈsaɪnmənt/",
+    "partOfSpeech": "noun",
+    "category": "education",
+    "level": 2,
+    "example": "The assignment is due tomorrow.",
+    "exampleKo": "그 과제는 내일까지다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_252",
+    "word": "lecture",
+    "meaning": "강의",
+    "pronunciation": "/ˈlektʃər/",
+    "partOfSpeech": "noun",
+    "category": "education",
+    "level": 2,
+    "example": "The lecture begins at ten.",
+    "exampleKo": "강의는 10시에 시작한다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_253",
+    "word": "semester",
+    "meaning": "학기",
+    "pronunciation": "/səˈmestər/",
+    "partOfSpeech": "noun",
+    "category": "education",
+    "level": 2,
+    "example": "This semester is very busy.",
+    "exampleKo": "이번 학기는 매우 바쁘다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_254",
+    "word": "tuition",
+    "meaning": "수업료, 등록금",
+    "pronunciation": "/tuˈɪʃən/",
+    "partOfSpeech": "noun",
+    "category": "education",
+    "level": 3,
+    "example": "Tuition is expensive this year.",
+    "exampleKo": "올해 등록금이 비싸다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_255",
+    "word": "scholarship",
+    "meaning": "장학금",
+    "pronunciation": "/ˈskɑːlərʃɪp/",
+    "partOfSpeech": "noun",
+    "category": "education",
+    "level": 3,
+    "example": "She received a scholarship.",
+    "exampleKo": "그녀는 장학금을 받았다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_256",
+    "word": "graduate",
+    "meaning": "졸업하다",
+    "pronunciation": "/ˈɡrædʒueɪt/",
+    "partOfSpeech": "verb",
+    "category": "education",
+    "level": 2,
+    "example": "He will graduate next spring.",
+    "exampleKo": "그는 내년 봄에 졸업할 것이다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_257",
+    "word": "review",
+    "meaning": "복습하다, 검토하다",
+    "pronunciation": "/rɪˈvjuː/",
+    "partOfSpeech": "verb",
+    "category": "education",
+    "level": 1,
+    "example": "Review the words every day.",
+    "exampleKo": "매일 단어를 복습해라.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_258",
+    "word": "memorize",
+    "meaning": "암기하다",
+    "pronunciation": "/ˈmeməraɪz/",
+    "partOfSpeech": "verb",
+    "category": "education",
+    "level": 2,
+    "example": "I need to memorize these phrases.",
+    "exampleKo": "나는 이 표현들을 암기해야 한다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_259",
+    "word": "explain",
+    "meaning": "설명하다",
+    "pronunciation": "/ɪkˈspleɪn/",
+    "partOfSpeech": "verb",
+    "category": "education",
+    "level": 1,
+    "example": "Can you explain the answer?",
+    "exampleKo": "답을 설명해 줄 수 있나요?",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_260",
+    "word": "improve",
+    "meaning": "향상되다, 향상시키다",
+    "pronunciation": "/ɪmˈpruːv/",
+    "partOfSpeech": "verb",
+    "category": "education",
+    "level": 1,
+    "example": "Your speaking will improve with practice.",
+    "exampleKo": "연습하면 말하기가 향상될 것이다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_261",
+    "word": "coast",
+    "meaning": "해안",
+    "pronunciation": "/koʊst/",
+    "partOfSpeech": "noun",
+    "category": "nature",
+    "level": 2,
+    "example": "We drove along the coast.",
+    "exampleKo": "우리는 해안을 따라 운전했다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_262",
+    "word": "valley",
+    "meaning": "계곡",
+    "pronunciation": "/ˈvæli/",
+    "partOfSpeech": "noun",
+    "category": "nature",
+    "level": 2,
+    "example": "A small river runs through the valley.",
+    "exampleKo": "작은 강이 계곡을 지난다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_263",
+    "word": "desert",
+    "meaning": "사막",
+    "pronunciation": "/ˈdezərt/",
+    "partOfSpeech": "noun",
+    "category": "nature",
+    "level": 2,
+    "example": "The desert is hot during the day.",
+    "exampleKo": "사막은 낮에 덥다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_264",
+    "word": "island",
+    "meaning": "섬",
+    "pronunciation": "/ˈaɪlənd/",
+    "partOfSpeech": "noun",
+    "category": "nature",
+    "level": 1,
+    "example": "They live on a small island.",
+    "exampleKo": "그들은 작은 섬에 산다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_265",
+    "word": "wave",
+    "meaning": "파도",
+    "pronunciation": "/weɪv/",
+    "partOfSpeech": "noun",
+    "category": "nature",
+    "level": 1,
+    "example": "The waves were high today.",
+    "exampleKo": "오늘 파도가 높았다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_266",
+    "word": "storm",
+    "meaning": "폭풍",
+    "pronunciation": "/stɔːrm/",
+    "partOfSpeech": "noun",
+    "category": "nature",
+    "level": 1,
+    "example": "A storm is coming tonight.",
+    "exampleKo": "오늘 밤 폭풍이 온다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_267",
+    "word": "climate",
+    "meaning": "기후",
+    "pronunciation": "/ˈklaɪmət/",
+    "partOfSpeech": "noun",
+    "category": "nature",
+    "level": 2,
+    "example": "The climate is changing quickly.",
+    "exampleKo": "기후가 빠르게 변하고 있다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_268",
+    "word": "wildlife",
+    "meaning": "야생 동물",
+    "pronunciation": "/ˈwaɪldlaɪf/",
+    "partOfSpeech": "noun",
+    "category": "nature",
+    "level": 2,
+    "example": "The park protects wildlife.",
+    "exampleKo": "그 공원은 야생 동물을 보호한다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_269",
+    "word": "harvest",
+    "meaning": "수확",
+    "pronunciation": "/ˈhɑːrvəst/",
+    "partOfSpeech": "noun",
+    "category": "nature",
+    "level": 2,
+    "example": "The harvest was good this year.",
+    "exampleKo": "올해 수확은 좋았다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_270",
+    "word": "pollution",
+    "meaning": "오염",
+    "pronunciation": "/pəˈluːʃən/",
+    "partOfSpeech": "noun",
+    "category": "nature",
+    "level": 2,
+    "example": "Pollution harms the river.",
+    "exampleKo": "오염은 강을 해친다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_271",
+    "word": "community",
+    "meaning": "공동체, 지역사회",
+    "pronunciation": "/kəˈmjuːnəti/",
+    "partOfSpeech": "noun",
+    "category": "social",
+    "level": 2,
+    "example": "The community helped the family.",
+    "exampleKo": "지역사회가 그 가족을 도왔다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_272",
+    "word": "volunteer",
+    "meaning": "자원봉사자, 자원하다",
+    "pronunciation": "/ˌvɑːlənˈtɪr/",
+    "partOfSpeech": "noun",
+    "category": "social",
+    "level": 2,
+    "example": "Many volunteers cleaned the park.",
+    "exampleKo": "많은 자원봉사자들이 공원을 청소했다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_273",
+    "word": "campaign",
+    "meaning": "캠페인, 운동",
+    "pronunciation": "/kæmˈpeɪn/",
+    "partOfSpeech": "noun",
+    "category": "social",
+    "level": 2,
+    "example": "The campaign raised awareness.",
+    "exampleKo": "그 캠페인은 인식을 높였다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_274",
+    "word": "policy",
+    "meaning": "정책",
+    "pronunciation": "/ˈpɑːləsi/",
+    "partOfSpeech": "noun",
+    "category": "social",
+    "level": 2,
+    "example": "The new policy starts next month.",
+    "exampleKo": "새 정책은 다음 달에 시작된다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_275",
+    "word": "election",
+    "meaning": "선거",
+    "pronunciation": "/ɪˈlekʃən/",
+    "partOfSpeech": "noun",
+    "category": "social",
+    "level": 2,
+    "example": "The election is in November.",
+    "exampleKo": "선거는 11월에 있다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_276",
+    "word": "rights",
+    "meaning": "권리",
+    "pronunciation": "/raɪts/",
+    "partOfSpeech": "noun",
+    "category": "social",
+    "level": 2,
+    "example": "Everyone has basic rights.",
+    "exampleKo": "모든 사람은 기본권을 가진다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_277",
+    "word": "justice",
+    "meaning": "정의",
+    "pronunciation": "/ˈdʒʌstɪs/",
+    "partOfSpeech": "noun",
+    "category": "social",
+    "level": 3,
+    "example": "They fought for justice.",
+    "exampleKo": "그들은 정의를 위해 싸웠다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_278",
+    "word": "debate",
+    "meaning": "토론",
+    "pronunciation": "/dɪˈbeɪt/",
+    "partOfSpeech": "noun",
+    "category": "social",
+    "level": 2,
+    "example": "The debate lasted one hour.",
+    "exampleKo": "토론은 한 시간 동안 계속되었다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_279",
+    "word": "diversity",
+    "meaning": "다양성",
+    "pronunciation": "/daɪˈvɜːrsəti/",
+    "partOfSpeech": "noun",
+    "category": "social",
+    "level": 3,
+    "example": "Diversity makes the team stronger.",
+    "exampleKo": "다양성은 팀을 더 강하게 만든다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_280",
+    "word": "equality",
+    "meaning": "평등",
+    "pronunciation": "/iˈkwɑːləti/",
+    "partOfSpeech": "noun",
+    "category": "social",
+    "level": 3,
+    "example": "Equality is important in society.",
+    "exampleKo": "평등은 사회에서 중요하다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_281",
+    "word": "organize",
+    "meaning": "정리하다, 조직하다",
+    "pronunciation": "/ˈɔːrɡənaɪz/",
+    "partOfSpeech": "verb",
+    "category": "daily",
+    "level": 2,
+    "example": "I organize my desk every Friday.",
+    "exampleKo": "나는 매주 금요일 책상을 정리한다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_282",
+    "word": "schedule",
+    "meaning": "일정을 잡다, 일정",
+    "pronunciation": "/ˈskedʒuːl/",
+    "partOfSpeech": "noun",
+    "category": "daily",
+    "level": 2,
+    "example": "Check your schedule before you leave.",
+    "exampleKo": "떠나기 전에 일정을 확인해라.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_283",
+    "word": "errand",
+    "meaning": "심부름, 볼일",
+    "pronunciation": "/ˈerənd/",
+    "partOfSpeech": "noun",
+    "category": "daily",
+    "level": 2,
+    "example": "I have a few errands to run.",
+    "exampleKo": "나는 처리할 볼일이 몇 가지 있다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_284",
+    "word": "tidy",
+    "meaning": "정돈된, 정리하다",
+    "pronunciation": "/ˈtaɪdi/",
+    "partOfSpeech": "adjective",
+    "category": "daily",
+    "level": 1,
+    "example": "Keep your room tidy.",
+    "exampleKo": "방을 정돈된 상태로 유지해라.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_285",
+    "word": "repair",
+    "meaning": "수리하다",
+    "pronunciation": "/rɪˈper/",
+    "partOfSpeech": "verb",
+    "category": "daily",
+    "level": 2,
+    "example": "He can repair the chair.",
+    "exampleKo": "그는 의자를 수리할 수 있다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_286",
+    "word": "replace",
+    "meaning": "교체하다",
+    "pronunciation": "/rɪˈpleɪs/",
+    "partOfSpeech": "verb",
+    "category": "daily",
+    "level": 2,
+    "example": "Replace the old battery.",
+    "exampleKo": "오래된 배터리를 교체해라.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_287",
+    "word": "borrow",
+    "meaning": "빌리다",
+    "pronunciation": "/ˈbɑːroʊ/",
+    "partOfSpeech": "verb",
+    "category": "daily",
+    "level": 1,
+    "example": "Can I borrow your pen?",
+    "exampleKo": "펜을 빌릴 수 있을까요?",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_288",
+    "word": "lend",
+    "meaning": "빌려주다",
+    "pronunciation": "/lend/",
+    "partOfSpeech": "verb",
+    "category": "daily",
+    "level": 1,
+    "example": "I can lend you my umbrella.",
+    "exampleKo": "내 우산을 빌려줄 수 있다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_289",
+    "word": "receipt",
+    "meaning": "영수증",
+    "pronunciation": "/rɪˈsiːt/",
+    "partOfSpeech": "noun",
+    "category": "daily",
+    "level": 2,
+    "example": "Keep the receipt after buying it.",
+    "exampleKo": "그것을 산 후 영수증을 보관해라.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_290",
+    "word": "refund",
+    "meaning": "환불",
+    "pronunciation": "/ˈriːfʌnd/",
+    "partOfSpeech": "noun",
+    "category": "daily",
+    "level": 2,
+    "example": "I asked for a refund.",
+    "exampleKo": "나는 환불을 요청했다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_291",
+    "word": "deadline",
+    "meaning": "마감일",
+    "pronunciation": "/ˈdedlaɪn/",
+    "partOfSpeech": "noun",
+    "category": "business",
+    "level": 2,
+    "example": "The deadline is this Friday.",
+    "exampleKo": "마감일은 이번 금요일이다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_292",
+    "word": "budget",
+    "meaning": "예산",
+    "pronunciation": "/ˈbʌdʒɪt/",
+    "partOfSpeech": "noun",
+    "category": "business",
+    "level": 2,
+    "example": "We need a clear budget.",
+    "exampleKo": "우리는 명확한 예산이 필요하다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_293",
+    "word": "invoice",
+    "meaning": "청구서",
+    "pronunciation": "/ˈɪnvɔɪs/",
+    "partOfSpeech": "noun",
+    "category": "business",
+    "level": 3,
+    "example": "Please send the invoice today.",
+    "exampleKo": "오늘 청구서를 보내 주세요.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_294",
+    "word": "contract",
+    "meaning": "계약서, 계약",
+    "pronunciation": "/ˈkɑːntrækt/",
+    "partOfSpeech": "noun",
+    "category": "business",
+    "level": 2,
+    "example": "Read the contract carefully.",
+    "exampleKo": "계약서를 주의 깊게 읽어라.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_295",
+    "word": "client",
+    "meaning": "고객, 의뢰인",
+    "pronunciation": "/ˈklaɪənt/",
+    "partOfSpeech": "noun",
+    "category": "business",
+    "level": 2,
+    "example": "The client wants a quick reply.",
+    "exampleKo": "고객은 빠른 답변을 원한다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_296",
+    "word": "negotiate",
+    "meaning": "협상하다",
+    "pronunciation": "/nɪˈɡoʊʃieɪt/",
+    "partOfSpeech": "verb",
+    "category": "business",
+    "level": 3,
+    "example": "They will negotiate the price.",
+    "exampleKo": "그들은 가격을 협상할 것이다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_297",
+    "word": "proposal",
+    "meaning": "제안서, 제안",
+    "pronunciation": "/prəˈpoʊzəl/",
+    "partOfSpeech": "noun",
+    "category": "business",
+    "level": 2,
+    "example": "She wrote a new proposal.",
+    "exampleKo": "그녀는 새 제안서를 썼다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_298",
+    "word": "profit",
+    "meaning": "이익, 수익",
+    "pronunciation": "/ˈprɑːfɪt/",
+    "partOfSpeech": "noun",
+    "category": "business",
+    "level": 2,
+    "example": "The company made a profit.",
+    "exampleKo": "그 회사는 이익을 냈다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_299",
+    "word": "expense",
+    "meaning": "비용",
+    "pronunciation": "/ɪkˈspens/",
+    "partOfSpeech": "noun",
+    "category": "business",
+    "level": 2,
+    "example": "Travel is a major expense.",
+    "exampleKo": "여행은 큰 비용이다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "word_300",
+    "word": "strategy",
+    "meaning": "전략",
+    "pronunciation": "/ˈstrætədʒi/",
+    "partOfSpeech": "noun",
+    "category": "business",
+    "level": 3,
+    "example": "We need a simple strategy.",
+    "exampleKo": "우리는 간단한 전략이 필요하다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  }
 ];

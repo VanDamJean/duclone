@@ -18,7 +18,11 @@ export const wordData_ja = [
     category: "phr",
     level: 1,
     example: "こんにちは、お元気ですか。",
-    exampleKo: "안녕하세요, 잘 지내세요?"
+    exampleKo: "안녕하세요, 잘 지내세요?",
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    }
   },
   {
     id: "ja_w2",
@@ -31,7 +35,11 @@ export const wordData_ja = [
     category: "phr",
     level: 1,
     example: "手伝ってくれてありがとう。",
-    exampleKo: "도와줘서 고마워."
+    exampleKo: "도와줘서 고마워.",
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    }
   },
   {
     id: "ja_w3",
@@ -44,7 +52,11 @@ export const wordData_ja = [
     category: "adv",
     level: 1,
     example: "はい、分かりました。",
-    exampleKo: "네, 알겠습니다."
+    exampleKo: "네, 알겠습니다.",
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    }
   },
   {
     id: "ja_w4",
@@ -57,7 +69,11 @@ export const wordData_ja = [
     category: "adv",
     level: 1,
     example: "いいえ、違います。",
-    exampleKo: "아니요, 틀립니다."
+    exampleKo: "아니요, 틀립니다.",
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    }
   },
   {
     id: "ja_w5",
@@ -70,7 +86,11 @@ export const wordData_ja = [
     category: "n",
     level: 1,
     example: "可愛い猫がいます。",
-    exampleKo: "귀여운 고양이가 있습니다."
+    exampleKo: "귀여운 고양이가 있습니다.",
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    }
   },
   {
     id: "ja_w6",
@@ -83,7 +103,11 @@ export const wordData_ja = [
     category: "n",
     level: 1,
     example: "犬が公園を走っています。",
-    exampleKo: "개가 공원을 달리고 있습니다."
+    exampleKo: "개가 공원을 달리고 있습니다.",
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    }
   },
   {
     id: "ja_w7",
@@ -96,7 +120,11 @@ export const wordData_ja = [
     category: "n",
     level: 1,
     example: "お水をください。",
-    exampleKo: "물을 주세요."
+    exampleKo: "물을 주세요.",
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    }
   },
   {
     id: "ja_w8",
@@ -109,7 +137,11 @@ export const wordData_ja = [
     category: "v",
     level: 1,
     example: "朝ごはんを食べます。",
-    exampleKo: "아침밥을 먹습니다."
+    exampleKo: "아침밥을 먹습니다.",
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    }
   },
   {
     id: "ja_w9",
@@ -122,7 +154,11 @@ export const wordData_ja = [
     category: "v",
     level: 1,
     example: "お茶を飲みます。",
-    exampleKo: "차를 마십니다."
+    exampleKo: "차를 마십니다.",
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    }
   },
   {
     id: "ja_w10",
@@ -135,7 +171,11 @@ export const wordData_ja = [
     category: "adj",
     level: 1,
     example: "大きい家ですね。",
-    exampleKo: "큰 집이네요."
+    exampleKo: "큰 집이네요.",
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    }
   },
   {
     id: "ja_w11",
@@ -148,7 +188,11 @@ export const wordData_ja = [
     category: "adj",
     level: 1,
     example: "小さい車を買いました。",
-    exampleKo: "작은 차를 샀습니다."
+    exampleKo: "작은 차를 샀습니다.",
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    }
   },
   {
     id: "ja_w12",
@@ -161,7 +205,11 @@ export const wordData_ja = [
     category: "adj",
     level: 1,
     example: "このケーキはとても美味しいです。",
-    exampleKo: "이 케이크는 정말 맛있습니다."
+    exampleKo: "이 케이크는 정말 맛있습니다.",
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    }
   },
   {
     id: "ja_w13",
@@ -174,7 +222,11 @@ export const wordData_ja = [
     category: "v",
     level: 1,
     example: "明日、学校へ行きます。",
-    exampleKo: "내일, 학교에 갑니다."
+    exampleKo: "내일, 학교에 갑니다.",
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    }
   },
   {
     id: "ja_w14",
@@ -187,7 +239,11 @@ export const wordData_ja = [
     category: "v",
     level: 1,
     example: "友達が家に来ました。",
-    exampleKo: "친구가 집에 왔습니다."
+    exampleKo: "친구가 집에 왔습니다.",
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    }
   },
   {
     id: "ja_w15",
@@ -200,7 +256,11 @@ export const wordData_ja = [
     category: "v",
     level: 1,
     example: "宿題をします。",
-    exampleKo: "숙제를 합니다."
+    exampleKo: "숙제를 합니다.",
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    }
   },
   {
     id: "ja_w16",
@@ -213,7 +273,11 @@ export const wordData_ja = [
     category: "n",
     level: 1,
     example: "時間がありません。",
-    exampleKo: "시간이 없습니다."
+    exampleKo: "시간이 없습니다.",
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    }
   },
   {
     id: "ja_w17",
@@ -226,7 +290,11 @@ export const wordData_ja = [
     category: "n",
     level: 1,
     example: "あの人は誰ですか。",
-    exampleKo: "저 사람은 누구입니까?"
+    exampleKo: "저 사람은 누구입니까?",
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    }
   },
   {
     id: "ja_w18",
@@ -239,7 +307,11 @@ export const wordData_ja = [
     category: "n",
     level: 1,
     example: "私は学生です。",
-    exampleKo: "저는 학생입니다."
+    exampleKo: "저는 학생입니다.",
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    }
   },
   {
     id: "ja_w19",
@@ -252,7 +324,11 @@ export const wordData_ja = [
     category: "v",
     level: 1,
     example: "映画を見ます。",
-    exampleKo: "영화를 봅니다."
+    exampleKo: "영화를 봅니다.",
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    }
   },
   {
     id: "ja_w20",
@@ -265,7 +341,11 @@ export const wordData_ja = [
     category: "n",
     level: 1,
     example: "本を読んでいます。",
-    exampleKo: "책을 읽고 있습니다."
+    exampleKo: "책을 읽고 있습니다.",
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    }
   },
   {
     "id": "ja_w21",

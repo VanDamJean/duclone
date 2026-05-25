@@ -16,7 +16,11 @@ export const wordData_fr = [
     category: "phr",
     level: 1,
     example: "Bonjour, comment allez-vous ?",
-    exampleKo: "안녕하세요, 어떻게 지내세요?"
+    exampleKo: "안녕하세요, 어떻게 지내세요?",
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    }
   },
   {
     id: "fr_w2",
@@ -27,7 +31,11 @@ export const wordData_fr = [
     category: "phr",
     level: 1,
     example: "Merci beaucoup pour votre aide.",
-    exampleKo: "도와주셔서 정말 감사합니다."
+    exampleKo: "도와주셔서 정말 감사합니다.",
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    }
   },
   {
     id: "fr_w3",
@@ -38,7 +46,11 @@ export const wordData_fr = [
     category: "adv",
     level: 1,
     example: "Oui, c'est vrai.",
-    exampleKo: "네, 그게 맞아요."
+    exampleKo: "네, 그게 맞아요.",
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    }
   },
   {
     id: "fr_w4",
@@ -49,7 +61,11 @@ export const wordData_fr = [
     category: "adv",
     level: 1,
     example: "Non, je ne sais pas.",
-    exampleKo: "아니요, 저는 모릅니다."
+    exampleKo: "아니요, 저는 모릅니다.",
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    }
   },
   {
     id: "fr_w5",
@@ -62,7 +78,11 @@ export const wordData_fr = [
     category: "n",
     level: 1,
     example: "Le chat dort sur le canapé.",
-    exampleKo: "고양이가 소파 위에서 자고 있습니다."
+    exampleKo: "고양이가 소파 위에서 자고 있습니다.",
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    }
   },
   {
     id: "fr_w6",
@@ -75,7 +95,11 @@ export const wordData_fr = [
     category: "n",
     level: 1,
     example: "Le chien aboie.",
-    exampleKo: "개가 짖고 있습니다."
+    exampleKo: "개가 짖고 있습니다.",
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    }
   },
   {
     id: "fr_w7",
@@ -88,7 +112,11 @@ export const wordData_fr = [
     category: "n",
     level: 1,
     example: "Je voudrais de l'eau, s'il vous plaît.",
-    exampleKo: "물 좀 주시겠어요?"
+    exampleKo: "물 좀 주시겠어요?",
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    }
   },
   {
     id: "fr_w8",
@@ -99,7 +127,11 @@ export const wordData_fr = [
     category: "v",
     level: 1,
     example: "Il aime manger des pommes.",
-    exampleKo: "그는 사과 먹는 것을 좋아합니다."
+    exampleKo: "그는 사과 먹는 것을 좋아합니다.",
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    }
   },
   {
     id: "fr_w9",
@@ -110,7 +142,11 @@ export const wordData_fr = [
     category: "v",
     level: 1,
     example: "Je bois du café le matin.",
-    exampleKo: "나는 아침에 커피를 마십니다."
+    exampleKo: "나는 아침에 커피를 마십니다.",
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    }
   },
   {
     id: "fr_w10",
@@ -121,7 +157,11 @@ export const wordData_fr = [
     category: "adj",
     level: 1,
     example: "C'est un grand bâtiment.",
-    exampleKo: "저것은 큰 건물입니다."
+    exampleKo: "저것은 큰 건물입니다.",
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    }
   },
   {
     id: "fr_w11",
@@ -132,7 +172,11 @@ export const wordData_fr = [
     category: "adj",
     level: 1,
     example: "Le petit garçon joue dans le parc.",
-    exampleKo: "작은 소년이 공원에서 놀고 있습니다."
+    exampleKo: "작은 소년이 공원에서 놀고 있습니다.",
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    }
   },
   {
     id: "fr_w12",
@@ -143,7 +187,11 @@ export const wordData_fr = [
     category: "adj",
     level: 1,
     example: "C'est un beau paysage.",
-    exampleKo: "아름다운 풍경이네요."
+    exampleKo: "아름다운 풍경이네요.",
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    }
   },
   {
     id: "fr_w13",
@@ -154,7 +202,11 @@ export const wordData_fr = [
     category: "v",
     level: 1,
     example: "J'aime la musique.",
-    exampleKo: "나는 음악을 좋아합니다."
+    exampleKo: "나는 음악을 좋아합니다.",
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    }
   },
   {
     id: "fr_w14",
@@ -165,7 +217,11 @@ export const wordData_fr = [
     category: "v",
     level: 1,
     example: "Je vais à l'école.",
-    exampleKo: "나는 학교에 갑니다."
+    exampleKo: "나는 학교에 갑니다.",
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    }
   },
   {
     id: "fr_w15",
@@ -176,7 +232,11 @@ export const wordData_fr = [
     category: "v",
     level: 1,
     example: "Je fais mes devoirs.",
-    exampleKo: "나는 숙제를 합니다."
+    exampleKo: "나는 숙제를 합니다.",
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    }
   },
   {
     id: "fr_w16",
@@ -189,7 +249,11 @@ export const wordData_fr = [
     category: "n",
     level: 2,
     example: "Quel temps fait-il aujourd'hui ?",
-    exampleKo: "오늘 날씨가 어떤가요?"
+    exampleKo: "오늘 날씨가 어떤가요?",
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    }
   },
   {
     id: "fr_w17",
@@ -202,7 +266,11 @@ export const wordData_fr = [
     category: "n",
     level: 1,
     example: "Passez une bonne journée !",
-    exampleKo: "좋은 하루 보내세요!"
+    exampleKo: "좋은 하루 보내세요!",
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    }
   },
   {
     id: "fr_w18",
@@ -215,7 +283,11 @@ export const wordData_fr = [
     category: "n",
     level: 1,
     example: "Cet homme est mon père.",
-    exampleKo: "이 남자는 나의 아버지입니다."
+    exampleKo: "이 남자는 나의 아버지입니다.",
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    }
   },
   {
     id: "fr_w19",
@@ -228,7 +300,11 @@ export const wordData_fr = [
     category: "n",
     level: 1,
     example: "C'est une femme très intelligente.",
-    exampleKo: "그녀는 매우 똑똑한 여성입니다."
+    exampleKo: "그녀는 매우 똑똑한 여성입니다.",
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    }
   },
   {
     id: "fr_w20",
@@ -239,7 +315,11 @@ export const wordData_fr = [
     category: "v",
     level: 1,
     example: "Je veux voir ce film.",
-    exampleKo: "나는 이 영화를 보고 싶다."
+    exampleKo: "나는 이 영화를 보고 싶다.",
+    source: {
+      lexical: 'legacy-seed',
+      example: 'legacy-seed',
+    }
   },
   {
     "id": "fr_w21",

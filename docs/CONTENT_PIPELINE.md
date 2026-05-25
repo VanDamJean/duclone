@@ -16,9 +16,9 @@ Current check:
 npm run vocab:check
 ```
 
-Current counts after batch 5:
+Current counts after English batch 1 and French/Japanese batch 5:
 
-- English: 200
+- English: 300
 - French: 300
 - Japanese: 300
 

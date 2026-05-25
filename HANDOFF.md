@@ -54,6 +54,9 @@ Repository:
   - French increased from 220 to 300 words.
   - Japanese increased from 220 to 300 words.
   - Batch files saved in `data/vocab-import/batches/fr-005.json` and `data/vocab-import/batches/ja-005.json`.
+- English content batch 1:
+  - English increased from 200 to 300 words.
+  - Batch file saved in `data/vocab-import/batches/en-001.json`.
 - Weekly league rollover MVP:
   - Week changes finalize the old league.
   - Promotion/stay/demotion tier changes apply to the new week.
@@ -74,19 +77,18 @@ git diff --check
 
 Expected current vocab check summary:
 
-- EN: 200 words, 100 short of 300.
+- EN: 300 words, ready.
 - FR: 300 words, ready.
 - JA: 300 words, ready.
-- Existing words still lack source metadata; this is tracked as warning debt.
+- Source metadata warnings are cleared.
 
 ## What To Do Next
 
 Recommended order:
 
 1. Add richer league result/reward copy.
-2. Add source metadata cleanup for older seed words.
-3. Expand English or normalize source metadata to make `vocab:check` warning-free.
-4. Add a small content QA pass for batch 1-5 examples before broader release.
+2. Add a small content QA pass for imported examples before broader release.
+3. Tune difficulty/category mix after real usage data.
 
 ## Do Not Let UI Agents Touch
 
