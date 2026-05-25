@@ -12,22 +12,32 @@ import { getCurrentLanguage } from '../lib/storage.js';
 export const wordData = wordData_en;
 export const categories = categories_en;
 
+const languageData = {
+  en: { label: 'English', words: wordData_en, categories: categories_en },
+  fr: { label: 'Français', words: wordData_fr, categories: categories_fr },
+  ja: { label: '日本語', words: wordData_ja, categories: categories_ja },
+};
+
 export function getWordData() {
   const lang = getCurrentLanguage();
-  switch (lang) {
-    case 'fr': return wordData_fr;
-    case 'ja': return wordData_ja;
-    case 'en':
-    default: return wordData_en;
-  }
+  return languageData[lang]?.words || wordData_en;
 }
 
 export function getCategories() {
   const lang = getCurrentLanguage();
-  switch (lang) {
-    case 'fr': return categories_fr;
-    case 'ja': return categories_ja;
-    case 'en':
-    default: return categories_en;
-  }
+  return languageData[lang]?.categories || categories_en;
+}
+
+export function getLanguageSummaries() {
+  return Object.fromEntries(
+    Object.entries(languageData).map(([id, data]) => [
+      id,
+      {
+        id,
+        label: data.label,
+        wordCount: data.words.length,
+        categoryCount: Object.keys(data.categories).length,
+      },
+    ])
+  );
 }

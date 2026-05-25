@@ -12,7 +12,7 @@ export const wordData_fr = [
     word: "bonjour",
     meaning: "안녕하세요 / 좋은 아침",
     pronunciation: "봉주르",
-    partOfSpeech: "n",
+    partOfSpeech: "phr",
     category: "phr",
     level: 1,
     example: "Bonjour, comment allez-vous ?",
@@ -23,7 +23,7 @@ export const wordData_fr = [
     word: "merci",
     meaning: "감사합니다",
     pronunciation: "메흐씨",
-    partOfSpeech: "n",
+    partOfSpeech: "phr",
     category: "phr",
     level: 1,
     example: "Merci beaucoup pour votre aide.",
@@ -54,6 +54,8 @@ export const wordData_fr = [
   {
     id: "fr_w5",
     word: "chat",
+    article: "le",
+    gender: "m",
     meaning: "고양이",
     pronunciation: "샤",
     partOfSpeech: "n",
@@ -65,6 +67,8 @@ export const wordData_fr = [
   {
     id: "fr_w6",
     word: "chien",
+    article: "le",
+    gender: "m",
     meaning: "개",
     pronunciation: "시앙",
     partOfSpeech: "n",
@@ -76,6 +80,8 @@ export const wordData_fr = [
   {
     id: "fr_w7",
     word: "eau",
+    article: "l'",
+    gender: "f",
     meaning: "물",
     pronunciation: "오",
     partOfSpeech: "n",
@@ -175,6 +181,8 @@ export const wordData_fr = [
   {
     id: "fr_w16",
     word: "temps",
+    article: "le",
+    gender: "m",
     meaning: "시간, 날씨",
     pronunciation: "땅",
     partOfSpeech: "n",
@@ -186,6 +194,8 @@ export const wordData_fr = [
   {
     id: "fr_w17",
     word: "jour",
+    article: "le",
+    gender: "m",
     meaning: "날, 하루",
     pronunciation: "주흐",
     partOfSpeech: "n",
@@ -197,6 +207,8 @@ export const wordData_fr = [
   {
     id: "fr_w18",
     word: "homme",
+    article: "l'",
+    gender: "m",
     meaning: "남자, 사람",
     pronunciation: "옴므",
     partOfSpeech: "n",
@@ -208,6 +220,8 @@ export const wordData_fr = [
   {
     id: "fr_w19",
     word: "femme",
+    article: "la",
+    gender: "f",
     meaning: "여자, 아내",
     pronunciation: "팜므",
     partOfSpeech: "n",

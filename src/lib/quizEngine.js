@@ -6,6 +6,7 @@
 import { getWordData } from '../data/wordData.js';
 import { getAllCards } from './storage.js';
 import { State } from 'ts-fsrs';
+import { getAnswerVariants, getDisplayWord, getSpeakText, getWordSub } from './wordPresentation.js';
 
 /**
  * 퀴즈 타입 enum
@@ -61,7 +62,7 @@ export function selectQuizType(cardState, isNew) {
  */
 export function generateMultipleChoice(targetWord) {
   // 방향 결정: 학습 언어→한국어 vs 한국어→학습 언어
-  const isEnToKo = Math.random() < 0.6;
+  const isWordToKo = Math.random() < 0.6;
 
   // 오답 보기 3개 생성 (같은 품사에서 우선 선택)
   const distractors = getDistractors(targetWord, 3);
@@ -72,25 +73,27 @@ export function generateMultipleChoice(targetWord) {
 
   const correctIndex = options.findIndex(o => o.id === targetWord.id);
 
-  if (isEnToKo) {
+  if (isWordToKo) {
     return {
       type: QuizType.MULTIPLE_CHOICE,
-      direction: 'en_to_ko',
-      question: targetWord.word,
-      questionSub: targetWord.pronunciation,
+      direction: 'word_to_ko',
+      question: getDisplayWord(targetWord),
+      questionSub: getWordSub(targetWord),
       options: options.map(o => o.meaning),
       correctIndex,
       word: targetWord,
+      speakText: getSpeakText(targetWord),
     };
   } else {
     return {
       type: QuizType.MULTIPLE_CHOICE,
-      direction: 'ko_to_en',
+      direction: 'ko_to_word',
       question: targetWord.meaning,
       questionSub: null,
-      options: options.map(o => o.word),
+      options: options.map(o => getDisplayWord(o)),
       correctIndex,
       word: targetWord,
+      speakText: getSpeakText(targetWord),
     };
   }
 }
@@ -103,8 +106,8 @@ export function generateFlashcard(targetWord) {
     type: QuizType.FLASHCARD,
     word: targetWord,
     front: {
-      text: targetWord.word,
-      sub: targetWord.pronunciation,
+      text: getDisplayWord(targetWord),
+      sub: getWordSub(targetWord),
       partOfSpeech: targetWord.partOfSpeech,
     },
     back: {
@@ -112,6 +115,7 @@ export function generateFlashcard(targetWord) {
       example: targetWord.example,
       exampleKo: targetWord.exampleKo,
     },
+    speakText: getSpeakText(targetWord),
   };
 }
 
@@ -121,13 +125,19 @@ export function generateFlashcard(targetWord) {
 export function generateFillBlank(targetWord) {
   // 예문에서 단어를 빈칸으로 대체
   const sentence = targetWord.example;
-  const wordRegex = new RegExp(`\\b${escapeRegex(targetWord.word)}\\b`, 'gi');
+  const answer = targetWord.word.toLowerCase();
   
   // 단어의 다양한 형태도 찾기 (ing, ed, s, es 등)
   let blankSentence = sentence;
   let found = false;
+
+  if (sentence.includes(targetWord.word)) {
+    blankSentence = sentence.replace(new RegExp(escapeRegex(targetWord.word), 'g'), '________');
+    found = true;
+  }
   
-  if (wordRegex.test(sentence)) {
+  const wordRegex = new RegExp(`\\b${escapeRegex(targetWord.word)}\\b`, 'gi');
+  if (!found && wordRegex.test(sentence)) {
     blankSentence = sentence.replace(wordRegex, '________');
     found = true;
   }
@@ -151,14 +161,15 @@ export function generateFillBlank(targetWord) {
   }
 
   // 힌트: 첫 글자와 글자 수
-  const hint = `${targetWord.word[0]}${'_'.repeat(targetWord.word.length - 1)} (${targetWord.word.length}글자)`;
+  const hint = `${answer[0]}${'_'.repeat(Math.max(answer.length - 1, 0))} (${answer.length}글자)`;
 
   return {
     type: QuizType.FILL_BLANK,
     word: targetWord,
     sentence: blankSentence,
     sentenceKo: targetWord.exampleKo,
-    answer: targetWord.word.toLowerCase(),
+    answer,
+    acceptedAnswers: getAnswerVariants(targetWord),
     hint,
     meaning: targetWord.meaning,
   };
@@ -173,7 +184,7 @@ export function generateMatching(words) {
 
   const pairs = selected.map(w => ({
     id: w.id,
-    word: w.word,
+    word: getDisplayWord(w),
     meaning: w.meaning,
   }));
 

@@ -8,6 +8,7 @@ import {
   QuizType
 } from './quizEngine.js';
 import { State } from 'ts-fsrs';
+import { getDisplayWord, isAcceptedAnswer } from './wordPresentation.js';
 
 describe('Quiz Engine Tests', () => {
   const dummyWord = {
@@ -49,7 +50,7 @@ describe('Quiz Engine Tests', () => {
       expect(quiz.options.length).toBe(4);
       
       // Target word should be in options
-      if (quiz.direction === 'en_to_ko') {
+      if (quiz.direction === 'word_to_ko') {
         expect(quiz.options).toContain(dummyWord.meaning);
         expect(quiz.question).toBe(dummyWord.word);
       } else {
@@ -77,6 +78,45 @@ describe('Quiz Engine Tests', () => {
       expect(quiz.type).toBe(QuizType.FILL_BLANK);
       expect(quiz.sentence).toContain('________');
       expect(quiz.answer).toBe(dummyWord.word.toLowerCase());
+      expect(quiz.acceptedAnswers).toContain(dummyWord.word);
+    });
+
+    it('should accept Japanese kanji, kana, and romaji answers', () => {
+      const japaneseWord = {
+        id: 'ja_test',
+        word: '猫',
+        reading: 'ねこ',
+        romaji: 'neko',
+        meaning: '고양이',
+        partOfSpeech: 'n',
+        example: '猫がいます。',
+        exampleKo: '고양이가 있습니다.',
+      };
+      const quiz = generateFillBlank(japaneseWord);
+
+      expect(quiz.sentence).toContain('________');
+      expect(isAcceptedAnswer('猫', japaneseWord)).toBe(true);
+      expect(isAcceptedAnswer('ねこ', japaneseWord)).toBe(true);
+      expect(isAcceptedAnswer('neko', japaneseWord)).toBe(true);
+    });
+
+    it('should display French articles but accept bare noun answers', () => {
+      const frenchWord = {
+        id: 'fr_test',
+        word: 'eau',
+        article: "l'",
+        gender: 'f',
+        meaning: '물',
+        partOfSpeech: 'n',
+        example: "Je voudrais de l'eau.",
+        exampleKo: '물을 원합니다.',
+      };
+      const quiz = generateFillBlank(frenchWord);
+
+      expect(getDisplayWord(frenchWord)).toBe("l'eau");
+      expect(quiz.sentence).toContain('________');
+      expect(isAcceptedAnswer('eau', frenchWord)).toBe(true);
+      expect(isAcceptedAnswer("l'eau", frenchWord)).toBe(true);
     });
   });
 

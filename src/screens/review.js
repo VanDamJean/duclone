@@ -7,6 +7,7 @@ import { getDueCards, processReview, previewSchedule } from '../lib/scheduler.js
 import { awardXp, calculateCorrectXp, updateStreak, isFirstStudyToday } from '../lib/gamification.js';
 import { updateTodayStats, addReviewLog } from '../lib/storage.js';
 import { playCorrect, playWrong, playComplete, playFlip, speakWord, initAudio } from '../lib/sounds.js';
+import { getDisplayWord, getSpeakText, getWordSub } from '../lib/wordPresentation.js';
 import { launchConfetti } from '../components/confetti.js';
 import { showStreakToast, showXpToast, showLevelUpToast } from '../components/toast.js';
 import { hideNavbar, showNavbar } from '../components/navbar.js';
@@ -79,8 +80,8 @@ function renderCard(container, navigate) {
         <div class="flashcard" id="review-flashcard">
           <div class="flashcard-inner">
             <div class="flashcard-front">
-              <div class="word">${word.word}</div>
-              <div class="pronunciation">${word.pronunciation}</div>
+              <div class="word">${getDisplayWord(word)}</div>
+              <div class="pronunciation">${getWordSub(word)}</div>
               <div class="pos">${word.partOfSpeech}</div>
               <button class="speaker-btn" id="speak-btn">🔊</button>
               <div class="tap-hint">탭해서 뜻 확인</div>
@@ -113,7 +114,7 @@ function renderCard(container, navigate) {
   // TTS
   document.getElementById('speak-btn')?.addEventListener('click', (e) => {
     e.stopPropagation();
-    speakWord(word.word);
+    speakWord(getSpeakText(word));
   });
 
   // 닫기
@@ -125,7 +126,7 @@ function renderCard(container, navigate) {
   });
 
   // 자동 TTS
-  setTimeout(() => speakWord(word.word), 300);
+  setTimeout(() => speakWord(getSpeakText(word)), 300);
 }
 
 function showRatingButtons(container, word, navigate) {

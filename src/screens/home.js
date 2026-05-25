@@ -5,6 +5,7 @@
 
 import { getUser, getTodayStats, getSettings, getCurrentLanguage, setCurrentLanguage } from '../lib/storage.js';
 import { getDueCards, getNewWords, getOverallProgress } from '../lib/scheduler.js';
+import { getLanguageSummaries } from '../data/wordData.js';
 import { calculateLevel, getLevelProgress, getXpToNextLevel, getLevelBadge, getLevelTitle, getAccuracy } from '../lib/gamification.js';
 import { createProgressBar } from '../components/progressBar.js';
 import { initAudio } from '../lib/sounds.js';
@@ -38,14 +39,15 @@ export function renderHome(container, navigate) {
   const isComplete = todayStats.completed || todayDone >= todayGoal;
 
   const lang = getCurrentLanguage();
+  const languages = getLanguageSummaries();
 
   container.innerHTML = `
     <div class="home-screen">
       <div class="home-topbar">
         <select class="language-select" id="lang-select" aria-label="학습 언어 선택">
-          <option value="en" ${lang === 'en' ? 'selected' : ''}>🇺🇸 English</option>
-          <option value="fr" ${lang === 'fr' ? 'selected' : ''}>🇫🇷 Français</option>
-          <option value="ja" ${lang === 'ja' ? 'selected' : ''}>🇯🇵 日本語</option>
+          <option value="en" ${lang === 'en' ? 'selected' : ''}>🇺🇸 English · ${languages.en.wordCount}</option>
+          <option value="fr" ${lang === 'fr' ? 'selected' : ''}>🇫🇷 Français · ${languages.fr.wordCount}</option>
+          <option value="ja" ${lang === 'ja' ? 'selected' : ''}>🇯🇵 日本語 · ${languages.ja.wordCount}</option>
         </select>
       </div>
 

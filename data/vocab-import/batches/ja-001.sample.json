@@ -1,0 +1,23 @@
+{
+  "lang": "ja",
+  "notes": "Sample shape only. Review and rename before applying.",
+  "words": [
+    {
+      "id": "ja_w21",
+      "word": "学校",
+      "reading": "がっこう",
+      "romaji": "gakko",
+      "meaning": "학교",
+      "pronunciation": "각코-",
+      "partOfSpeech": "n",
+      "category": "n",
+      "level": 1,
+      "example": "学校へ行きます。",
+      "exampleKo": "학교에 갑니다.",
+      "source": {
+        "lexical": "jmdict",
+        "example": "curated"
+      }
+    }
+  ]
+}

@@ -9,6 +9,7 @@ import { calculateCorrectXp, calculateLessonCompleteXp, awardXp, updateStreak, i
 import { awardAnswerLp, awardLessonCompleteLp, canClaimAdReward, claimAdReward, getLeagueRewards } from '../lib/league.js';
 import { updateTodayStats, addReviewLog } from '../lib/storage.js';
 import { playCorrect, playWrong, playComplete, playClick, playFlip, speakWord, initAudio } from '../lib/sounds.js';
+import { isAcceptedAnswer, getDisplayWord, getSpeakText } from '../lib/wordPresentation.js';
 import { launchConfetti, miniConfetti } from '../components/confetti.js';
 import { showToast, showXpToast, showLevelUpToast, showStreakToast } from '../components/toast.js';
 import { hideNavbar, showNavbar } from '../components/navbar.js';
@@ -176,7 +177,7 @@ function renderFlashcardQuiz(container, body, footer, quiz, navigate, quizzes) {
   // TTS
   document.getElementById('speak-btn')?.addEventListener('click', (e) => {
     e.stopPropagation();
-    speakWord(quiz.word.word);
+    speakWord(getSpeakText(quiz.word));
   });
 }
 
@@ -217,7 +218,7 @@ function renderRatingButtons(parentContainer, quiz, navigate, quizzes) {
 function renderMultipleChoiceQuiz(container, body, footer, quiz, navigate, quizzes) {
   answered = false;
 
-  const directionLabel = quiz.direction === 'en_to_ko' ? '이 단어의 뜻은?' : '이 뜻의 단어는?';
+  const directionLabel = quiz.direction === 'word_to_ko' ? '이 단어의 뜻은?' : '이 뜻의 단어는?';
   const newBadge = quiz.isNew ? '<div style="margin-bottom: 8px; font-size: 0.75rem; color: var(--primary-600); background: var(--primary-50); padding: 4px 12px; border-radius: var(--radius-full); font-weight: 700; display: inline-block;">✨ 새 단어</div>' : '';
 
   body.innerHTML = `
@@ -226,7 +227,7 @@ function renderMultipleChoiceQuiz(container, body, footer, quiz, navigate, quizz
       <div class="word">${quiz.question}</div>
       ${quiz.questionSub ? `<div class="pronunciation">${quiz.questionSub}</div>` : ''}
       <div class="meaning-prompt">${directionLabel}</div>
-      ${quiz.direction === 'en_to_ko' ? `<button class="speaker-btn" id="speak-btn">🔊</button>` : ''}
+      ${quiz.direction === 'word_to_ko' ? `<button class="speaker-btn" id="speak-btn">🔊</button>` : ''}
     </div>
     <div class="quiz-options" id="quiz-options">
       ${quiz.options.map((opt, i) => `
@@ -241,12 +242,12 @@ function renderMultipleChoiceQuiz(container, body, footer, quiz, navigate, quizz
 
   // TTS
   document.getElementById('speak-btn')?.addEventListener('click', () => {
-    speakWord(quiz.word.word);
+    speakWord(getSpeakText(quiz.word));
   });
 
   // 자동 TTS (새 단어)
-  if (quiz.isNew && quiz.direction === 'en_to_ko') {
-    setTimeout(() => speakWord(quiz.word.word), 300);
+  if (quiz.isNew && quiz.direction === 'word_to_ko') {
+    setTimeout(() => speakWord(getSpeakText(quiz.word)), 300);
   }
 
   // 옵션 클릭
@@ -319,18 +320,18 @@ function renderFillBlankQuiz(container, body, footer, quiz, navigate, quizzes) {
 
   const submit = () => {
     if (answered) return;
-    const userAnswer = input.value.trim().toLowerCase();
+    const userAnswer = input.value.trim();
     if (!userAnswer) return;
     
     answered = true;
-    const isCorrect = userAnswer === quiz.answer.toLowerCase();
+    const isCorrect = isAcceptedAnswer(userAnswer, quiz.word);
 
     input.classList.add(isCorrect ? 'correct' : 'wrong');
     input.disabled = true;
 
     const blankDisplay = document.getElementById('blank-display');
     if (blankDisplay) {
-      blankDisplay.textContent = quiz.answer;
+      blankDisplay.textContent = getDisplayWord(quiz.word);
       blankDisplay.style.color = isCorrect ? 'var(--correct)' : 'var(--wrong)';
     }
 

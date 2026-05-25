@@ -1,0 +1,26 @@
+{
+  "wiktionary-kaikki": {
+    "name": "Wiktionary via Kaikki/Wiktextract",
+    "url": "https://kaikki.org/",
+    "license": "Wiktionary-derived; attribution/share-alike review required",
+    "use": "Lexical candidates, part of speech, pronunciation candidates"
+  },
+  "tatoeba": {
+    "name": "Tatoeba",
+    "url": "https://tatoeba.org/downloads",
+    "license": "CC BY 2.0 FR or CC0 for some sentence subsets",
+    "use": "Example sentence candidates and translation candidates"
+  },
+  "jmdict": {
+    "name": "JMdict / EDRDG",
+    "url": "https://www.jmdict.org/",
+    "license": "EDRDG license; attribution required",
+    "use": "Japanese words, readings, and lexical candidates"
+  },
+  "curated": {
+    "name": "DUO curated content",
+    "url": "local",
+    "license": "Project-owned generated and reviewed content",
+    "use": "Korean meanings, simplified examples, reviewed app copy"
+  }
+}

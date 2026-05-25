@@ -7,6 +7,7 @@ import { getWordData, getCategories } from '../data/wordData.js';
 import { getAllCards } from '../lib/storage.js';
 import { getCardStateLabel } from '../lib/scheduler.js';
 import { speakWord } from '../lib/sounds.js';
+import { getDisplayWord, getSearchText, getSpeakText, getWordSub } from '../lib/wordPresentation.js';
 import { State } from 'ts-fsrs';
 
 let currentCategory = 'all';
@@ -78,8 +79,7 @@ function renderWordList(allCards) {
   // 검색 필터
   if (searchQuery) {
     filtered = filtered.filter(w => 
-      w.word.toLowerCase().includes(searchQuery) ||
-      w.meaning.includes(searchQuery)
+      getSearchText(w).includes(searchQuery)
     );
   }
 
@@ -102,10 +102,10 @@ function renderWordList(allCards) {
       <div class="word-list-item animate-in" style="animation-delay:${Math.min(index * 0.03, 0.3)}s" data-word-id="${word.id}">
         <div class="wli-mastery ${cls}">${label}</div>
         <div class="wli-content">
-          <div class="wli-word">${word.word}</div>
+          <div class="wli-word">${getDisplayWord(word)}</div>
           <div class="wli-meaning">${word.meaning}</div>
         </div>
-        <button class="wli-speak" data-word="${word.word}" style="font-size:1.2rem; padding:8px; border-radius:var(--radius-full); background:none; border:none; cursor:pointer;">🔊</button>
+        <button class="wli-speak" data-word-id="${word.id}" style="font-size:1.2rem; padding:8px; border-radius:var(--radius-full); background:none; border:none; cursor:pointer;">🔊</button>
         <span class="wli-arrow">›</span>
       </div>
     `;
@@ -115,7 +115,8 @@ function renderWordList(allCards) {
   list.querySelectorAll('.wli-speak').forEach(btn => {
     btn.addEventListener('click', (e) => {
       e.stopPropagation();
-      speakWord(btn.dataset.word);
+      const word = getWordData().find(w => w.id === btn.dataset.wordId);
+      speakWord(getSpeakText(word));
     });
   });
 
@@ -158,8 +159,8 @@ function showWordDetail(word, card) {
       <div class="modal-handle"></div>
       
       <div style="text-align:center; margin-bottom:24px">
-        <div style="font-size:2rem; font-weight:800; margin-bottom:4px">${word.word}</div>
-        <div style="font-size:0.9rem; color:var(--text-secondary); margin-bottom:4px">${word.pronunciation}</div>
+        <div style="font-size:2rem; font-weight:800; margin-bottom:4px">${getDisplayWord(word)}</div>
+        <div style="font-size:0.9rem; color:var(--text-secondary); margin-bottom:4px">${getWordSub(word)}</div>
         <div style="display:inline-flex; gap:8px">
           <span style="font-size:0.75rem; padding:3px 10px; border-radius:var(--radius-full); background:var(--primary-50); color:var(--primary-600); font-weight:600">${word.partOfSpeech}</span>
           <span style="font-size:0.75rem; padding:3px 10px; border-radius:var(--radius-full); background:var(--divider); color:var(--text-secondary); font-weight:600">${label}</span>
@@ -211,5 +212,5 @@ function showWordDetail(word, card) {
   });
 
   overlay.querySelector('#close-detail')?.addEventListener('click', () => overlay.remove());
-  overlay.querySelector('#speak-detail')?.addEventListener('click', () => speakWord(word.word));
+  overlay.querySelector('#speak-detail')?.addEventListener('click', () => speakWord(getSpeakText(word)));
 }

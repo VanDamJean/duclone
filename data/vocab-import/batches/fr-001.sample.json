@@ -1,0 +1,23 @@
+{
+  "lang": "fr",
+  "notes": "Sample shape only. Review and rename before applying.",
+  "words": [
+    {
+      "id": "fr_w21",
+      "word": "maison",
+      "article": "la",
+      "gender": "f",
+      "meaning": "집",
+      "pronunciation": "메종",
+      "partOfSpeech": "n",
+      "category": "n",
+      "level": 1,
+      "example": "La maison est près de la gare.",
+      "exampleKo": "그 집은 역 근처에 있다.",
+      "source": {
+        "lexical": "wiktionary-kaikki",
+        "example": "curated"
+      }
+    }
+  ]
+}
