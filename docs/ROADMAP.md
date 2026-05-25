@@ -36,6 +36,7 @@ Status: in progress.
 - Track import sources in `docs/CONTENT_PIPELINE.md`.
 - Run `npm run vocab:check` before each content batch.
 - Batch 1 complete: French 20 -> 70, Japanese 20 -> 70.
+- Batch 2 complete: French 70 -> 120, Japanese 70 -> 120.
 
 ### 4. Weekly League Loop
 
