@@ -10,6 +10,7 @@ import {
   getLeagueName,
   getLeagueRewards,
   getUserRank,
+  saveLeague,
 } from './league.js';
 
 describe('League system', () => {
@@ -53,5 +54,20 @@ describe('League system', () => {
     expect(getUserRank().rank).toBe(1);
     expect(getLeagueName(0)).toBe('Bronze');
     expect(getLeagueName(4)).toBe('Ruby');
+  });
+
+  it('rolls weekly results into the next league', () => {
+    const league = getLeague();
+    league.weekKey = '2000-01-03';
+    league.tier = 0;
+    league.userLp = 10000;
+    saveLeague(league);
+
+    const nextLeague = getLeague();
+
+    expect(nextLeague.weekKey).not.toBe('2000-01-03');
+    expect(nextLeague.tier).toBe(1);
+    expect(nextLeague.lastResult.rank).toBe(1);
+    expect(nextLeague.lastResult.tierDelta).toBe(1);
   });
 });

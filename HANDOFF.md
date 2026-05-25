@@ -34,6 +34,14 @@ Repository:
   - `scripts/import-vocab-batch.mjs`
   - `npm run vocab:check`
   - `npm run vocab:import -- <batch.json>`
+- Content batch 1:
+  - French increased from 20 to 70 words.
+  - Japanese increased from 20 to 70 words.
+  - Batch files saved in `data/vocab-import/batches/fr-001.json` and `data/vocab-import/batches/ja-001.json`.
+- Weekly league rollover MVP:
+  - Week changes finalize the old league.
+  - Promotion/stay/demotion tier changes apply to the new week.
+  - League screen shows a dismissible previous-week result card.
 - Small visible UI status:
   - Home language selector now shows word counts.
 
@@ -51,8 +59,8 @@ git diff --check
 Expected current vocab check summary:
 
 - EN: 200 words, 100 short of 300.
-- FR: 20 words, 280 short of 300.
-- JA: 20 words, 280 short of 300.
+- FR: 70 words, 230 short of 300.
+- JA: 70 words, 230 short of 300.
 - Existing words still lack source metadata; this is tracked as warning debt.
 
 ## What To Do Next
@@ -62,10 +70,10 @@ Recommended order:
 1. Commit the current pipeline/schema work.
 2. Let Gemini/Antigravity do UI-only polish using `docs/UI_POLISH_BRIEF.md`.
 3. Review Gemini's diff carefully.
-4. Create reviewed FR/JA batches of 50 words each.
+4. Create reviewed FR/JA batch 2, likely another 50 words each.
 5. Dry-run each batch with `npm run vocab:import -- <batch>`.
 6. Apply with `--apply`, then run full validation.
-7. After content starts moving, implement weekly league rollover/result screen.
+7. Add richer league result/reward copy after UI polish.
 
 ## Do Not Let UI Agents Touch
 

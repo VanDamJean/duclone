@@ -240,5 +240,785 @@ export const wordData_fr = [
     level: 1,
     example: "Je veux voir ce film.",
     exampleKo: "나는 이 영화를 보고 싶다."
+  },
+  {
+    "id": "fr_w21",
+    "word": "maison",
+    "article": "la",
+    "gender": "f",
+    "meaning": "집",
+    "pronunciation": "메종",
+    "partOfSpeech": "n",
+    "category": "n",
+    "level": 1,
+    "example": "La maison est près de la gare.",
+    "exampleKo": "그 집은 역 근처에 있다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "fr_w22",
+    "word": "école",
+    "article": "l'",
+    "gender": "f",
+    "meaning": "학교",
+    "pronunciation": "에콜",
+    "partOfSpeech": "n",
+    "category": "n",
+    "level": 1,
+    "example": "L'école commence à neuf heures.",
+    "exampleKo": "학교는 9시에 시작한다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "fr_w23",
+    "word": "ami",
+    "article": "l'",
+    "gender": "m",
+    "meaning": "친구",
+    "pronunciation": "아미",
+    "partOfSpeech": "n",
+    "category": "n",
+    "level": 1,
+    "example": "Mon ami habite à Paris.",
+    "exampleKo": "내 친구는 파리에 산다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "fr_w24",
+    "word": "ville",
+    "article": "la",
+    "gender": "f",
+    "meaning": "도시",
+    "pronunciation": "빌",
+    "partOfSpeech": "n",
+    "category": "n",
+    "level": 1,
+    "example": "Cette ville est très calme.",
+    "exampleKo": "이 도시는 매우 조용하다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "fr_w25",
+    "word": "travail",
+    "article": "le",
+    "gender": "m",
+    "meaning": "일, 직장",
+    "pronunciation": "트라바이",
+    "partOfSpeech": "n",
+    "category": "n",
+    "level": 1,
+    "example": "Le travail finit à six heures.",
+    "exampleKo": "일은 6시에 끝난다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "fr_w26",
+    "word": "pain",
+    "article": "le",
+    "gender": "m",
+    "meaning": "빵",
+    "pronunciation": "팽",
+    "partOfSpeech": "n",
+    "category": "n",
+    "level": 1,
+    "example": "Le pain est encore chaud.",
+    "exampleKo": "빵이 아직 따뜻하다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "fr_w27",
+    "word": "café",
+    "article": "le",
+    "gender": "m",
+    "meaning": "커피, 카페",
+    "pronunciation": "카페",
+    "partOfSpeech": "n",
+    "category": "n",
+    "level": 1,
+    "example": "Je bois un café le matin.",
+    "exampleKo": "나는 아침에 커피를 마신다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "fr_w28",
+    "word": "lait",
+    "article": "le",
+    "gender": "m",
+    "meaning": "우유",
+    "pronunciation": "레",
+    "partOfSpeech": "n",
+    "category": "n",
+    "level": 1,
+    "example": "Le lait est dans le frigo.",
+    "exampleKo": "우유는 냉장고 안에 있다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "fr_w29",
+    "word": "pomme",
+    "article": "la",
+    "gender": "f",
+    "meaning": "사과",
+    "pronunciation": "폼",
+    "partOfSpeech": "n",
+    "category": "n",
+    "level": 1,
+    "example": "La pomme est rouge.",
+    "exampleKo": "사과가 빨갛다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "fr_w30",
+    "word": "table",
+    "article": "la",
+    "gender": "f",
+    "meaning": "테이블",
+    "pronunciation": "타블",
+    "partOfSpeech": "n",
+    "category": "n",
+    "level": 1,
+    "example": "La table est près de la fenêtre.",
+    "exampleKo": "테이블은 창문 근처에 있다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "fr_w31",
+    "word": "chaise",
+    "article": "la",
+    "gender": "f",
+    "meaning": "의자",
+    "pronunciation": "셰즈",
+    "partOfSpeech": "n",
+    "category": "n",
+    "level": 1,
+    "example": "La chaise est confortable.",
+    "exampleKo": "의자가 편안하다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "fr_w32",
+    "word": "porte",
+    "article": "la",
+    "gender": "f",
+    "meaning": "문",
+    "pronunciation": "포르트",
+    "partOfSpeech": "n",
+    "category": "n",
+    "level": 1,
+    "example": "La porte est ouverte.",
+    "exampleKo": "문이 열려 있다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "fr_w33",
+    "word": "fenêtre",
+    "article": "la",
+    "gender": "f",
+    "meaning": "창문",
+    "pronunciation": "프네트르",
+    "partOfSpeech": "n",
+    "category": "n",
+    "level": 1,
+    "example": "La fenêtre donne sur la rue.",
+    "exampleKo": "창문은 거리 쪽을 향한다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "fr_w34",
+    "word": "livre",
+    "article": "le",
+    "gender": "m",
+    "meaning": "책",
+    "pronunciation": "리브르",
+    "partOfSpeech": "n",
+    "category": "n",
+    "level": 1,
+    "example": "Le livre est sur le bureau.",
+    "exampleKo": "책은 책상 위에 있다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "fr_w35",
+    "word": "téléphone",
+    "article": "le",
+    "gender": "m",
+    "meaning": "전화기, 휴대폰",
+    "pronunciation": "텔레폰",
+    "partOfSpeech": "n",
+    "category": "n",
+    "level": 1,
+    "example": "Mon téléphone sonne souvent.",
+    "exampleKo": "내 휴대폰은 자주 울린다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "fr_w36",
+    "word": "acheter",
+    "meaning": "사다",
+    "pronunciation": "아슈테",
+    "partOfSpeech": "v",
+    "category": "v",
+    "level": 1,
+    "example": "Je veux acheter du pain.",
+    "exampleKo": "나는 빵을 사고 싶다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "fr_w37",
+    "word": "vendre",
+    "meaning": "팔다",
+    "pronunciation": "방드르",
+    "partOfSpeech": "v",
+    "category": "v",
+    "level": 2,
+    "example": "Ils vendent des fruits au marché.",
+    "exampleKo": "그들은 시장에서 과일을 판다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "fr_w38",
+    "word": "ouvrir",
+    "meaning": "열다",
+    "pronunciation": "우브리르",
+    "partOfSpeech": "v",
+    "category": "v",
+    "level": 1,
+    "example": "Elle ouvre la porte doucement.",
+    "exampleKo": "그녀는 문을 조용히 연다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "fr_w39",
+    "word": "fermer",
+    "meaning": "닫다",
+    "pronunciation": "페르메",
+    "partOfSpeech": "v",
+    "category": "v",
+    "level": 1,
+    "example": "Je ferme la fenêtre.",
+    "exampleKo": "나는 창문을 닫는다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "fr_w40",
+    "word": "lire",
+    "meaning": "읽다",
+    "pronunciation": "리르",
+    "partOfSpeech": "v",
+    "category": "v",
+    "level": 1,
+    "example": "Nous aimons lire le soir.",
+    "exampleKo": "우리는 저녁에 읽는 것을 좋아한다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "fr_w41",
+    "word": "écrire",
+    "meaning": "쓰다",
+    "pronunciation": "에크리르",
+    "partOfSpeech": "v",
+    "category": "v",
+    "level": 1,
+    "example": "Il écrit une lettre.",
+    "exampleKo": "그는 편지를 쓴다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "fr_w42",
+    "word": "parler",
+    "meaning": "말하다",
+    "pronunciation": "파를레",
+    "partOfSpeech": "v",
+    "category": "v",
+    "level": 1,
+    "example": "Je parle français un peu.",
+    "exampleKo": "나는 프랑스어를 조금 말한다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "fr_w43",
+    "word": "écouter",
+    "meaning": "듣다",
+    "pronunciation": "에쿠테",
+    "partOfSpeech": "v",
+    "category": "v",
+    "level": 1,
+    "example": "Tu écoutes de la musique.",
+    "exampleKo": "너는 음악을 듣는다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "fr_w44",
+    "word": "regarder",
+    "meaning": "보다, 바라보다",
+    "pronunciation": "르가르데",
+    "partOfSpeech": "v",
+    "category": "v",
+    "level": 1,
+    "example": "Nous regardons un film.",
+    "exampleKo": "우리는 영화를 본다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "fr_w45",
+    "word": "dormir",
+    "meaning": "자다",
+    "pronunciation": "도르미르",
+    "partOfSpeech": "v",
+    "category": "v",
+    "level": 1,
+    "example": "Le bébé dort bien.",
+    "exampleKo": "아기가 잘 잔다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "fr_w46",
+    "word": "travailler",
+    "meaning": "일하다",
+    "pronunciation": "트라바이에",
+    "partOfSpeech": "v",
+    "category": "v",
+    "level": 1,
+    "example": "Elle travaille à la maison.",
+    "exampleKo": "그녀는 집에서 일한다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "fr_w47",
+    "word": "apprendre",
+    "meaning": "배우다",
+    "pronunciation": "아프랑드르",
+    "partOfSpeech": "v",
+    "category": "v",
+    "level": 2,
+    "example": "J'apprends de nouveaux mots.",
+    "exampleKo": "나는 새로운 단어들을 배운다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "fr_w48",
+    "word": "comprendre",
+    "meaning": "이해하다",
+    "pronunciation": "콩프랑드르",
+    "partOfSpeech": "v",
+    "category": "v",
+    "level": 2,
+    "example": "Je comprends la question.",
+    "exampleKo": "나는 질문을 이해한다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "fr_w49",
+    "word": "donner",
+    "meaning": "주다",
+    "pronunciation": "도네",
+    "partOfSpeech": "v",
+    "category": "v",
+    "level": 1,
+    "example": "Il donne un livre à Marie.",
+    "exampleKo": "그는 마리에게 책을 준다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "fr_w50",
+    "word": "prendre",
+    "meaning": "잡다, 타다, 먹다",
+    "pronunciation": "프랑드르",
+    "partOfSpeech": "v",
+    "category": "v",
+    "level": 2,
+    "example": "Je prends le train demain.",
+    "exampleKo": "나는 내일 기차를 탄다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "fr_w51",
+    "word": "rapide",
+    "meaning": "빠른",
+    "pronunciation": "라피드",
+    "partOfSpeech": "adj",
+    "category": "adj",
+    "level": 1,
+    "example": "Ce train est rapide.",
+    "exampleKo": "이 기차는 빠르다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "fr_w52",
+    "word": "lent",
+    "meaning": "느린",
+    "pronunciation": "랑",
+    "partOfSpeech": "adj",
+    "category": "adj",
+    "level": 1,
+    "example": "Le service est lent aujourd'hui.",
+    "exampleKo": "오늘 서비스가 느리다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "fr_w53",
+    "word": "chaud",
+    "meaning": "뜨거운, 따뜻한",
+    "pronunciation": "쇼",
+    "partOfSpeech": "adj",
+    "category": "adj",
+    "level": 1,
+    "example": "Le café est chaud.",
+    "exampleKo": "커피가 뜨겁다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "fr_w54",
+    "word": "froid",
+    "meaning": "차가운, 추운",
+    "pronunciation": "프루아",
+    "partOfSpeech": "adj",
+    "category": "adj",
+    "level": 1,
+    "example": "L'eau est froide.",
+    "exampleKo": "물이 차갑다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "fr_w55",
+    "word": "nouveau",
+    "meaning": "새로운",
+    "pronunciation": "누보",
+    "partOfSpeech": "adj",
+    "category": "adj",
+    "level": 1,
+    "example": "J'ai un nouveau sac.",
+    "exampleKo": "나는 새 가방이 있다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "fr_w56",
+    "word": "vieux",
+    "meaning": "오래된, 늙은",
+    "pronunciation": "비외",
+    "partOfSpeech": "adj",
+    "category": "adj",
+    "level": 1,
+    "example": "Ce vieux livre est rare.",
+    "exampleKo": "이 오래된 책은 희귀하다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "fr_w57",
+    "word": "facile",
+    "meaning": "쉬운",
+    "pronunciation": "파실",
+    "partOfSpeech": "adj",
+    "category": "adj",
+    "level": 1,
+    "example": "Cette leçon est facile.",
+    "exampleKo": "이 수업은 쉽다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "fr_w58",
+    "word": "difficile",
+    "meaning": "어려운",
+    "pronunciation": "디피실",
+    "partOfSpeech": "adj",
+    "category": "adj",
+    "level": 1,
+    "example": "Ce mot est difficile.",
+    "exampleKo": "이 단어는 어렵다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "fr_w59",
+    "word": "important",
+    "meaning": "중요한",
+    "pronunciation": "앵포르탕",
+    "partOfSpeech": "adj",
+    "category": "adj",
+    "level": 2,
+    "example": "Ce rendez-vous est important.",
+    "exampleKo": "이 약속은 중요하다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "fr_w60",
+    "word": "possible",
+    "meaning": "가능한",
+    "pronunciation": "포시블",
+    "partOfSpeech": "adj",
+    "category": "adj",
+    "level": 2,
+    "example": "C'est possible aujourd'hui.",
+    "exampleKo": "그것은 오늘 가능하다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "fr_w61",
+    "word": "toujours",
+    "meaning": "항상",
+    "pronunciation": "투주르",
+    "partOfSpeech": "adv",
+    "category": "adv",
+    "level": 1,
+    "example": "Elle arrive toujours tôt.",
+    "exampleKo": "그녀는 항상 일찍 도착한다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "fr_w62",
+    "word": "souvent",
+    "meaning": "자주",
+    "pronunciation": "수방",
+    "partOfSpeech": "adv",
+    "category": "adv",
+    "level": 1,
+    "example": "Nous mangeons souvent ici.",
+    "exampleKo": "우리는 여기서 자주 먹는다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "fr_w63",
+    "word": "parfois",
+    "meaning": "가끔",
+    "pronunciation": "파르푸아",
+    "partOfSpeech": "adv",
+    "category": "adv",
+    "level": 1,
+    "example": "Je marche parfois au travail.",
+    "exampleKo": "나는 가끔 걸어서 출근한다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "fr_w64",
+    "word": "maintenant",
+    "meaning": "지금",
+    "pronunciation": "맹트낭",
+    "partOfSpeech": "adv",
+    "category": "adv",
+    "level": 1,
+    "example": "Je suis prêt maintenant.",
+    "exampleKo": "나는 지금 준비됐다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "fr_w65",
+    "word": "demain",
+    "meaning": "내일",
+    "pronunciation": "드맹",
+    "partOfSpeech": "adv",
+    "category": "adv",
+    "level": 1,
+    "example": "Nous partons demain.",
+    "exampleKo": "우리는 내일 떠난다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "fr_w66",
+    "word": "hier",
+    "meaning": "어제",
+    "pronunciation": "이에르",
+    "partOfSpeech": "adv",
+    "category": "adv",
+    "level": 1,
+    "example": "Il est venu hier.",
+    "exampleKo": "그는 어제 왔다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "fr_w67",
+    "word": "ici",
+    "meaning": "여기",
+    "pronunciation": "이시",
+    "partOfSpeech": "adv",
+    "category": "adv",
+    "level": 1,
+    "example": "Reste ici, s'il te plaît.",
+    "exampleKo": "부디 여기 있어 줘.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "fr_w68",
+    "word": "là",
+    "meaning": "거기",
+    "pronunciation": "라",
+    "partOfSpeech": "adv",
+    "category": "adv",
+    "level": 1,
+    "example": "Le sac est là.",
+    "exampleKo": "가방은 거기에 있다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "fr_w69",
+    "word": "bien sûr",
+    "meaning": "물론",
+    "pronunciation": "비앙 쉬르",
+    "partOfSpeech": "phr",
+    "category": "phr",
+    "level": 1,
+    "example": "Bien sûr, je peux aider.",
+    "exampleKo": "물론, 내가 도울 수 있다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
+  },
+  {
+    "id": "fr_w70",
+    "word": "s'il vous plaît",
+    "meaning": "부탁합니다, 제발",
+    "pronunciation": "실 부 플레",
+    "partOfSpeech": "phr",
+    "category": "phr",
+    "level": 1,
+    "example": "Un café, s'il vous plaît.",
+    "exampleKo": "커피 한 잔 부탁합니다.",
+    "source": {
+      "lexical": "curated",
+      "example": "curated"
+    }
   }
 ];

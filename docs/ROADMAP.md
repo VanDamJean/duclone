@@ -30,19 +30,21 @@ Status: done.
 
 Status: in progress.
 
-- Expand French and Japanese from 20 words to 100-200 words each.
+- Expand French and Japanese toward the first 300-word target.
 - Add category and difficulty coverage for daily sessions.
 - Validate sample sentences and translations before scaling further.
 - Track import sources in `docs/CONTENT_PIPELINE.md`.
 - Run `npm run vocab:check` before each content batch.
+- Batch 1 complete: French 20 -> 70, Japanese 20 -> 70.
 
 ### 4. Weekly League Loop
 
-Status: planned.
+Status: in progress.
 
 - Add weekly rollover, result screen, promotion/stay/demotion handling.
 - Keep bot league first; real global users can come after auth/backend.
 - Tie daily rewarded ad to a small league push, not forced progress.
+- Weekly rollover MVP complete: previous-week result is stored, tier changes are applied, and a dismissible result card appears in the league screen.
 
 ## Later
 

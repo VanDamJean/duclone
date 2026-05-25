@@ -1286,6 +1286,33 @@ input {
   font-weight: 800;
 }
 
+.league-result {
+  background: var(--bg-card);
+  border: 2px solid var(--accent-200);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-card);
+  padding: 16px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.league-result .league-title {
+  color: var(--accent-600);
+  font-size: 1.1rem;
+}
+
+.league-result .league-subtitle {
+  color: var(--text-secondary);
+  opacity: 1;
+}
+
+.league-result .league-ad-btn {
+  min-width: 72px;
+}
+
 .league-summary {
   display: grid;
   grid-template-columns: 1fr 1fr;

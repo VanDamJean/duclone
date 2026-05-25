@@ -36,7 +36,7 @@ function safeSet(key, value) {
   }
 }
 
-function getWeekKey(date = new Date()) {
+export function getWeekKey(date = new Date()) {
   const d = new Date(date);
   const day = d.getDay();
   const diffToMonday = day === 0 ? -6 : 1 - day;
@@ -88,15 +88,15 @@ function normalizeBots(league) {
   return league;
 }
 
-function createLeague() {
-  const weekKey = getWeekKey();
+function createLeague({ tier = 0, weekKey = getWeekKey(), lastResult = null } = {}) {
   return {
     weekKey,
-    tier: 0,
+    tier,
     userLp: 0,
     adRewardClaimedDate: null,
     bots: createBots(weekKey),
     lastSimulatedAt: new Date().toISOString(),
+    lastResult,
   };
 }
 
@@ -117,11 +117,56 @@ function simulateBots(league) {
   return league;
 }
 
+function getLeaderboardForLeague(league) {
+  const rows = [
+    { id: 'user', name: 'You', avatar: '🧠', lp: league.userLp || 0, isUser: true },
+    ...league.bots,
+  ].sort((a, b) => b.lp - a.lp);
+
+  return rows.map((entry, index) => ({
+    ...entry,
+    rank: index + 1,
+    zone: index < 5 ? 'promotion' : index >= 15 ? 'demotion' : 'stay',
+  }));
+}
+
+function getTierDelta(zone, tier) {
+  if (zone === 'promotion' && tier < LEAGUES.length - 1) return 1;
+  if (zone === 'demotion' && tier > 0) return -1;
+  return 0;
+}
+
+function finalizeWeek(league, nextWeekKey) {
+  const leaderboard = getLeaderboardForLeague(league);
+  const user = leaderboard.find((entry) => entry.isUser);
+  const tierDelta = getTierDelta(user.zone, league.tier);
+  const nextTier = Math.min(Math.max((league.tier || 0) + tierDelta, 0), LEAGUES.length - 1);
+
+  return {
+    weekKey: league.weekKey,
+    nextWeekKey,
+    rank: user.rank,
+    lp: user.lp,
+    zone: user.zone,
+    tier: league.tier || 0,
+    tierName: getLeagueName(league.tier || 0),
+    nextTier,
+    nextTierName: getLeagueName(nextTier),
+    tierDelta,
+  };
+}
+
 export function getLeague() {
   let league = safeGet(LEAGUE_KEY, null);
   const weekKey = getWeekKey();
   if (!league || league.weekKey !== weekKey) {
-    league = createLeague();
+    const previous = league ? simulateBots(normalizeBots(league)) : null;
+    const lastResult = previous ? finalizeWeek(previous, weekKey) : null;
+    league = createLeague({
+      weekKey,
+      tier: lastResult?.nextTier || 0,
+      lastResult,
+    });
   }
   league = normalizeBots(league);
   league = simulateBots(league);
@@ -139,16 +184,7 @@ export function getLeagueName(tier = getLeague().tier) {
 
 export function getLeaderboard() {
   const league = getLeague();
-  const rows = [
-    { id: 'user', name: 'You', avatar: '🧠', lp: league.userLp || 0, isUser: true },
-    ...league.bots,
-  ].sort((a, b) => b.lp - a.lp);
-
-  return rows.map((entry, index) => ({
-    ...entry,
-    rank: index + 1,
-    zone: index < 5 ? 'promotion' : index >= 15 ? 'demotion' : 'stay',
-  }));
+  return getLeaderboardForLeague(league);
 }
 
 export function getUserRank() {
@@ -198,4 +234,14 @@ export function getLeagueRewards() {
     perfect: PERFECT_LP,
     ad: AD_REWARD_LP,
   };
+}
+
+export function getLastLeagueResult() {
+  return getLeague().lastResult || null;
+}
+
+export function clearLastLeagueResult() {
+  const league = getLeague();
+  league.lastResult = null;
+  saveLeague(league);
 }

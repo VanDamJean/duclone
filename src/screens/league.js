@@ -2,7 +2,7 @@
  * league.js — weekly ranking screen
  */
 
-import { canClaimAdReward, claimAdReward, getLeaderboard, getLeague, getLeagueName, getLeagueRewards, getUserRank } from '../lib/league.js';
+import { canClaimAdReward, claimAdReward, clearLastLeagueResult, getLastLeagueResult, getLeaderboard, getLeague, getLeagueName, getLeagueRewards, getUserRank } from '../lib/league.js';
 import { showToast } from '../components/toast.js';
 
 export function renderLeague(container) {
@@ -10,6 +10,7 @@ export function renderLeague(container) {
   const rows = getLeaderboard();
   const user = getUserRank();
   const reward = getLeagueRewards();
+  const lastResult = getLastLeagueResult();
 
   container.innerHTML = `
     <div class="league-screen">
@@ -28,6 +29,17 @@ export function renderLeague(container) {
           <small>위</small>
         </div>
       </div>
+
+      ${lastResult ? `
+        <div class="league-result animate-in">
+          <div>
+            <div class="league-eyebrow">지난 주 결과</div>
+            <div class="league-title">${getResultTitle(lastResult)}</div>
+            <div class="league-subtitle">${lastResult.rank}위 · ${lastResult.lp} LP · ${lastResult.tierName} → ${lastResult.nextTierName}</div>
+          </div>
+          <button class="league-ad-btn" id="dismiss-league-result">확인</button>
+        </div>
+      ` : ''}
 
       <div class="league-summary animate-in animate-in-delay-1">
         <div>
@@ -68,4 +80,15 @@ export function renderLeague(container) {
       renderLeague(container);
     }
   });
+
+  document.getElementById('dismiss-league-result')?.addEventListener('click', () => {
+    clearLastLeagueResult();
+    renderLeague(container);
+  });
+}
+
+function getResultTitle(result) {
+  if (result.tierDelta > 0) return '승급했어요!';
+  if (result.tierDelta < 0) return '강등됐어요';
+  return '잔류했어요';
 }
